@@ -1,24 +1,21 @@
 const path = require('path')
 const resolve = _path => path.resolve(__dirname, _path)
-const DOMGlobals = ['window', 'document']
-const NodeGlobals = ['module', 'require']
-
 
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: resolve('./tsconfig.json'), 
+    project: resolve('./tsconfig.json'),
     tsconfigRootDir: resolve('./'),
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
-    'indent': ['error', 2],
-    'no-unused-vars': 'error',
-    'no-restricted-globals': ['error', ...DOMGlobals, ...NodeGlobals],
+    indent: ['warning', 2],
+    'no-unused-vars': 'off',
+    'no-restricted-globals': 'off',
     'no-console': 'off',
-    }
-};
+  },
+}

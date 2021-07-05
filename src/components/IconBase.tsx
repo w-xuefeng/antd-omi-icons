@@ -39,15 +39,6 @@ function getTwoToneColors(): TwoToneColorPalette {
   };
 }
 
-interface Color {
-  getTwoToneColors: () => TwoToneColorPalette;
-  setTwoToneColors: (twoToneColors: TwoToneColorPaletteSetter) => void;
-}
-
-export interface IconBaseType extends Color {
-  displayName: string;
-}
-
 class IconBase extends OmiComponent<IconProps> {
   static propTypes = {
     icon: Object,
