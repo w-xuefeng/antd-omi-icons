@@ -7,7 +7,7 @@ import pkg from './package.json'
 
 const getPath = (_path) => path.resolve(__dirname, _path)
 
-const entry = './src/index.tsx'
+const entry = './src/index.ts'
 const extensions = ['.js', '.ts', '.tsx']
 
 const tsPlugin = typescript({
