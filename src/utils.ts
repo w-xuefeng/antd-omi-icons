@@ -14,7 +14,6 @@ export function warning(valid: boolean, message: string): void {
   warn(valid, `[antd-icons-omi] ${message}`);
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function isIconDefinition(target: any): target is IconDefinition {
   return (
     typeof target === 'object' &&

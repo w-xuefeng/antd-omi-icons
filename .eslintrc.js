@@ -17,5 +17,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-restricted-globals': 'off',
     'no-console': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
 }
