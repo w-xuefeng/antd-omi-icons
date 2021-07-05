@@ -62,7 +62,7 @@ export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
     // generate icon file
     await writeFile(
       path.resolve(__dirname, `../src/icons/${svgIdentifier}.tsx`),
-      render({ svgIdentifier, tagName: `o-${changeName(svgIdentifier)}` })
+      render({ svgIdentifier, tagName: `o${changeName(svgIdentifier)}` })
     )
   })
 
