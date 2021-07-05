@@ -2,6 +2,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import eslint from '@rollup/plugin-eslint'
 import typescript from '@rollup/plugin-typescript'
+import babel from '@rollup/plugin-babel'
 import path from 'path'
 import pkg from './package.json'
 
@@ -20,10 +21,21 @@ const esPlugin = eslint({
   exclude: ['node_modules/**', 'lib/**'],
 })
 
+const babelPlugin = babel({
+  exclude: 'node_modules/**',
+  babelHelpers: 'runtime',
+})
+
 const commonConfig = {
   input: getPath(entry),
   external: ['omi'],
-  plugins: [resolve({ extensions }), commonjs(), esPlugin, tsPlugin],
+  plugins: [
+    resolve({ extensions }),
+    commonjs(),
+    babelPlugin,
+    esPlugin,
+    tsPlugin,
+  ],
 }
 
 const commonOutputOptions = {
