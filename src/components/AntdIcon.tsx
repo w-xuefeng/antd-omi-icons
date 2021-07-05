@@ -12,10 +12,7 @@ export interface AntdIconProps extends IconBaseProps {
 export interface IconComponentProps extends AntdIconProps {
   icon: IconDefinition;
 }
-interface Color {
-  getTwoToneColor: () => TwoToneColor;
-  setTwoToneColor: (twoToneColor: TwoToneColor) => void;
-}
+
 // Initial setting
 setTwoToneColor('#1890ff');
 

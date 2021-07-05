@@ -15,7 +15,6 @@ module.exports = {
     tsconfigRootDir: resolve('./'),
     sourceType: 'module'
   },
-  plugins: ['prettier'],
   rules: {
     'indent': ['error', 2],
     'no-unused-vars': 'error',
