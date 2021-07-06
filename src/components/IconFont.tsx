@@ -67,10 +67,8 @@ export default function create(options: CustomIconOptions = {}) {
     };
     static inheritAttrs = false;
     static displayName = 'Iconfont';
-    render(props: IconFontProps, context: any) {
-      const { attrs, slots } = context;
-      const { type, ...restProps } = { ...props, ...attrs } as any;
-      const children = slots.default && slots.default();
+    render(props: IconFontProps) {
+      const { type, children, ...restProps } = props;
       // children > type
       let content = null;
       if (type) {

@@ -1,8 +1,8 @@
 import { svgBaseProps, warning, useInsertStyles } from '../utils';
-import { Component as OmiComponent, h } from 'omi';
+import { Component as OmiComponent, h, classNames } from 'omi';
 
 export interface IconBaseProps extends Omit<JSX.HTMLAttributes, 'icon'> {
-  spin?: boolean;
+  spin?: boolean | string;
   rotate?: number;
 }
 export interface CustomIconComponentProps {
@@ -13,7 +13,7 @@ export interface CustomIconComponentProps {
 }
 export interface IconComponentProps extends IconBaseProps {
   viewBox?: string;
-  component?: Omi.VNode;
+  component?: Omi.WeElementConstructor;
   ariaLabel?: string;
 }
 
@@ -26,8 +26,7 @@ class Icon extends OmiComponent<IconComponentProps> {
   };
   static inheritAttrs = false;
   static displayName = 'Icon';
-  render(props: IconComponentProps, context: any) {
-    const { attrs, slots } = context;
+  render(props: IconComponentProps) {
     const {
       class: cls,
       // affect inner <svg>...</svg>
@@ -37,38 +36,41 @@ class Icon extends OmiComponent<IconComponentProps> {
       rotate,
       tabindex,
       onClick,
+      children,
       ...restProps
-    } = { ...props, ...attrs } as any;
-    const children = slots.default && slots.default();
+    } = props;
+
     const hasChildren = children && children.length;
-    const slotsComponent = slots.component;
     warning(
-      Boolean(Component || hasChildren || slotsComponent),
+      Boolean(Component || hasChildren),
       'Should have `component` prop/slot or `children`.',
     );
 
     useInsertStyles();
 
-    const classString = {
+    const classString = classNames({
       anticon: true,
       [cls]: cls,
-    };
+    });
 
-    const svgClassString = {
+    const svgClassString = classNames({
       'anticon-spin': spin === '' || !!spin,
-    };
+    });
+
     const svgStyle = rotate
-      ? {
-        msTransform: `rotate(${rotate}deg)`,
-        transform: `rotate(${rotate}deg)`,
+      ? `.svgInnerRotate {
+        -ms-transform: rotate(${rotate}deg);
+        transform: rotate(${rotate}deg);
       }
+      `
       : undefined;
 
     const innerSvgProps = {
       ...svgBaseProps,
       viewBox,
       class: svgClassString,
-      style: svgStyle,
+      css: svgStyle,
+      className: svgStyle && 'svgInnerRotate'
     };
 
     if (!viewBox) {
@@ -78,16 +80,12 @@ class Icon extends OmiComponent<IconComponentProps> {
       if (Component) {
         return <Component {...innerSvgProps}>{children}</Component>;
       }
-      if (slotsComponent) {
-        return slotsComponent(innerSvgProps);
-      }
       if (hasChildren) {
         warning(
           Boolean(viewBox) || (children.length === 1 && children[0] && children[0].type === 'use'),
           'Make sure that you provide correct `viewBox`' +
           ' prop (default `0 0 1024 1024`) to the icon.',
         );
-
         return (
           <svg {...innerSvgProps} viewBox={viewBox}>
             {children}

@@ -50,11 +50,8 @@ class IconBase extends OmiComponent<IconProps> {
   static displayName = 'IconBase';
   static getTwoToneColors = getTwoToneColors;
   static setTwoToneColors = setTwoToneColors;
-  render(props: IconProps, context: any) {
-    const { icon, primaryColor, secondaryColor, className, ...restProps } = {
-      ...props,
-      ...context.attrs,
-    } as any;
+  render(props: IconProps) {
+    const { icon, primaryColor, secondaryColor, className, ...restProps } = props;
 
     let colors = twoToneColorPalette;
     if (primaryColor) {

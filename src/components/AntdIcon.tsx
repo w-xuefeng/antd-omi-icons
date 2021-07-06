@@ -3,7 +3,7 @@ import { IconBaseProps } from './Icon';
 import { IconDefinition } from '@ant-design/icons-svg/lib/types';
 import { getTwoToneColor, TwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 import { normalizeTwoToneColors } from '../utils';
-import { Component as OmiComponent, h } from 'omi';
+import { Component as OmiComponent, h, classNames } from 'omi';
 
 export interface AntdIconProps extends IconBaseProps {
   twoToneColor?: TwoToneColor;
@@ -27,7 +27,7 @@ class Icon extends OmiComponent<IconComponentProps> {
   static inheritAttrs = false;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
-  render(props: IconComponentProps, context: any) {
+  render(props: IconComponentProps) {
     const {
       class: cls,
       icon,
@@ -38,12 +38,12 @@ class Icon extends OmiComponent<IconComponentProps> {
       twoToneColor,
       onClick,
       ...restProps
-    } = { ...props, ...context.attrs } as any;
-    const classObj = {
+    } = props;
+    const classObj = classNames({
       anticon: true,
       [`anticon-${icon.name}`]: Boolean(icon.name),
       [cls]: cls,
-    };
+    });
 
     const svgClassString = spin === '' || !!spin || icon.name === 'loading' ? 'anticon-spin' : '';
 
