@@ -13,7 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    indent: ['warn', 2],
+    indent: 'off',
     'no-unused-vars': 'off',
     'no-restricted-globals': 'off',
     'no-console': 'off',
