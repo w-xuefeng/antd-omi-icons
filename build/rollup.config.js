@@ -3,8 +3,8 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import babel from '@rollup/plugin-babel'
 import path from 'path'
-import { indexEntry, extensions, iconTargetPath } from './config.js'
-import iconsEntries from './icons.js'
+import { indexEntry, extensions, iconTargetPath, componentTargetPath } from './config.js'
+import { iconsEntries, componentsEntries } from './entries.js'
 import getPkg from './pkg.js'
 
 const pkg = getPkg()
@@ -22,15 +22,12 @@ const babelPlugin = babel({
 
 const deps = Object.keys(pkg.dependencies)
 
+const externalFiles = componentsEntries().map((comp) => comp.path)
+
 const commonConfig = (entry = indexEntry) => ({
   input: getPath(entry),
-  external: [...deps, 'omi'],
-  plugins: [
-    resolve({ extensions }),
-    commonjs(),
-    babelPlugin,
-    tsPlugin,
-  ],
+  external: [...deps, ...externalFiles, 'omi'],
+  plugins: [resolve({ extensions }), commonjs(), babelPlugin, tsPlugin],
 })
 
 const commonOutputOptions = {
@@ -84,7 +81,28 @@ const iconsOutput = iconsEntries().reduce(
   ],
   []
 )
+const componentsOutput = componentsEntries().reduce(
+  (total, comp) => [
+    ...total,
+    ...outputMap(
+      `${componentTargetPath('cjs')}/${comp.name}.js`,
+      `${componentTargetPath('es')}/${comp.name}.js`
+    ).map((output) =>
+      buildConfig(
+        {
+          output: {
+            name: pkg.name,
+            ...commonOutputOptions,
+            ...output,
+          },
+        },
+        comp.path
+      )
+    ),
+  ],
+  []
+)
 
-// export default [...indexOutput, ...iconsOutput]
+// export default [...indexOutput, ...iconsOutput, ...componentsOutput]
 
-export default iconsOutput
+export default componentsOutput

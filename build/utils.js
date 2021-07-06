@@ -1,11 +1,10 @@
 import glob from 'glob'
 import fs from 'fs'
-import { iconPath } from './config.js'
 
-export const getIcons = () => {
+export const getFiles = (path) => {
   const source = []
   const dir = []
-  glob.sync(`${iconPath}/**`).forEach((pathname) => {
+  glob.sync(`${path}/**`).forEach((pathname) => {
     const tmp = pathname.split('/')
     const [name, ext] = tmp[tmp.length - 1].split('.')
     fs.statSync(pathname).isFile()
@@ -21,10 +20,3 @@ export const getIcons = () => {
   })
   return { source, dir }
 }
-
-export const iconsEntries = () => {
-  const { source } = getIcons()
-  return source
-}
-
-export default iconsEntries
