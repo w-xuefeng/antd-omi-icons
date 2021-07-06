@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "es/index.js",
-  "type": "module",
   "dependencies": {
     "@ant-design/colors": "^6.0.0",
     "@ant-design/icons-svg": "^4.1.0",

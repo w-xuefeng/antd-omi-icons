@@ -1,7 +1,7 @@
-import path from 'path'
+const path = require('path')
 const resolve = _path => path.resolve(__dirname, _path)
 
-export default {
+module.exports = {
   env: {
     browser: true,
     es6: true,
