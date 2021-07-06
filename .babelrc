@@ -5,7 +5,7 @@
       {
         "modules": false,
         "useBuiltIns": "usage",
-        "corejs": "2.6.10",
+        "corejs": "3.15.2",
         "targets": {
           "ie": 10
         }
