@@ -47,10 +47,6 @@ const commonOutputOptions = {
 
 const outputMap = [
   {
-    file: pkg.browser,
-    format: 'umd',
-  },
-  {
     file: pkg.main,
     format: 'cjs',
   },
