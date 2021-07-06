@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class FilePdfFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FilePdfFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={FilePdfFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={FilePdfFilledSvg}></AntdIcon>;
   };
 }

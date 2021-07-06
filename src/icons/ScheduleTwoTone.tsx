@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ScheduleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ScheduleTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ScheduleTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ScheduleTwoToneSvg}></AntdIcon>;
   };
 }

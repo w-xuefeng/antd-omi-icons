@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class EuroTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'EuroTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={EuroTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={EuroTwoToneSvg}></AntdIcon>;
   };
 }

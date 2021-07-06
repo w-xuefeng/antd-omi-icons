@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class FrownFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FrownFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={FrownFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={FrownFilledSvg}></AntdIcon>;
   };
 }

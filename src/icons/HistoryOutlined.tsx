@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class HistoryOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'HistoryOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={HistoryOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={HistoryOutlinedSvg}></AntdIcon>;
   };
 }

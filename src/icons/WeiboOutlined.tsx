@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class WeiboOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WeiboOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={WeiboOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={WeiboOutlinedSvg}></AntdIcon>;
   };
 }

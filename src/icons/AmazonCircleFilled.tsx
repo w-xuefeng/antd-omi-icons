@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class AmazonCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AmazonCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={AmazonCircleFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={AmazonCircleFilledSvg}></AntdIcon>;
   };
 }

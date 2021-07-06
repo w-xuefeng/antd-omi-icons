@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ExpandOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExpandOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ExpandOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ExpandOutlinedSvg}></AntdIcon>;
   };
 }

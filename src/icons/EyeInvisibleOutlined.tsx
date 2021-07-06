@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class EyeInvisibleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EyeInvisibleOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={EyeInvisibleOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={EyeInvisibleOutlinedSvg}></AntdIcon>;
   };
 }

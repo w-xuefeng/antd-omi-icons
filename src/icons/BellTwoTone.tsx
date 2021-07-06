@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class BellTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'BellTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={BellTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={BellTwoToneSvg}></AntdIcon>;
   };
 }

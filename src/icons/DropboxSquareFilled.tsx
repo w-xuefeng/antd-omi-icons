@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class DropboxSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'DropboxSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={DropboxSquareFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={DropboxSquareFilledSvg}></AntdIcon>;
   };
 }

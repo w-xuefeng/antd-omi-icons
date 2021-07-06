@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class CodepenSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CodepenSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={CodepenSquareFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={CodepenSquareFilledSvg}></AntdIcon>;
   };
 }

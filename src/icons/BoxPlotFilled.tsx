@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class BoxPlotFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BoxPlotFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={BoxPlotFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={BoxPlotFilledSvg}></AntdIcon>;
   };
 }

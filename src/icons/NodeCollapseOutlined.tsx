@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class NodeCollapseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'NodeCollapseOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={NodeCollapseOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={NodeCollapseOutlinedSvg}></AntdIcon>;
   };
 }

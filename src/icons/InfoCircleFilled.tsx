@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class InfoCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'InfoCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={InfoCircleFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={InfoCircleFilledSvg}></AntdIcon>;
   };
 }

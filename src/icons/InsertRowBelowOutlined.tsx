@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class InsertRowBelowOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InsertRowBelowOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={InsertRowBelowOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={InsertRowBelowOutlinedSvg}></AntdIcon>;
   };
 }

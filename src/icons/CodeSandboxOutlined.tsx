@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class CodeSandboxOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CodeSandboxOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={CodeSandboxOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={CodeSandboxOutlinedSvg}></AntdIcon>;
   };
 }

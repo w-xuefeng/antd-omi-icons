@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class AlipayCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AlipayCircleOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={AlipayCircleOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={AlipayCircleOutlinedSvg}></AntdIcon>;
   };
 }

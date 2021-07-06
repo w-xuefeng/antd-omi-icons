@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ThunderboltTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ThunderboltTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ThunderboltTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ThunderboltTwoToneSvg}></AntdIcon>;
   };
 }

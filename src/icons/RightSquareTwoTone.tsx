@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class RightSquareTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'RightSquareTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={RightSquareTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={RightSquareTwoToneSvg}></AntdIcon>;
   };
 }

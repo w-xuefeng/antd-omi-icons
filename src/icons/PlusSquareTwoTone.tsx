@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class PlusSquareTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PlusSquareTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={PlusSquareTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={PlusSquareTwoToneSvg}></AntdIcon>;
   };
 }

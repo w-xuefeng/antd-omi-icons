@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class PauseCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PauseCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={PauseCircleFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={PauseCircleFilledSvg}></AntdIcon>;
   };
 }

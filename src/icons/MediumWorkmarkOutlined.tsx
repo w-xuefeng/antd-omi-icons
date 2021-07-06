@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class MediumWorkmarkOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MediumWorkmarkOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={MediumWorkmarkOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={MediumWorkmarkOutlinedSvg}></AntdIcon>;
   };
 }

@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class MinusSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MinusSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={MinusSquareFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={MinusSquareFilledSvg}></AntdIcon>;
   };
 }

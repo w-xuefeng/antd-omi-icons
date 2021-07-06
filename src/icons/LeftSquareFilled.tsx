@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class LeftSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={LeftSquareFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={LeftSquareFilledSvg}></AntdIcon>;
   };
 }

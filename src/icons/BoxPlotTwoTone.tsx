@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class BoxPlotTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'BoxPlotTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={BoxPlotTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={BoxPlotTwoToneSvg}></AntdIcon>;
   };
 }

@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class CodeSandboxSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CodeSandboxSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={CodeSandboxSquareFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={CodeSandboxSquareFilledSvg}></AntdIcon>;
   };
 }

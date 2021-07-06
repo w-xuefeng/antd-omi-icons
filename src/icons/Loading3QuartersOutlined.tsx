@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class Loading3QuartersOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'Loading3QuartersOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={Loading3QuartersOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={Loading3QuartersOutlinedSvg}></AntdIcon>;
   };
 }

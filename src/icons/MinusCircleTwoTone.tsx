@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class MinusCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'MinusCircleTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={MinusCircleTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={MinusCircleTwoToneSvg}></AntdIcon>;
   };
 }

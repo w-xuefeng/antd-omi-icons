@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class DeleteColumnOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DeleteColumnOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={DeleteColumnOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={DeleteColumnOutlinedSvg}></AntdIcon>;
   };
 }

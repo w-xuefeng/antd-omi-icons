@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class GoogleCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GoogleCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={GoogleCircleFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={GoogleCircleFilledSvg}></AntdIcon>;
   };
 }

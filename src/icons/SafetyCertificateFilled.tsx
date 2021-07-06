@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class SafetyCertificateFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SafetyCertificateFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={SafetyCertificateFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={SafetyCertificateFilledSvg}></AntdIcon>;
   };
 }

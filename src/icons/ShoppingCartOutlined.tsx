@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ShoppingCartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ShoppingCartOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ShoppingCartOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ShoppingCartOutlinedSvg}></AntdIcon>;
   };
 }

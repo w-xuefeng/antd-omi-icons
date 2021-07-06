@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class UsergroupAddOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UsergroupAddOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={UsergroupAddOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={UsergroupAddOutlinedSvg}></AntdIcon>;
   };
 }

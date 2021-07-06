@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class SplitCellsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SplitCellsOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={SplitCellsOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={SplitCellsOutlinedSvg}></AntdIcon>;
   };
 }

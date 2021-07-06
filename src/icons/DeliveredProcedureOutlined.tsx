@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class DeliveredProcedureOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DeliveredProcedureOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={DeliveredProcedureOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={DeliveredProcedureOutlinedSvg}></AntdIcon>;
   };
 }

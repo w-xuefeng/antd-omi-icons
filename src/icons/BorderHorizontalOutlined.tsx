@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class BorderHorizontalOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BorderHorizontalOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={BorderHorizontalOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={BorderHorizontalOutlinedSvg}></AntdIcon>;
   };
 }

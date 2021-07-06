@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class WhatsAppOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WhatsAppOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={WhatsAppOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={WhatsAppOutlinedSvg}></AntdIcon>;
   };
 }

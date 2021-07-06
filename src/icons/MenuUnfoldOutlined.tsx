@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class MenuUnfoldOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MenuUnfoldOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={MenuUnfoldOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={MenuUnfoldOutlinedSvg}></AntdIcon>;
   };
 }

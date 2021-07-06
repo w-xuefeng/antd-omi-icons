@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class BehanceSquareOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BehanceSquareOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={BehanceSquareOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={BehanceSquareOutlinedSvg}></AntdIcon>;
   };
 }

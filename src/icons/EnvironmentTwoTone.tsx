@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class EnvironmentTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'EnvironmentTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={EnvironmentTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={EnvironmentTwoToneSvg}></AntdIcon>;
   };
 }

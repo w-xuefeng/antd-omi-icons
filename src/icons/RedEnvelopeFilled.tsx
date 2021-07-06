@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class RedEnvelopeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'RedEnvelopeFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={RedEnvelopeFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={RedEnvelopeFilledSvg}></AntdIcon>;
   };
 }

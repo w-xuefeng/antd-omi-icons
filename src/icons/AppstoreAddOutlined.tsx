@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class AppstoreAddOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AppstoreAddOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={AppstoreAddOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={AppstoreAddOutlinedSvg}></AntdIcon>;
   };
 }

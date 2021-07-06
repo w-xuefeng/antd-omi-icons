@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class FullscreenExitOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FullscreenExitOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={FullscreenExitOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={FullscreenExitOutlinedSvg}></AntdIcon>;
   };
 }

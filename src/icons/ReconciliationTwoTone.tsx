@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ReconciliationTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ReconciliationTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ReconciliationTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ReconciliationTwoToneSvg}></AntdIcon>;
   };
 }

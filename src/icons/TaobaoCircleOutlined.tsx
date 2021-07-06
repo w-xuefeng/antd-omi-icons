@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class TaobaoCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TaobaoCircleOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={TaobaoCircleOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={TaobaoCircleOutlinedSvg}></AntdIcon>;
   };
 }

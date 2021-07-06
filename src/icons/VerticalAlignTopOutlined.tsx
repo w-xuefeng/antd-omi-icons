@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class VerticalAlignTopOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'VerticalAlignTopOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={VerticalAlignTopOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={VerticalAlignTopOutlinedSvg}></AntdIcon>;
   };
 }

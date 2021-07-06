@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ConsoleSqlOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ConsoleSqlOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ConsoleSqlOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ConsoleSqlOutlinedSvg}></AntdIcon>;
   };
 }

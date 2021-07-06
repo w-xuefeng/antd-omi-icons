@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class ArrowsAltOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ArrowsAltOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={ArrowsAltOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={ArrowsAltOutlinedSvg}></AntdIcon>;
   };
 }

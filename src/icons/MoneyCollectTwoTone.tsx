@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class MoneyCollectTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'MoneyCollectTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={MoneyCollectTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={MoneyCollectTwoToneSvg}></AntdIcon>;
   };
 }

@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class DoubleLeftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DoubleLeftOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={DoubleLeftOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={DoubleLeftOutlinedSvg}></AntdIcon>;
   };
 }

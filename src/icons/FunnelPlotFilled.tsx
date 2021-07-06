@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class FunnelPlotFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FunnelPlotFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={FunnelPlotFilledSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={FunnelPlotFilledSvg}></AntdIcon>;
   };
 }

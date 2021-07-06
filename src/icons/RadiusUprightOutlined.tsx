@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class RadiusUprightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RadiusUprightOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={RadiusUprightOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={RadiusUprightOutlinedSvg}></AntdIcon>;
   };
 }

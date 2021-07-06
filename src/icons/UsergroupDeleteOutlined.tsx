@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class UsergroupDeleteOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UsergroupDeleteOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={UsergroupDeleteOutlinedSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={UsergroupDeleteOutlinedSvg}></AntdIcon>;
   };
 }

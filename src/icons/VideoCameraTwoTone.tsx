@@ -9,8 +9,7 @@ import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
 export default class VideoCameraTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'VideoCameraTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps, context: any) {
-    const p = { ...props, ...context.attrs };
-    return <AntdIcon {...p} icon={VideoCameraTwoToneSvg}></AntdIcon>;
+  render(props: AntdIconProps) {
+    return <AntdIcon {...props} icon={VideoCameraTwoToneSvg}></AntdIcon>;
   };
 }
