@@ -1,17 +1,17 @@
-import VueIcon from './IconBase'
+import IconBase from './IconBase'
 import { normalizeTwoToneColors } from '../utils'
 
 export type TwoToneColor = string | [string, string]
 export function setTwoToneColor(twoToneColor: TwoToneColor): void {
   const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor)
-  return VueIcon.setTwoToneColors({
+  return IconBase.setTwoToneColors({
     primaryColor,
     secondaryColor,
   })
 }
 
 export function getTwoToneColor(): TwoToneColor {
-  const colors = VueIcon.getTwoToneColors()
+  const colors = IconBase.getTwoToneColors()
   if (!colors.calculated) {
     return colors.primaryColor
   }

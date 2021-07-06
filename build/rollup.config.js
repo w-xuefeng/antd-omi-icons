@@ -1,6 +1,5 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-// import eslint from '@rollup/plugin-eslint'
 import typescript from '@rollup/plugin-typescript'
 import babel from '@rollup/plugin-babel'
 import path from 'path'
@@ -16,13 +15,6 @@ const tsPlugin = typescript({
   tsconfig: getPath('./tsconfig.json'),
 })
 
-// const esPlugin = eslint({
-//   fix: true,
-//   throwOnError: true,
-//   include: ['src/**/*.ts', 'src/**/*.tsx'],
-//   exclude: ['node_modules/**', 'lib/**'],
-// })
-
 const babelPlugin = babel({
   exclude: 'node_modules/**',
   babelHelpers: 'runtime',
@@ -37,7 +29,6 @@ const commonConfig = (entry = indexEntry) => ({
     resolve({ extensions }),
     commonjs(),
     babelPlugin,
-    // esPlugin,
     tsPlugin,
   ],
 })
