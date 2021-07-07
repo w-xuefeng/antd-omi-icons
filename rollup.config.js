@@ -58,18 +58,29 @@ const outputUMDMap = (umdFile = pkg.browser) => [
   },
 ]
 
-const buildConfig = (options, entry = indexEntry) =>
-  Object.assign({}, commonConfig(entry, options.externalDeps), options)
+const buildConfig = (
+  options,
+  buildOps = {
+    entry: indexEntry,
+    externalDeps: true,
+  }
+) =>
+  Object.assign({}, commonConfig(buildOps.entry, buildOps.externalDeps), options)
 
 const indexOutput = outputUMDMap().map((output) =>
-  buildConfig({
-    externalDeps: false,
-    output: {
-      name: pkg.name,
-      ...commonOutputOptions,
-      ...output,
+  buildConfig(
+    {
+      output: {
+        name: pkg.name,
+        ...commonOutputOptions,
+        ...output,
+      },
     },
-  })
+    {
+      entry: indexEntry,
+      externalDeps: false,
+    }
+  )
 )
 
 export default indexOutput
