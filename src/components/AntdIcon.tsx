@@ -1,22 +1,16 @@
-import IconBase from './IconBase';
-import { IconBaseProps } from './Icon';
-import { IconDefinition } from '@ant-design/icons-svg/lib/types';
-import { getTwoToneColor, TwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
+
+import { Component as OmiComponent, h, classNames, tag } from 'omi';
+import './IconBase';
+import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 import { normalizeTwoToneColors } from '../utils';
-import { Component as OmiComponent, h, classNames } from 'omi';
+import type { AntdIconComponentProps } from './types'
 
-export interface AntdIconProps extends IconBaseProps {
-  twoToneColor?: TwoToneColor;
-}
-
-export interface IconComponentProps extends AntdIconProps {
-  icon: IconDefinition;
-}
 
 // Initial setting
 setTwoToneColor('#1890ff');
 
-class Icon extends OmiComponent<IconComponentProps> {
+@tag('o-antd-icon')
+export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   static propTypes = {
     spin: Boolean,
     rotate: Number,
@@ -27,7 +21,7 @@ class Icon extends OmiComponent<IconComponentProps> {
   static inheritAttrs = false;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
-  render(props: IconComponentProps) {
+  render(props: Omi.RenderableProps<AntdIconComponentProps>) {
     const {
       class: cls,
       icon,
@@ -42,7 +36,7 @@ class Icon extends OmiComponent<IconComponentProps> {
     const classObj = classNames({
       anticon: true,
       [`anticon-${icon.name}`]: Boolean(icon.name),
-      [cls]: cls,
+      [cls || '']: cls,
     });
 
     const svgClassString = spin === '' || !!spin || icon.name === 'loading' ? 'anticon-spin' : '';
@@ -64,7 +58,7 @@ class Icon extends OmiComponent<IconComponentProps> {
 
     return (
       <span role="img" aria-label={icon.name} {...restProps} onClick={onClick} class={classObj}>
-        <IconBase
+        <o-icon-base
           class={svgClassString}
           icon={icon}
           primaryColor={primaryColor}
@@ -76,4 +70,3 @@ class Icon extends OmiComponent<IconComponentProps> {
     );
   };
 }
-export default Icon;

@@ -1,7 +1,7 @@
 import IconBase from './IconBase'
 import { normalizeTwoToneColors } from '../utils'
+import type { TwoToneColor } from './types'
 
-export type TwoToneColor = string | [string, string]
 export function setTwoToneColor(twoToneColor: TwoToneColor): void {
   const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor)
   return IconBase.setTwoToneColors({

@@ -1,17 +1,21 @@
-import { nextTick, h } from 'omi';
-import { AbstractNode, IconDefinition } from '@ant-design/icons-svg/lib/types';
-import { generate as generateColor } from '@ant-design/colors';
-import insertCss from './insert-css';
+import { h } from 'omi'
+import { AbstractNode, IconDefinition } from '@ant-design/icons-svg/lib/types'
+import { generate as generateColor } from '@ant-design/colors'
+import insertCss from './insert-css'
 
 export function warn(valid: boolean, message: string): void {
   // Support uglify
-  if (process.env.NODE_ENV !== 'production' && !valid && console !== undefined) {
-    console.error(`Warning: ${message}`);
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    !valid &&
+    console !== undefined
+  ) {
+    console.error(`Warning: ${message}`)
   }
 }
 
 export function warning(valid: boolean, message: string): void {
-  warn(valid, `[antd-icons-omi] ${message}`);
+  warn(valid, `[antd-icons-omi] ${message}`)
 }
 
 export function isIconDefinition(target: any): target is IconDefinition {
@@ -20,41 +24,45 @@ export function isIconDefinition(target: any): target is IconDefinition {
     typeof target.name === 'string' &&
     typeof target.theme === 'string' &&
     (typeof target.icon === 'object' || typeof target.icon === 'function')
-  );
+  )
 }
 
 export function normalizeAttrs(attrs: Attrs = {}): Attrs {
   return Object.keys(attrs).reduce((acc: Attrs, key) => {
-    const val = attrs[key];
+    const val = attrs[key]
     switch (key) {
-    case 'class':
-      acc.className = val;
-      delete acc.class;
-      break;
-    default:
-      acc[key] = val;
+      case 'class':
+        acc.className = val
+        delete acc.class
+        break
+      default:
+        acc[key] = val
     }
-    return acc;
-  }, {});
+    return acc
+  }, {})
 }
 export interface Attrs {
-  [key: string]: string;
+  [key: string]: string
 }
-export type StringKeyOf<T> = Extract<keyof T, string>;
+export type StringKeyOf<T> = Extract<keyof T, string>
 export type EventHandlers<E> = {
-  [K in StringKeyOf<E>]?: E[K] extends () => any ? E[K] : (payload: E[K]) => void;
-};
+  [K in StringKeyOf<E>]?: E[K] extends () => any
+    ? E[K]
+    : (payload: E[K]) => void
+}
 export function generate(
   node: AbstractNode,
   key: string,
-  rootProps?: { [key: string]: any } | false,
+  rootProps?: { [key: string]: any } | false
 ): any {
   if (!rootProps) {
     return h(
       node.tag,
       { key, ...node.attrs },
-      (node.children || []).map((child, index) => generate(child, `${key}-${node.tag}-${index}`)),
-    );
+      (node.children || []).map((child, index) =>
+        generate(child, `${key}-${node.tag}-${index}`)
+      )
+    )
   }
   return h(
     node.tag,
@@ -63,23 +71,25 @@ export function generate(
       ...rootProps,
       ...node.attrs,
     },
-    (node.children || []).map((child, index) => generate(child, `${key}-${node.tag}-${index}`)),
-  );
+    (node.children || []).map((child, index) =>
+      generate(child, `${key}-${node.tag}-${index}`)
+    )
+  )
 }
 
 export function getSecondaryColor(primaryColor: string): string {
   // choose the second color
-  return generateColor(primaryColor)[0];
+  return generateColor(primaryColor)[0]
 }
 
 export function normalizeTwoToneColors(
-  twoToneColor: string | [string, string] | undefined,
+  twoToneColor: string | [string, string] | undefined
 ): string[] {
   if (!twoToneColor) {
-    return [];
+    return []
   }
 
-  return Array.isArray(twoToneColor) ? twoToneColor : [twoToneColor];
+  return Array.isArray(twoToneColor) ? twoToneColor : [twoToneColor]
 }
 
 // These props make sure that the SVG behaviours like general text.
@@ -90,7 +100,7 @@ export const svgBaseProps = {
   fill: 'currentColor',
   'aria-hidden': 'true',
   focusable: 'false',
-} as any;
+} as any
 
 export const iconStyles = `
 .anticon {
@@ -146,19 +156,21 @@ export const iconStyles = `
     transform: rotate(360deg);
   }
 }
-`;
+`
 
-let cssInjectedFlag = false;
+let cssInjectedFlag = false
 
 export const useInsertStyles = (styleStr: string = iconStyles): void => {
-  nextTick(() => {
-    if (!cssInjectedFlag) {
-      if (typeof window !== 'undefined' && window.document && window.document.documentElement) {
-        insertCss(styleStr, {
-          prepend: true,
-        });
-      }
-      cssInjectedFlag = true;
+  if (!cssInjectedFlag) {
+    if (
+      typeof window !== 'undefined' &&
+      window.document &&
+      window.document.documentElement
+    ) {
+      insertCss(styleStr, {
+        prepend: true,
+      })
     }
-  });
-};
+    cssInjectedFlag = true
+  }
+}

@@ -1,8 +1,8 @@
 {
   "name": "antd-omi-icons",
   "version": "0.0.1",
-  "main": "cjs/index.js",
-  "module": "es/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.ts",
   "dependencies": {
     "@ant-design/colors": "^6.0.0",
     "@ant-design/icons-svg": "^4.1.0",
@@ -14,11 +14,10 @@
     "@babel/preset-env": "^7.14.7",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^11.0.1",
-    "@rollup/plugin-eslint": "^8.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
     "@types/lodash": "^4.14.170",
-    "@typescript-eslint/parser": "^4.28.1",
+    "@types/node": "^16.0.0",
     "core-js": "^3.15.2",
     "cross-env": "^7.0.3",
     "glob": "^7.1.7",
@@ -26,6 +25,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.52.7",
     "ts-node": "^10.0.0",
+    "tslib": "*",
     "typescript": "^4.3.5"
   },
   "scripts": {
@@ -34,7 +34,6 @@
     "clear": "rimraf lib",
     "dev": "cross-env NODE_ENV=developemnt rollup -c -w",
     "generate": "rimraf src/icons && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=icon",
-    "lint": "eslint -c ./.eslintrc.js ./src --ext .tsx,.ts --fix",
     "postcompile": "yarn clean && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=entry",
     "prebuild": "yarn clear",
     "pretest": "yarn build",
@@ -42,8 +41,7 @@
   },
   "files": [
     "lib",
-    "es",
-    "cjs"
+    "src"
   ],
   "contributors": [
     "w-xuefeng <xuefeng@kcalb.wang>"

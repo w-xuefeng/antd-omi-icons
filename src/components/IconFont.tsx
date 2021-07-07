@@ -1,15 +1,12 @@
 import { Component as OmiComponent, h } from 'omi';
-import Icon, { IconBaseProps } from './Icon';
+import type { IconFontProps } from './types';
+import './Icon';
 
 const customCache = new Set<string>();
 
 export interface CustomIconOptions {
   scriptUrl?: string | string[];
   extraCommonProps?: { [key: string]: any };
-}
-
-export interface IconFontProps extends IconBaseProps {
-  type: string;
 }
 
 function isValidCustomScriptUrl(scriptUrl: string): boolean {
@@ -67,21 +64,21 @@ export default function create(options: CustomIconOptions = {}) {
     };
     static inheritAttrs = false;
     static displayName = 'Iconfont';
-    render(props: IconFontProps) {
+    render(props: Omi.RenderableProps<IconFontProps>) {
       const { type, children, ...restProps } = props;
       // children > type
       let content = null;
       if (type) {
         content = <use xlinkHref={`#${type}`} />;
       }
-      if (children && children.length) {
+      if (children && Array.isArray(children) && children.length) {
         content = children;
       }
       const iconProps = {
         ...extraCommonProps,
         ...restProps,
       };
-      return <Icon {...iconProps}>{content}</Icon>;
+      return <o-icon {...iconProps}>{content}</o-icon>;
     };
   };
 }

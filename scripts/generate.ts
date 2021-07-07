@@ -44,14 +44,15 @@ async function generateIcons() {
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import <%= svgIdentifier %>Svg from '@ant-design/icons-svg/lib/asn/<%= svgIdentifier %>';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('<%= tagName %>')
 export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   static displayName = '<%= svgIdentifier %>';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={<%= svgIdentifier %>Svg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={<%= svgIdentifier %>Svg} />;
   };
 }
 `.trim()

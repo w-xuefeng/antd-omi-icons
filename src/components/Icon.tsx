@@ -1,23 +1,10 @@
+
+import { Component as OmiComponent, h, classNames, tag } from 'omi';
 import { svgBaseProps, warning, useInsertStyles } from '../utils';
-import { Component as OmiComponent, h, classNames } from 'omi';
+import type { IconComponentProps } from './types'
 
-export interface IconBaseProps extends Omit<JSX.HTMLAttributes, 'icon'> {
-  spin?: boolean | string;
-  rotate?: number;
-}
-export interface CustomIconComponentProps {
-  width: string | number;
-  height: string | number;
-  fill: string;
-  viewBox?: string;
-}
-export interface IconComponentProps extends IconBaseProps {
-  viewBox?: string;
-  component?: Omi.WeElementConstructor;
-  ariaLabel?: string;
-}
-
-class Icon extends OmiComponent<IconComponentProps> {
+@tag('o-icon')
+export default class Icon extends OmiComponent<IconComponentProps> {
   static propTypes = {
     spin: Boolean,
     rotate: Number,
@@ -26,7 +13,12 @@ class Icon extends OmiComponent<IconComponentProps> {
   };
   static inheritAttrs = false;
   static displayName = 'Icon';
-  render(props: IconComponentProps) {
+
+  installed() {
+    useInsertStyles();
+  }
+
+  render(props: Omi.RenderableProps<IconComponentProps>) {
     const {
       class: cls,
       // affect inner <svg>...</svg>
@@ -40,17 +32,15 @@ class Icon extends OmiComponent<IconComponentProps> {
       ...restProps
     } = props;
 
-    const hasChildren = children && children.length;
+    const hasChildren = !!(children && Array.isArray(children) && children.length);
     warning(
       Boolean(Component || hasChildren),
       'Should have `component` prop/slot or `children`.',
     );
 
-    useInsertStyles();
-
     const classString = classNames({
       anticon: true,
-      [cls]: cls,
+      [cls || '']: cls,
     });
 
     const svgClassString = classNames({
@@ -82,6 +72,7 @@ class Icon extends OmiComponent<IconComponentProps> {
       }
       if (hasChildren) {
         warning(
+          // @ts-ignore
           Boolean(viewBox) || (children.length === 1 && children[0] && children[0].type === 'use'),
           'Make sure that you provide correct `viewBox`' +
           ' prop (default `0 0 1024 1024`) to the icon.',
@@ -108,5 +99,3 @@ class Icon extends OmiComponent<IconComponentProps> {
     );
   }
 }
-
-export default Icon;

@@ -105,4 +105,4 @@ const componentsOutput = componentsEntries().reduce(
 
 // export default [...indexOutput, ...iconsOutput, ...componentsOutput]
 
-export default componentsOutput
+export default iconsOutput[1]

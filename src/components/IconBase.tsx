@@ -1,25 +1,7 @@
+import { Component as OmiComponent, classNames, tag } from 'omi';
+import { AbstractNode } from '@ant-design/icons-svg/lib/types';
 import { generate, getSecondaryColor, isIconDefinition, warning, useInsertStyles } from '../utils';
-import { AbstractNode, IconDefinition } from '@ant-design/icons-svg/lib/types';
-import { Component as OmiComponent, classNames } from 'omi';
-
-export interface IconProps {
-  icon: IconDefinition;
-  class?: string;
-  onClick?: (e?: Event) => void;
-  className?: string;
-  primaryColor?: string; // only for two-tone
-  secondaryColor?: string; // only for two-tone
-  focusable?: string;
-}
-
-export interface TwoToneColorPaletteSetter {
-  primaryColor: string;
-  secondaryColor?: string;
-}
-
-export interface TwoToneColorPalette extends TwoToneColorPaletteSetter {
-  calculated?: boolean; // marker for calculation
-}
+import type { IconProps, TwoToneColorPalette, TwoToneColorPaletteSetter } from './types';
 
 const twoToneColorPalette: TwoToneColorPalette & { secondaryColor: string } = {
   primaryColor: '#333',
@@ -39,7 +21,8 @@ function getTwoToneColors(): TwoToneColorPalette {
   };
 }
 
-class IconBase extends OmiComponent<IconProps> {
+@tag('o-icon-base')
+export default class IconBase extends OmiComponent<IconProps> {
   static propTypes = {
     icon: Object,
     primaryColor: String,
@@ -50,7 +33,12 @@ class IconBase extends OmiComponent<IconProps> {
   static displayName = 'IconBase';
   static getTwoToneColors = getTwoToneColors;
   static setTwoToneColors = setTwoToneColors;
-  render(props: IconProps) {
+
+  installed() {
+    useInsertStyles();
+  }
+
+  render(props: Omi.RenderableProps<IconProps>) {
     const { icon, primaryColor, secondaryColor, className, ...restProps } = props;
 
     let colors = twoToneColorPalette;
@@ -60,8 +48,6 @@ class IconBase extends OmiComponent<IconProps> {
         secondaryColor: secondaryColor || getSecondaryColor(primaryColor),
       };
     }
-
-    useInsertStyles();
 
     warning(isIconDefinition(icon), `icon should be icon definiton, but got ${icon}`);
 
@@ -88,4 +74,3 @@ class IconBase extends OmiComponent<IconProps> {
     });
   };
 }
-export default IconBase;
