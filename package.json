@@ -2,7 +2,8 @@
   "name": "antd-omi-icons",
   "version": "0.0.1",
   "main": "lib/cjs/index.js",
-  "module": "lib/es/index.ts",
+  "module": "lib/es/index.js",
+  "browser": "lib/umd/antd-omi-icons.min.js",
   "dependencies": {
     "@ant-design/colors": "^6.0.0",
     "@ant-design/icons-svg": "^4.1.0",
@@ -24,12 +25,15 @@
     "omi": "^6.19.21",
     "rimraf": "^3.0.2",
     "rollup": "^2.52.7",
+    "rollup-plugin-terser": "^7.0.2",
     "ts-node": "^10.0.0",
     "tslib": "*",
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production rollup -c",
+    "build:umd": "cross-env NODE_ENV=production rollup -c",
+    "build:tsc": "./node_modules/.bin/tsc --project tsconfig.json",
+    "build:cjs": "./node_modules/.bin/tsc --project tsconfig.json --module CommonJS --outDir",
     "clean": "./scripts/cleanup.sh",
     "clear": "rimraf lib",
     "dev": "cross-env NODE_ENV=developemnt rollup -c -w",
