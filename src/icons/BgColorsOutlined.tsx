@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import BgColorsOutlinedSvg from '@ant-design/icons-svg/lib/asn/BgColorsOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-bg-colors-outlined')
 export default class BgColorsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BgColorsOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={BgColorsOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={BgColorsOutlinedSvg} />;
   };
 }

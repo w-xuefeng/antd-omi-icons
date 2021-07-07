@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import YahooFilledSvg from '@ant-design/icons-svg/lib/asn/YahooFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-yahoo-filled')
 export default class YahooFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'YahooFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={YahooFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={YahooFilledSvg} />;
   };
 }

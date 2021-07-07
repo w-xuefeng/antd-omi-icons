@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import DashboardTwoToneSvg from '@ant-design/icons-svg/lib/asn/DashboardTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-dashboard-two-tone')
 export default class DashboardTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'DashboardTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={DashboardTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={DashboardTwoToneSvg} />;
   };
 }

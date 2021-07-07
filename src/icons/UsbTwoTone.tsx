@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import UsbTwoToneSvg from '@ant-design/icons-svg/lib/asn/UsbTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-usb-two-tone')
 export default class UsbTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'UsbTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={UsbTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={UsbTwoToneSvg} />;
   };
 }

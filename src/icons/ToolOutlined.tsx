@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ToolOutlinedSvg from '@ant-design/icons-svg/lib/asn/ToolOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-tool-outlined')
 export default class ToolOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ToolOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ToolOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ToolOutlinedSvg} />;
   };
 }

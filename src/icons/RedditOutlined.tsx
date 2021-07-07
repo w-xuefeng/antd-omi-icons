@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import RedditOutlinedSvg from '@ant-design/icons-svg/lib/asn/RedditOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-reddit-outlined')
 export default class RedditOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RedditOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={RedditOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={RedditOutlinedSvg} />;
   };
 }

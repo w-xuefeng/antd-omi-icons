@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FastBackwardFilledSvg from '@ant-design/icons-svg/lib/asn/FastBackwardFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-fast-backward-filled')
 export default class FastBackwardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FastBackwardFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FastBackwardFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FastBackwardFilledSvg} />;
   };
 }

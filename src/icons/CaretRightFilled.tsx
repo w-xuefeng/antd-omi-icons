@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import CaretRightFilledSvg from '@ant-design/icons-svg/lib/asn/CaretRightFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-caret-right-filled')
 export default class CaretRightFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CaretRightFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={CaretRightFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={CaretRightFilledSvg} />;
   };
 }

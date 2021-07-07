@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import CrownTwoToneSvg from '@ant-design/icons-svg/lib/asn/CrownTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-crown-two-tone')
 export default class CrownTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CrownTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={CrownTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={CrownTwoToneSvg} />;
   };
 }

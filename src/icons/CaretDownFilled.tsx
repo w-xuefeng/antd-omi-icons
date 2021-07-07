@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import CaretDownFilledSvg from '@ant-design/icons-svg/lib/asn/CaretDownFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-caret-down-filled')
 export default class CaretDownFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CaretDownFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={CaretDownFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={CaretDownFilledSvg} />;
   };
 }

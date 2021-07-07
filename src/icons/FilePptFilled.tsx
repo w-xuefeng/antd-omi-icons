@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FilePptFilledSvg from '@ant-design/icons-svg/lib/asn/FilePptFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-file-ppt-filled')
 export default class FilePptFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FilePptFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FilePptFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FilePptFilledSvg} />;
   };
 }

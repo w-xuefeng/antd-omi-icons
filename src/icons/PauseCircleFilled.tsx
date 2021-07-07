@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import PauseCircleFilledSvg from '@ant-design/icons-svg/lib/asn/PauseCircleFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-pause-circle-filled')
 export default class PauseCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PauseCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={PauseCircleFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={PauseCircleFilledSvg} />;
   };
 }

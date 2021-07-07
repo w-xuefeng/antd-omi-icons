@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FileAddFilledSvg from '@ant-design/icons-svg/lib/asn/FileAddFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-file-add-filled')
 export default class FileAddFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FileAddFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FileAddFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FileAddFilledSvg} />;
   };
 }

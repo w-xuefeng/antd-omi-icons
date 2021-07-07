@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ExportOutlinedSvg from '@ant-design/icons-svg/lib/asn/ExportOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-export-outlined')
 export default class ExportOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExportOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ExportOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ExportOutlinedSvg} />;
   };
 }

@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ChromeFilledSvg from '@ant-design/icons-svg/lib/asn/ChromeFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-chrome-filled')
 export default class ChromeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ChromeFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ChromeFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ChromeFilledSvg} />;
   };
 }

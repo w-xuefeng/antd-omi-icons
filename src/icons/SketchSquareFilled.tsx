@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import SketchSquareFilledSvg from '@ant-design/icons-svg/lib/asn/SketchSquareFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-sketch-square-filled')
 export default class SketchSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SketchSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={SketchSquareFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={SketchSquareFilledSvg} />;
   };
 }

@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import CreditCardFilledSvg from '@ant-design/icons-svg/lib/asn/CreditCardFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-credit-card-filled')
 export default class CreditCardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CreditCardFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={CreditCardFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={CreditCardFilledSvg} />;
   };
 }

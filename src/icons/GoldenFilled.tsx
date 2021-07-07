@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import GoldenFilledSvg from '@ant-design/icons-svg/lib/asn/GoldenFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-golden-filled')
 export default class GoldenFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GoldenFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={GoldenFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={GoldenFilledSvg} />;
   };
 }

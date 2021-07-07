@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ProjectFilledSvg from '@ant-design/icons-svg/lib/asn/ProjectFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-project-filled')
 export default class ProjectFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ProjectFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ProjectFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ProjectFilledSvg} />;
   };
 }

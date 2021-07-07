@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import Html5OutlinedSvg from '@ant-design/icons-svg/lib/asn/Html5Outlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-html5-outlined')
 export default class Html5Outlined extends OmiComponent<AntdIconProps> {
   static displayName = 'Html5Outlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={Html5OutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={Html5OutlinedSvg} />;
   };
 }

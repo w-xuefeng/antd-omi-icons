@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import DislikeTwoToneSvg from '@ant-design/icons-svg/lib/asn/DislikeTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-dislike-two-tone')
 export default class DislikeTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'DislikeTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={DislikeTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={DislikeTwoToneSvg} />;
   };
 }

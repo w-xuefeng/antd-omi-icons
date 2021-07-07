@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import SketchCircleFilledSvg from '@ant-design/icons-svg/lib/asn/SketchCircleFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-sketch-circle-filled')
 export default class SketchCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SketchCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={SketchCircleFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={SketchCircleFilledSvg} />;
   };
 }

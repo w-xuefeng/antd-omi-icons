@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ProfileTwoToneSvg from '@ant-design/icons-svg/lib/asn/ProfileTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-profile-two-tone')
 export default class ProfileTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ProfileTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ProfileTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ProfileTwoToneSvg} />;
   };
 }

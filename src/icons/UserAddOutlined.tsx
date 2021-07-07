@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import UserAddOutlinedSvg from '@ant-design/icons-svg/lib/asn/UserAddOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-user-add-outlined')
 export default class UserAddOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UserAddOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={UserAddOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={UserAddOutlinedSvg} />;
   };
 }

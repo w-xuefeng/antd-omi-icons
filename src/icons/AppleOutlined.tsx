@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import AppleOutlinedSvg from '@ant-design/icons-svg/lib/asn/AppleOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-apple-outlined')
 export default class AppleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AppleOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={AppleOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={AppleOutlinedSvg} />;
   };
 }

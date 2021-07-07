@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import LeftOutlinedSvg from '@ant-design/icons-svg/lib/asn/LeftOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-left-outlined')
 export default class LeftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={LeftOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={LeftOutlinedSvg} />;
   };
 }

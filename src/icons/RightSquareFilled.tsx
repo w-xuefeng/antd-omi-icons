@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import RightSquareFilledSvg from '@ant-design/icons-svg/lib/asn/RightSquareFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-right-square-filled')
 export default class RightSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'RightSquareFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={RightSquareFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={RightSquareFilledSvg} />;
   };
 }

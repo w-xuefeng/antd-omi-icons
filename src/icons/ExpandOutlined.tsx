@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ExpandOutlinedSvg from '@ant-design/icons-svg/lib/asn/ExpandOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-expand-outlined')
 export default class ExpandOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExpandOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ExpandOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ExpandOutlinedSvg} />;
   };
 }

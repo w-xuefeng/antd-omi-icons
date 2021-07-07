@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import RetweetOutlinedSvg from '@ant-design/icons-svg/lib/asn/RetweetOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-retweet-outlined')
 export default class RetweetOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RetweetOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={RetweetOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={RetweetOutlinedSvg} />;
   };
 }

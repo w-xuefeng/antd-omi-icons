@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import GiftTwoToneSvg from '@ant-design/icons-svg/lib/asn/GiftTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-gift-two-tone')
 export default class GiftTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'GiftTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={GiftTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={GiftTwoToneSvg} />;
   };
 }

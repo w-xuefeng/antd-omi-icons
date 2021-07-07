@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import GithubOutlinedSvg from '@ant-design/icons-svg/lib/asn/GithubOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-github-outlined')
 export default class GithubOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'GithubOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={GithubOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={GithubOutlinedSvg} />;
   };
 }

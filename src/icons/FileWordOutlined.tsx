@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FileWordOutlinedSvg from '@ant-design/icons-svg/lib/asn/FileWordOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-file-word-outlined')
 export default class FileWordOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileWordOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FileWordOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FileWordOutlinedSvg} />;
   };
 }

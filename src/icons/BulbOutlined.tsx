@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import BulbOutlinedSvg from '@ant-design/icons-svg/lib/asn/BulbOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-bulb-outlined')
 export default class BulbOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BulbOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={BulbOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={BulbOutlinedSvg} />;
   };
 }

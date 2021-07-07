@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import EnterOutlinedSvg from '@ant-design/icons-svg/lib/asn/EnterOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-enter-outlined')
 export default class EnterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EnterOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={EnterOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={EnterOutlinedSvg} />;
   };
 }

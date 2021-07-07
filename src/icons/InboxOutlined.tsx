@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import InboxOutlinedSvg from '@ant-design/icons-svg/lib/asn/InboxOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-inbox-outlined')
 export default class InboxOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InboxOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={InboxOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={InboxOutlinedSvg} />;
   };
 }

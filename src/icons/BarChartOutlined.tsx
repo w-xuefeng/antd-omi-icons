@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import BarChartOutlinedSvg from '@ant-design/icons-svg/lib/asn/BarChartOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-bar-chart-outlined')
 export default class BarChartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BarChartOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={BarChartOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={BarChartOutlinedSvg} />;
   };
 }

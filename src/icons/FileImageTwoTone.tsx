@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FileImageTwoToneSvg from '@ant-design/icons-svg/lib/asn/FileImageTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-file-image-two-tone')
 export default class FileImageTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FileImageTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FileImageTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FileImageTwoToneSvg} />;
   };
 }

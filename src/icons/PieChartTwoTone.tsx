@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import PieChartTwoToneSvg from '@ant-design/icons-svg/lib/asn/PieChartTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-pie-chart-two-tone')
 export default class PieChartTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PieChartTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={PieChartTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={PieChartTwoToneSvg} />;
   };
 }

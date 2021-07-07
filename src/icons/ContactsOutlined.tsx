@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ContactsOutlinedSvg from '@ant-design/icons-svg/lib/asn/ContactsOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-contacts-outlined')
 export default class ContactsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ContactsOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ContactsOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ContactsOutlinedSvg} />;
   };
 }

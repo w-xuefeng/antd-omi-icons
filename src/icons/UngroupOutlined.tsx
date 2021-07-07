@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import UngroupOutlinedSvg from '@ant-design/icons-svg/lib/asn/UngroupOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-ungroup-outlined')
 export default class UngroupOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UngroupOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={UngroupOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={UngroupOutlinedSvg} />;
   };
 }

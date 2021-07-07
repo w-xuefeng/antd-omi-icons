@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import HistoryOutlinedSvg from '@ant-design/icons-svg/lib/asn/HistoryOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-history-outlined')
 export default class HistoryOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'HistoryOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={HistoryOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={HistoryOutlinedSvg} />;
   };
 }

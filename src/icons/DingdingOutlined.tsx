@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import DingdingOutlinedSvg from '@ant-design/icons-svg/lib/asn/DingdingOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-dingding-outlined')
 export default class DingdingOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DingdingOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={DingdingOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={DingdingOutlinedSvg} />;
   };
 }

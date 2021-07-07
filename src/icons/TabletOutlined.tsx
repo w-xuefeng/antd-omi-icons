@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import TabletOutlinedSvg from '@ant-design/icons-svg/lib/asn/TabletOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-tablet-outlined')
 export default class TabletOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TabletOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={TabletOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={TabletOutlinedSvg} />;
   };
 }

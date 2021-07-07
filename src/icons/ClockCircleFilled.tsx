@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ClockCircleFilledSvg from '@ant-design/icons-svg/lib/asn/ClockCircleFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-clock-circle-filled')
 export default class ClockCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ClockCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ClockCircleFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ClockCircleFilledSvg} />;
   };
 }

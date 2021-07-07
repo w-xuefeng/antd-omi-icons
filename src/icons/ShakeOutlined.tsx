@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import ShakeOutlinedSvg from '@ant-design/icons-svg/lib/asn/ShakeOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-shake-outlined')
 export default class ShakeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ShakeOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={ShakeOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={ShakeOutlinedSvg} />;
   };
 }

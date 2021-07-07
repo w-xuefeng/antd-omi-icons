@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import MinusCircleFilledSvg from '@ant-design/icons-svg/lib/asn/MinusCircleFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-minus-circle-filled')
 export default class MinusCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MinusCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={MinusCircleFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={MinusCircleFilledSvg} />;
   };
 }

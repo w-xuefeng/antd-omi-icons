@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import FilePdfFilledSvg from '@ant-design/icons-svg/lib/asn/FilePdfFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-file-pdf-filled')
 export default class FilePdfFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FilePdfFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={FilePdfFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={FilePdfFilledSvg} />;
   };
 }

@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import YuqueFilledSvg from '@ant-design/icons-svg/lib/asn/YuqueFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-yuque-filled')
 export default class YuqueFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'YuqueFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={YuqueFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={YuqueFilledSvg} />;
   };
 }

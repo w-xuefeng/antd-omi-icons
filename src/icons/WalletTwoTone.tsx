@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import WalletTwoToneSvg from '@ant-design/icons-svg/lib/asn/WalletTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-wallet-two-tone')
 export default class WalletTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'WalletTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={WalletTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={WalletTwoToneSvg} />;
   };
 }

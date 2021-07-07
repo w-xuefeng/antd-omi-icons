@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import AudioTwoToneSvg from '@ant-design/icons-svg/lib/asn/AudioTwoTone';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-audio-two-tone')
 export default class AudioTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'AudioTwoTone';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={AudioTwoToneSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={AudioTwoToneSvg} />;
   };
 }

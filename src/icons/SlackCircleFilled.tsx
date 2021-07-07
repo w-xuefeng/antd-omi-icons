@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import SlackCircleFilledSvg from '@ant-design/icons-svg/lib/asn/SlackCircleFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-slack-circle-filled')
 export default class SlackCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SlackCircleFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={SlackCircleFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={SlackCircleFilledSvg} />;
   };
 }

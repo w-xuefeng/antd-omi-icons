@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import MacCommandFilledSvg from '@ant-design/icons-svg/lib/asn/MacCommandFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-mac-command-filled')
 export default class MacCommandFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MacCommandFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={MacCommandFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={MacCommandFilledSvg} />;
   };
 }

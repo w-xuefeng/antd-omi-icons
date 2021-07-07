@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import HighlightFilledSvg from '@ant-design/icons-svg/lib/asn/HighlightFilled';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-highlight-filled')
 export default class HighlightFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'HighlightFilled';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={HighlightFilledSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={HighlightFilledSvg} />;
   };
 }

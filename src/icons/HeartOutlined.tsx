@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import HeartOutlinedSvg from '@ant-design/icons-svg/lib/asn/HeartOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-heart-outlined')
 export default class HeartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'HeartOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={HeartOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={HeartOutlinedSvg} />;
   };
 }

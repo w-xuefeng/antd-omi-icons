@@ -3,13 +3,14 @@
 
 import { Component as OmiComponent, h, tag } from 'omi';
 import SlidersOutlinedSvg from '@ant-design/icons-svg/lib/asn/SlidersOutlined';
-import AntdIcon, { AntdIconProps } from '../components/AntdIcon';
+import type { AntdIconProps } from '../components/types';
+import '../components/AntdIcon';
 
 @tag('o-sliders-outlined')
 export default class SlidersOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SlidersOutlined';
   static inheritAttrs = false;
-  render(props: AntdIconProps) {
-    return <AntdIcon {...props} icon={SlidersOutlinedSvg}></AntdIcon>;
+  render(props: Omi.RenderableProps<AntdIconProps>) {
+    return <o-antd-icon {...props} icon={SlidersOutlinedSvg} />;
   };
 }
