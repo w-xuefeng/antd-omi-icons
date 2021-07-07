@@ -21,9 +21,9 @@ const babelPlugin = babel({
 
 const deps = Object.keys(pkg.dependencies)
 
-const commonConfig = (entry = indexEntry) => ({
+const commonConfig = (entry = indexEntry, externalDeps = true) => ({
   input: getPath(entry),
-  external: [...deps, 'omi'],
+  external: externalDeps ? [...deps, 'omi'] : ['omi'],
   plugins: [
     resolve({ extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'] }),
     commonjs(),
@@ -39,27 +39,31 @@ const commonOutputOptions = {
   exports: 'auto',
 }
 
-const outputMap = (/** cjsFile = pkg.main, esFile = pkg.module **/) => [
+// const outputMap = (cjsFile = pkg.main, esFile = pkg.module) => [
+//   {
+//     file: cjsFile,
+//     format: 'cjs',
+//   },
+//   {
+//     file: esFile,
+//     format: 'es',
+//   },
+// ]
+
+const outputUMDMap = (umdFile = pkg.browser) => [
   {
-    file: pkg.browser,
+    file: umdFile,
     format: 'umd',
     plugins: [terser()],
   },
-  // {
-  //   file: cjsFile,
-  //   format: 'cjs',
-  // },
-  // {
-  //   file: esFile,
-  //   format: 'es',
-  // },
 ]
 
 const buildConfig = (options, entry = indexEntry) =>
-  Object.assign({}, commonConfig(entry), options)
+  Object.assign({}, commonConfig(entry, options.externalDeps), options)
 
-const indexOutput = outputMap().map((output) =>
+const indexOutput = outputUMDMap().map((output) =>
   buildConfig({
+    externalDeps: false,
     output: {
       name: pkg.name,
       ...commonOutputOptions,
