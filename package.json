@@ -45,8 +45,7 @@
     "test": "node test/test.js"
   },
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "contributors": [
     "w-xuefeng <xuefeng@kcalb.wang>"

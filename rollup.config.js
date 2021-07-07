@@ -8,6 +8,8 @@ import pkg from './package.json'
 
 const getPath = (p) => path.resolve(p)
 
+const indexEntry = 'src/index.ts'
+
 const tsPlugin = typescript({
   tsconfig: getPath('./tsconfig.json'),
 })
@@ -19,7 +21,7 @@ const babelPlugin = babel({
 
 const deps = Object.keys(pkg.dependencies)
 
-const commonConfig = (entry = 'src/index.ts') => ({
+const commonConfig = (entry = indexEntry) => ({
   input: getPath(entry),
   external: [...deps, 'omi'],
   plugins: [
