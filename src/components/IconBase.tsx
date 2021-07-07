@@ -65,7 +65,7 @@ export default class IconBase extends OmiComponent<IconProps> {
 
     return generate(target.icon as AbstractNode, `svg-${target.name}`, {
       ...restProps,
-      class: classNames(className),
+      ...(className ? { class: classNames(className) } : {}),
       'data-icon': target.name,
       width: '1em',
       height: '1em',
