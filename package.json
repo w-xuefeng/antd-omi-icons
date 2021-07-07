@@ -32,8 +32,9 @@
   },
   "scripts": {
     "build:umd": "cross-env NODE_ENV=production rollup -c",
-    "build:tsc": "./node_modules/.bin/tsc --project tsconfig.json",
-    "build:cjs": "./node_modules/.bin/tsc --project tsconfig.json --module CommonJS --outDir",
+    "build:esm": "./node_modules/.bin/tsc --project tsconfig.json",
+    "build:cjs": "./node_modules/.bin/tsc --project tsconfig.json --module CommonJS --outDir lib/cjs",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:umd",
     "clean": "./scripts/cleanup.sh",
     "clear": "rimraf lib",
     "dev": "cross-env NODE_ENV=developemnt rollup -c -w",
