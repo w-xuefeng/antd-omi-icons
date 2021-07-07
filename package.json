@@ -1,6 +1,6 @@
 {
   "name": "antd-omi-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
   "browser": "lib/umd/antd-omi-icons.min.js",
