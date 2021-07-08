@@ -49,5 +49,19 @@
   ],
   "contributors": [
     "w-xuefeng <xuefeng@kcalb.wang>"
-  ]
+  ],
+  "description": "Ant Design Icons for Omi",
+  "keywords": [
+    "antd",
+    "Ant Design",
+    "Icons",
+    "Omi",
+    "omi-icons"
+  ],
+  "homepage": "https://github.com/w-xuefeng/antd-omi-icons/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w-xuefeng/antd-omi-icons.git"
+  }
 }
