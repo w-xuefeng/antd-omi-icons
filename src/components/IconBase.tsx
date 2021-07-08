@@ -1,6 +1,6 @@
 import { Component as OmiComponent, classNames, tag } from 'omi';
-import { AbstractNode } from '@ant-design/icons-svg/lib/types';
 import { generate, getSecondaryColor, isIconDefinition, warning, useInsertStyles } from '../utils';
+import type { AbstractNode } from '@ant-design/icons-svg/lib/types';
 import type { IconProps, TwoToneColorPalette, TwoToneColorPaletteSetter } from './types';
 
 const twoToneColorPalette: TwoToneColorPalette & { secondaryColor: string } = {

@@ -33,13 +33,16 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       onClick,
       ...restProps
     } = props;
+
+    if (!icon) return null
+
     const classObj = classNames({
       anticon: true,
       [`anticon-${icon.name}`]: Boolean(icon.name),
       [cls || '']: cls,
     });
 
-    const svgClassString = spin === '' || !!spin || icon.name === 'loading' ? 'anticon-spin' : '';
+    const svgClassString = spin === '' || !!spin || icon.name === 'loading' ? 'anticon-spin' : undefined;
 
     let iconTabIndex = tabindex;
     if (iconTabIndex === undefined && onClick) {
