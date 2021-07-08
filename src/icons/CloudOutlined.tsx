@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import CloudOutlinedSvg from '@ant-design/icons-svg/lib/asn/CloudOutlined';
+import CloudOutlinedSvg from '@ant-design/icons-svg/es/asn/CloudOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-cloud-outlined')
 export default class CloudOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CloudOutlined';
+  static tagName = 'o-cloud-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={CloudOutlinedSvg} />;

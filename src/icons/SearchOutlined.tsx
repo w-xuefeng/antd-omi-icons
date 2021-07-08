@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import SearchOutlinedSvg from '@ant-design/icons-svg/lib/asn/SearchOutlined';
+import SearchOutlinedSvg from '@ant-design/icons-svg/es/asn/SearchOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-search-outlined')
 export default class SearchOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SearchOutlined';
+  static tagName = 'o-search-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={SearchOutlinedSvg} />;

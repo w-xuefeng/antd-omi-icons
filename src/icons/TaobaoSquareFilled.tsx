@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import TaobaoSquareFilledSvg from '@ant-design/icons-svg/lib/asn/TaobaoSquareFilled';
+import TaobaoSquareFilledSvg from '@ant-design/icons-svg/es/asn/TaobaoSquareFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-taobao-square-filled')
 export default class TaobaoSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'TaobaoSquareFilled';
+  static tagName = 'o-taobao-square-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={TaobaoSquareFilledSvg} />;

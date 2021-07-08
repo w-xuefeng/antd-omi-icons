@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import SafetyCertificateTwoToneSvg from '@ant-design/icons-svg/lib/asn/SafetyCertificateTwoTone';
+import SafetyCertificateTwoToneSvg from '@ant-design/icons-svg/es/asn/SafetyCertificateTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-safety-certificate-two-tone')
 export default class SafetyCertificateTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SafetyCertificateTwoTone';
+  static tagName = 'o-safety-certificate-two-tone';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={SafetyCertificateTwoToneSvg} />;

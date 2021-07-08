@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import ClearOutlinedSvg from '@ant-design/icons-svg/lib/asn/ClearOutlined';
+import ClearOutlinedSvg from '@ant-design/icons-svg/es/asn/ClearOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-clear-outlined')
 export default class ClearOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ClearOutlined';
+  static tagName = 'o-clear-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={ClearOutlinedSvg} />;

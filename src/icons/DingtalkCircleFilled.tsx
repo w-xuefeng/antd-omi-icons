@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import DingtalkCircleFilledSvg from '@ant-design/icons-svg/lib/asn/DingtalkCircleFilled';
+import DingtalkCircleFilledSvg from '@ant-design/icons-svg/es/asn/DingtalkCircleFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-dingtalk-circle-filled')
 export default class DingtalkCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'DingtalkCircleFilled';
+  static tagName = 'o-dingtalk-circle-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={DingtalkCircleFilledSvg} />;

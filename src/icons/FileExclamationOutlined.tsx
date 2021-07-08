@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FileExclamationOutlinedSvg from '@ant-design/icons-svg/lib/asn/FileExclamationOutlined';
+import FileExclamationOutlinedSvg from '@ant-design/icons-svg/es/asn/FileExclamationOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-file-exclamation-outlined')
 export default class FileExclamationOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileExclamationOutlined';
+  static tagName = 'o-file-exclamation-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={FileExclamationOutlinedSvg} />;

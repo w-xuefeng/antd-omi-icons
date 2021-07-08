@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FileAddTwoToneSvg from '@ant-design/icons-svg/lib/asn/FileAddTwoTone';
+import FileAddTwoToneSvg from '@ant-design/icons-svg/es/asn/FileAddTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-file-add-two-tone')
 export default class FileAddTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FileAddTwoTone';
+  static tagName = 'o-file-add-two-tone';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={FileAddTwoToneSvg} />;

@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import RightCircleTwoToneSvg from '@ant-design/icons-svg/lib/asn/RightCircleTwoTone';
+import RightCircleTwoToneSvg from '@ant-design/icons-svg/es/asn/RightCircleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-right-circle-two-tone')
 export default class RightCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'RightCircleTwoTone';
+  static tagName = 'o-right-circle-two-tone';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={RightCircleTwoToneSvg} />;

@@ -1,9 +1,9 @@
 import * as allIconDefs from '@ant-design/icons-svg'
-import { IconDefinition } from '@ant-design/icons-svg/es/types'
 import * as path from 'path'
 import * as fs from 'fs'
 import { promisify } from 'util'
 import { template } from 'lodash'
+import type { IconDefinition } from '@ant-design/icons-svg/es/types'
 
 const writeFile = promisify(fs.writeFile)
 
@@ -43,13 +43,14 @@ async function generateIcons() {
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import <%= svgIdentifier %>Svg from '@ant-design/icons-svg/lib/asn/<%= svgIdentifier %>';
+import <%= svgIdentifier %>Svg from '@ant-design/icons-svg/es/asn/<%= svgIdentifier %>';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('<%= tagName %>')
 export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   static displayName = '<%= svgIdentifier %>';
+  static tagName = '<%= tagName %>';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={<%= svgIdentifier %>Svg} />;
@@ -70,7 +71,7 @@ export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   const entryText = Object.keys(allIconDefs)
     .sort()
     .map((svgIdentifier) => {
-      return `export { default as ${svgIdentifier} } from './${svgIdentifier}';`
+      return `import './${svgIdentifier}';`
     })
     .join('\n')
 

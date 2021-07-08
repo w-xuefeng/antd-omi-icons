@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import TaobaoCircleFilledSvg from '@ant-design/icons-svg/lib/asn/TaobaoCircleFilled';
+import TaobaoCircleFilledSvg from '@ant-design/icons-svg/es/asn/TaobaoCircleFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-taobao-circle-filled')
 export default class TaobaoCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'TaobaoCircleFilled';
+  static tagName = 'o-taobao-circle-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={TaobaoCircleFilledSvg} />;

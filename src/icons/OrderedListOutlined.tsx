@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import OrderedListOutlinedSvg from '@ant-design/icons-svg/lib/asn/OrderedListOutlined';
+import OrderedListOutlinedSvg from '@ant-design/icons-svg/es/asn/OrderedListOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-ordered-list-outlined')
 export default class OrderedListOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'OrderedListOutlined';
+  static tagName = 'o-ordered-list-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={OrderedListOutlinedSvg} />;

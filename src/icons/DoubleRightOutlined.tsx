@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import DoubleRightOutlinedSvg from '@ant-design/icons-svg/lib/asn/DoubleRightOutlined';
+import DoubleRightOutlinedSvg from '@ant-design/icons-svg/es/asn/DoubleRightOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-double-right-outlined')
 export default class DoubleRightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DoubleRightOutlined';
+  static tagName = 'o-double-right-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={DoubleRightOutlinedSvg} />;

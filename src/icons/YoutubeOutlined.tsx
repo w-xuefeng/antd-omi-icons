@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import YoutubeOutlinedSvg from '@ant-design/icons-svg/lib/asn/YoutubeOutlined';
+import YoutubeOutlinedSvg from '@ant-design/icons-svg/es/asn/YoutubeOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-youtube-outlined')
 export default class YoutubeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'YoutubeOutlined';
+  static tagName = 'o-youtube-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={YoutubeOutlinedSvg} />;

@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import TrademarkCircleTwoToneSvg from '@ant-design/icons-svg/lib/asn/TrademarkCircleTwoTone';
+import TrademarkCircleTwoToneSvg from '@ant-design/icons-svg/es/asn/TrademarkCircleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-trademark-circle-two-tone')
 export default class TrademarkCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'TrademarkCircleTwoTone';
+  static tagName = 'o-trademark-circle-two-tone';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={TrademarkCircleTwoToneSvg} />;

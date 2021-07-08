@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import BorderOuterOutlinedSvg from '@ant-design/icons-svg/lib/asn/BorderOuterOutlined';
+import BorderOuterOutlinedSvg from '@ant-design/icons-svg/es/asn/BorderOuterOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-border-outer-outlined')
 export default class BorderOuterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BorderOuterOutlined';
+  static tagName = 'o-border-outer-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={BorderOuterOutlinedSvg} />;

@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import VideoCameraOutlinedSvg from '@ant-design/icons-svg/lib/asn/VideoCameraOutlined';
+import VideoCameraOutlinedSvg from '@ant-design/icons-svg/es/asn/VideoCameraOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-video-camera-outlined')
 export default class VideoCameraOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'VideoCameraOutlined';
+  static tagName = 'o-video-camera-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={VideoCameraOutlinedSvg} />;

@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FolderFilledSvg from '@ant-design/icons-svg/lib/asn/FolderFilled';
+import FolderFilledSvg from '@ant-design/icons-svg/es/asn/FolderFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-folder-filled')
 export default class FolderFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FolderFilled';
+  static tagName = 'o-folder-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={FolderFilledSvg} />;

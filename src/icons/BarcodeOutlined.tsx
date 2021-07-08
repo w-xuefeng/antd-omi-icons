@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import BarcodeOutlinedSvg from '@ant-design/icons-svg/lib/asn/BarcodeOutlined';
+import BarcodeOutlinedSvg from '@ant-design/icons-svg/es/asn/BarcodeOutlined';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-barcode-outlined')
 export default class BarcodeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BarcodeOutlined';
+  static tagName = 'o-barcode-outlined';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={BarcodeOutlinedSvg} />;

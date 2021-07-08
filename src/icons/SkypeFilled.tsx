@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import SkypeFilledSvg from '@ant-design/icons-svg/lib/asn/SkypeFilled';
+import SkypeFilledSvg from '@ant-design/icons-svg/es/asn/SkypeFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-skype-filled')
 export default class SkypeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SkypeFilled';
+  static tagName = 'o-skype-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={SkypeFilledSvg} />;

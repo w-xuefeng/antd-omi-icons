@@ -2,13 +2,14 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import GiftFilledSvg from '@ant-design/icons-svg/lib/asn/GiftFilled';
+import GiftFilledSvg from '@ant-design/icons-svg/es/asn/GiftFilled';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
 @tag('o-gift-filled')
 export default class GiftFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GiftFilled';
+  static tagName = 'o-gift-filled';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
     return <o-antd-icon {...props} icon={GiftFilledSvg} />;
