@@ -22,7 +22,7 @@ const babelPlugin = babel({
 })
 
 const replacePlugin = replace({
-  'process.env.NODE_ENV': process.env.NODE_ENV,
+  'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
 })
 
 const deps = Object.keys(pkg.dependencies)
