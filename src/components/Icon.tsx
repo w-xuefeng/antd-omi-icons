@@ -1,5 +1,5 @@
 
-import { Component as OmiComponent, h, classNames, tag } from 'omi';
+import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi';
 import { svgBaseProps, warning, iconStyles } from '../utils';
 import type { IconComponentProps } from './types'
 
@@ -17,7 +17,6 @@ export default class Icon extends OmiComponent<IconComponentProps> {
 
   render(props: Omi.RenderableProps<IconComponentProps>) {
     const {
-      class: cls,
       // affect inner <svg>...</svg>
       component: Component,
       viewBox,
@@ -35,9 +34,8 @@ export default class Icon extends OmiComponent<IconComponentProps> {
       'Should have `component` prop/slot or `children`.',
     );
 
-    const classString = classNames({
-      anticon: true,
-      [cls || '']: cls,
+    const cls = extractClass(props, {
+      anticon: true
     });
 
     const svgStyle = rotate
@@ -90,7 +88,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
     }
 
     return (
-      <span role="img" {...restProps} onClick={onClick} class={classString}>
+      <span role="img" {...cls} {...restProps} onClick={onClick}>
         {renderInnerNode()}
       </span>
     );

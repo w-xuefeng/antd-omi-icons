@@ -1,8 +1,8 @@
 
-import { Component as OmiComponent, h, classNames, tag } from 'omi';
+import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi';
 import './IconBase';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
-import { normalizeTwoToneColors, iconStyles } from '../utils';
+import { normalizeTwoToneColors } from '../utils';
 import type { AntdIconComponentProps } from './types'
 
 
@@ -18,12 +18,10 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   };
   static displayName = 'AntdIcon';
   static inheritAttrs = false;
-  static css = iconStyles;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
   render(props: Omi.RenderableProps<AntdIconComponentProps>) {
     const {
-      class: cls,
       icon,
       spin,
       rotate,
@@ -36,10 +34,9 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
 
     if (!icon) return null
 
-    const classObj = classNames({
+    const classObj = extractClass(props, {
       anticon: true,
-      [`anticon-${icon.name}`]: Boolean(icon.name),
-      [cls || '']: cls,
+      [`anticon-${icon.name}`]: Boolean(icon.name)
     });
 
     let iconTabIndex = tabindex;
@@ -63,12 +60,17 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
     })
 
     return (
-      <span role="img" aria-label={icon.name} {...restProps} onClick={onClick} class={classObj}>
+      <span role="img"
+        aria-label={icon.name}
+        {...classObj}
+        {...restProps}
+        onClick={onClick}
+      >
         <o-icon-base
           icon={icon}
           primaryColor={primaryColor}
           secondaryColor={secondaryColor}
-          className={className}
+          class={className}
           css={svgStyle}
         />
       </span>
