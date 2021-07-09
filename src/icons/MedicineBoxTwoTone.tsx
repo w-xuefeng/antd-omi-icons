@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import MedicineBoxTwoToneSvg from '@ant-design/icons-svg/es/asn/MedicineBoxTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const MedicineBoxTwoToneSvg = {"name":"medicine-box","theme":"twotone"};
 
 @tag('o-medicine-box-two-tone')
 export default class MedicineBoxTwoTone extends OmiComponent<AntdIconProps> {

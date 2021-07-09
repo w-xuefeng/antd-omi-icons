@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import Html5TwoToneSvg from '@ant-design/icons-svg/es/asn/Html5TwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const Html5TwoToneSvg = {"name":"html5","theme":"twotone"};
 
 @tag('o-html5-two-tone')
 export default class Html5TwoTone extends OmiComponent<AntdIconProps> {

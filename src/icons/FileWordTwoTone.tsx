@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FileWordTwoToneSvg from '@ant-design/icons-svg/es/asn/FileWordTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const FileWordTwoToneSvg = {"name":"file-word","theme":"twotone"};
 
 @tag('o-file-word-two-tone')
 export default class FileWordTwoTone extends OmiComponent<AntdIconProps> {

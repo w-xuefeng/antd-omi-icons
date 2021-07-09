@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import ScheduleTwoToneSvg from '@ant-design/icons-svg/es/asn/ScheduleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const ScheduleTwoToneSvg = {"name":"schedule","theme":"twotone"};
 
 @tag('o-schedule-two-tone')
 export default class ScheduleTwoTone extends OmiComponent<AntdIconProps> {

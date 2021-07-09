@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import EyeInvisibleTwoToneSvg from '@ant-design/icons-svg/es/asn/EyeInvisibleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const EyeInvisibleTwoToneSvg = {"name":"eye-invisible","theme":"twotone"};
 
 @tag('o-eye-invisible-two-tone')
 export default class EyeInvisibleTwoTone extends OmiComponent<AntdIconProps> {

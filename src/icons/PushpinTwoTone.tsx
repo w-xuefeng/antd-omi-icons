@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import PushpinTwoToneSvg from '@ant-design/icons-svg/es/asn/PushpinTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const PushpinTwoToneSvg = {"name":"pushpin","theme":"twotone"};
 
 @tag('o-pushpin-two-tone')
 export default class PushpinTwoTone extends OmiComponent<AntdIconProps> {

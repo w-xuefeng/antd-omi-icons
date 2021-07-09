@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FilePdfTwoToneSvg from '@ant-design/icons-svg/es/asn/FilePdfTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const FilePdfTwoToneSvg = {"name":"file-pdf","theme":"twotone"};
 
 @tag('o-file-pdf-two-tone')
 export default class FilePdfTwoTone extends OmiComponent<AntdIconProps> {

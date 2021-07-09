@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import DiffTwoToneSvg from '@ant-design/icons-svg/es/asn/DiffTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const DiffTwoToneSvg = {"name":"diff","theme":"twotone"};
 
 @tag('o-diff-two-tone')
 export default class DiffTwoTone extends OmiComponent<AntdIconProps> {

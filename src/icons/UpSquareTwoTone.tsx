@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import UpSquareTwoToneSvg from '@ant-design/icons-svg/es/asn/UpSquareTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const UpSquareTwoToneSvg = {"name":"up-square","theme":"twotone"};
 
 @tag('o-up-square-two-tone')
 export default class UpSquareTwoTone extends OmiComponent<AntdIconProps> {

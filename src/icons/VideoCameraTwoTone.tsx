@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import VideoCameraTwoToneSvg from '@ant-design/icons-svg/es/asn/VideoCameraTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const VideoCameraTwoToneSvg = {"name":"video-camera","theme":"twotone"};
 
 @tag('o-video-camera-two-tone')
 export default class VideoCameraTwoTone extends OmiComponent<AntdIconProps> {

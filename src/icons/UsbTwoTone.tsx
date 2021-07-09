@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import UsbTwoToneSvg from '@ant-design/icons-svg/es/asn/UsbTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const UsbTwoToneSvg = {"name":"usb","theme":"twotone"};
 
 @tag('o-usb-two-tone')
 export default class UsbTwoTone extends OmiComponent<AntdIconProps> {

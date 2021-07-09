@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FileZipTwoToneSvg from '@ant-design/icons-svg/es/asn/FileZipTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const FileZipTwoToneSvg = {"name":"file-zip","theme":"twotone"};
 
 @tag('o-file-zip-two-tone')
 export default class FileZipTwoTone extends OmiComponent<AntdIconProps> {

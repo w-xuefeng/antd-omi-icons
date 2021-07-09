@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import CopyTwoToneSvg from '@ant-design/icons-svg/es/asn/CopyTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const CopyTwoToneSvg = {"name":"copy","theme":"twotone"};
 
 @tag('o-copy-two-tone')
 export default class CopyTwoTone extends OmiComponent<AntdIconProps> {

@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FolderAddTwoToneSvg from '@ant-design/icons-svg/es/asn/FolderAddTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const FolderAddTwoToneSvg = {"name":"folder-add","theme":"twotone"};
 
 @tag('o-folder-add-two-tone')
 export default class FolderAddTwoTone extends OmiComponent<AntdIconProps> {

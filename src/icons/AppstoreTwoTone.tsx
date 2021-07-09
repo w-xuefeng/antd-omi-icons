@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import AppstoreTwoToneSvg from '@ant-design/icons-svg/es/asn/AppstoreTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const AppstoreTwoToneSvg = {"name":"appstore","theme":"twotone"};
 
 @tag('o-appstore-two-tone')
 export default class AppstoreTwoTone extends OmiComponent<AntdIconProps> {

@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import FunnelPlotTwoToneSvg from '@ant-design/icons-svg/es/asn/FunnelPlotTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const FunnelPlotTwoToneSvg = {"name":"funnel-plot","theme":"twotone"};
 
 @tag('o-funnel-plot-two-tone')
 export default class FunnelPlotTwoTone extends OmiComponent<AntdIconProps> {

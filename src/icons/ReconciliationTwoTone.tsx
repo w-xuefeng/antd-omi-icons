@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import ReconciliationTwoToneSvg from '@ant-design/icons-svg/es/asn/ReconciliationTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const ReconciliationTwoToneSvg = {"name":"reconciliation","theme":"twotone"};
 
 @tag('o-reconciliation-two-tone')
 export default class ReconciliationTwoTone extends OmiComponent<AntdIconProps> {

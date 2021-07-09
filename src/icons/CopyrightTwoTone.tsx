@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import CopyrightTwoToneSvg from '@ant-design/icons-svg/es/asn/CopyrightTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const CopyrightTwoToneSvg = {"name":"copyright","theme":"twotone"};
 
 @tag('o-copyright-two-tone')
 export default class CopyrightTwoTone extends OmiComponent<AntdIconProps> {

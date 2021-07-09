@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import HourglassTwoToneSvg from '@ant-design/icons-svg/es/asn/HourglassTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const HourglassTwoToneSvg = {"name":"hourglass","theme":"twotone"};
 
 @tag('o-hourglass-two-tone')
 export default class HourglassTwoTone extends OmiComponent<AntdIconProps> {

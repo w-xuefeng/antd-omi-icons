@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import CopyrightCircleTwoToneSvg from '@ant-design/icons-svg/es/asn/CopyrightCircleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const CopyrightCircleTwoToneSvg = {"name":"copyright-circle","theme":"twotone"};
 
 @tag('o-copyright-circle-two-tone')
 export default class CopyrightCircleTwoTone extends OmiComponent<AntdIconProps> {

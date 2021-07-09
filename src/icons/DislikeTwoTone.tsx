@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import DislikeTwoToneSvg from '@ant-design/icons-svg/es/asn/DislikeTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const DislikeTwoToneSvg = {"name":"dislike","theme":"twotone"};
 
 @tag('o-dislike-two-tone')
 export default class DislikeTwoTone extends OmiComponent<AntdIconProps> {

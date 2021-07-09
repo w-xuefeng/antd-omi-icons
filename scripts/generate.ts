@@ -43,9 +43,10 @@ async function generateIcons() {
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import <%= svgIdentifier %>Svg from '@ant-design/icons-svg/es/asn/<%= svgIdentifier %>';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const <%= svgIdentifier %>Svg = <%= svgInfo %>;
 
 @tag('<%= tagName %>')
 export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
@@ -60,10 +61,13 @@ export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   )
 
   await walk(async ({ svgIdentifier }) => {
+    // getSvgInfo
+    const { default: svgInfo } = await import(`@ant-design/icons-svg/lib/asn/${svgIdentifier}`)
+
     // generate icon file
     await writeFile(
       path.resolve(__dirname, `../src/icons/${svgIdentifier}.tsx`),
-      render({ svgIdentifier, tagName: `o${changeName(svgIdentifier)}` })
+      render({ svgIdentifier, svgInfo: JSON.stringify(svgInfo), tagName: `o${changeName(svgIdentifier)}` })
     )
   })
 

@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import LockTwoToneSvg from '@ant-design/icons-svg/es/asn/LockTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const LockTwoToneSvg = {"name":"lock","theme":"twotone"};
 
 @tag('o-lock-two-tone')
 export default class LockTwoTone extends OmiComponent<AntdIconProps> {

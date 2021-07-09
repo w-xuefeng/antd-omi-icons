@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import CreditCardTwoToneSvg from '@ant-design/icons-svg/es/asn/CreditCardTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const CreditCardTwoToneSvg = {"name":"credit-card","theme":"twotone"};
 
 @tag('o-credit-card-two-tone')
 export default class CreditCardTwoTone extends OmiComponent<AntdIconProps> {

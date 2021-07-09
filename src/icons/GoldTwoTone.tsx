@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import GoldTwoToneSvg from '@ant-design/icons-svg/es/asn/GoldTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const GoldTwoToneSvg = {"name":"gold","theme":"twotone"};
 
 @tag('o-gold-two-tone')
 export default class GoldTwoTone extends OmiComponent<AntdIconProps> {

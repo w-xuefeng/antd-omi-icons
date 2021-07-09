@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import TrademarkCircleTwoToneSvg from '@ant-design/icons-svg/es/asn/TrademarkCircleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const TrademarkCircleTwoToneSvg = {"name":"trademark-circle","theme":"twotone"};
 
 @tag('o-trademark-circle-two-tone')
 export default class TrademarkCircleTwoTone extends OmiComponent<AntdIconProps> {

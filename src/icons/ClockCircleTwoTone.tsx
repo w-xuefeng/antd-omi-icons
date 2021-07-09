@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import ClockCircleTwoToneSvg from '@ant-design/icons-svg/es/asn/ClockCircleTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const ClockCircleTwoToneSvg = {"name":"clock-circle","theme":"twotone"};
 
 @tag('o-clock-circle-two-tone')
 export default class ClockCircleTwoTone extends OmiComponent<AntdIconProps> {

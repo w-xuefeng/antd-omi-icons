@@ -2,9 +2,10 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
-import DeleteTwoToneSvg from '@ant-design/icons-svg/es/asn/DeleteTwoTone';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
+
+const DeleteTwoToneSvg = {"name":"delete","theme":"twotone"};
 
 @tag('o-delete-two-tone')
 export default class DeleteTwoTone extends OmiComponent<AntdIconProps> {
