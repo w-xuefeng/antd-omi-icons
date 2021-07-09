@@ -34,8 +34,6 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       ...restProps
     } = props;
 
-    if (!icon) return null
-
     const classObj = classNames({
       anticon: true,
       [`anticon-${icon.name}`]: Boolean(icon.name),
