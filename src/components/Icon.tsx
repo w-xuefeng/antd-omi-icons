@@ -13,7 +13,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
   };
   static inheritAttrs = false;
   static displayName = 'Icon';
-  static css = iconStyles
+  static css = iconStyles;
 
   render(props: Omi.RenderableProps<IconComponentProps>) {
     const {
@@ -40,10 +40,6 @@ export default class Icon extends OmiComponent<IconComponentProps> {
       [cls || '']: cls,
     });
 
-    const svgClassString = classNames({
-      'anticon-spin': spin === '' || !!spin,
-    });
-
     const svgStyle = rotate
       ? `.svgInnerRotate {
         -ms-transform: rotate(${rotate}deg);
@@ -52,12 +48,16 @@ export default class Icon extends OmiComponent<IconComponentProps> {
       `
       : undefined;
 
+    const svgClassString = classNames({
+      'anticon-spin': spin === '' || !!spin,
+      svgInnerRotate: !!svgStyle
+    });
+
     const innerSvgProps = {
       ...svgBaseProps,
       viewBox,
       class: svgClassString,
-      css: svgStyle,
-      className: svgStyle && 'svgInnerRotate'
+      css: svgStyle
     };
 
     if (!viewBox) {
