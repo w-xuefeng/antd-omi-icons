@@ -28,6 +28,7 @@ export interface IconBaseProps extends Omit<JSX.HTMLAttributes, 'icon'> {
 
 export interface AntdIconProps extends IconBaseProps {
   twoToneColor?: TwoToneColor
+  icon: IconDefinition
 }
 
 export interface IconComponentProps extends IconBaseProps {

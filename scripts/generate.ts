@@ -46,7 +46,7 @@ import { Component as OmiComponent, h, tag } from 'omi';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
-const <%= svgIdentifier %>Svg = <%= svgInfo %>;
+const <%= svgIdentifier %>Svg: AntdIconProps['icon'] = <%= svgInfo %>;
 
 @tag('<%= tagName %>')
 export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
@@ -64,10 +64,18 @@ export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
     // getSvgInfo
     const { default: svgInfo } = await import(`@ant-design/icons-svg/lib/asn/${svgIdentifier}`)
 
+    let svgInfoString = JSON.stringify(svgInfo)
+
+    if (svgInfo && typeof svgInfo.icon === 'function') {
+      const { icon: iconFun, ...otherSvgInfo } = svgInfo
+      const otherSvgInfoString = JSON.stringify(otherSvgInfo)
+      svgInfoString = `${otherSvgInfoString.substring(0, otherSvgInfoString.length - 1)}, "icon": ${iconFun.toString()}}`
+    }
+
     // generate icon file
     await writeFile(
       path.resolve(__dirname, `../src/icons/${svgIdentifier}.tsx`),
-      render({ svgIdentifier, svgInfo: JSON.stringify(svgInfo), tagName: `o${changeName(svgIdentifier)}` })
+      render({ svgIdentifier, svgInfo: svgInfoString, tagName: `o${changeName(svgIdentifier)}` })
     )
   })
 

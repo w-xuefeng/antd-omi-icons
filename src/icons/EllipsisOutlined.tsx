@@ -5,7 +5,7 @@ import { Component as OmiComponent, h, tag } from 'omi';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
-const EllipsisOutlinedSvg = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"}}]},"name":"ellipsis","theme":"outlined"};
+const EllipsisOutlinedSvg: AntdIconProps['icon'] = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"}}]},"name":"ellipsis","theme":"outlined"};
 
 @tag('o-ellipsis-outlined')
 export default class EllipsisOutlined extends OmiComponent<AntdIconProps> {
