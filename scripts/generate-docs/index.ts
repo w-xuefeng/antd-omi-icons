@@ -10,6 +10,8 @@ const docsTPLPath = 'scripts/generate-docs/tpl/_index.ejs'
 const readTemplate = (p: string) =>
   fs.readFileSync(path.resolve(p), { encoding: 'utf-8' })
 
+const pkg = JSON.parse(readTemplate('package.json'))
+
 const docsTPLString = readTemplate(docsTPLPath)
 
 const writeFile = promisify(fs.writeFile)
@@ -50,7 +52,7 @@ async function generateDocs() {
 
   await writeFile(
     path.resolve(__dirname, `../../docs/index.html`),
-    render({ icons: iconText })
+    render({ icons: iconText, version: pkg.version })
   )
 }
 
