@@ -1,7 +1,6 @@
 import { h } from 'omi'
 import { AbstractNode, IconDefinition } from '@ant-design/icons-svg/lib/types'
 import { generate as generateColor } from '@ant-design/colors'
-import insertCss from './insert-css'
 
 export function warn(valid: boolean, message: string): void {
   // Support uglify
@@ -157,20 +156,3 @@ export const iconStyles = `
   }
 }
 `
-
-let cssInjectedFlag = false
-
-export const useInsertStyles = (styleStr: string = iconStyles): void => {
-  if (!cssInjectedFlag) {
-    if (
-      typeof window !== 'undefined' &&
-      window.document &&
-      window.document.documentElement
-    ) {
-      insertCss(styleStr, {
-        prepend: true,
-      })
-    }
-    cssInjectedFlag = true
-  }
-}

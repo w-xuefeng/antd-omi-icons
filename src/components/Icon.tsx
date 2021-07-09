@@ -1,6 +1,6 @@
 
 import { Component as OmiComponent, h, classNames, tag } from 'omi';
-import { svgBaseProps, warning, useInsertStyles } from '../utils';
+import { svgBaseProps, warning, iconStyles } from '../utils';
 import type { IconComponentProps } from './types'
 
 @tag('o-icon')
@@ -13,10 +13,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
   };
   static inheritAttrs = false;
   static displayName = 'Icon';
-
-  installed() {
-    useInsertStyles();
-  }
+  static css = iconStyles
 
   render(props: Omi.RenderableProps<IconComponentProps>) {
     const {

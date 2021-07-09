@@ -1,5 +1,5 @@
 import { Component as OmiComponent, classNames, tag } from 'omi';
-import { generate, getSecondaryColor, isIconDefinition, warning, useInsertStyles } from '../utils';
+import { generate, getSecondaryColor, isIconDefinition, warning, iconStyles } from '../utils';
 import type { AbstractNode } from '@ant-design/icons-svg/lib/types';
 import type { IconProps, TwoToneColorPalette, TwoToneColorPaletteSetter } from './types';
 
@@ -32,10 +32,7 @@ export default class IconBase extends OmiComponent<IconProps> {
   static displayName = 'IconBase';
   static getTwoToneColors = getTwoToneColors;
   static setTwoToneColors = setTwoToneColors;
-
-  installed() {
-    useInsertStyles();
-  }
+  static css = iconStyles
 
   render(props: Omi.RenderableProps<IconProps>) {
     const { icon, primaryColor, secondaryColor, className, ...restProps } = props;
