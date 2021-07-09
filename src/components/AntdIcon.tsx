@@ -2,7 +2,7 @@
 import { Component as OmiComponent, h, classNames, tag } from 'omi';
 import './IconBase';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
-import { normalizeTwoToneColors } from '../utils';
+import { normalizeTwoToneColors, iconStyles } from '../utils';
 import type { AntdIconComponentProps } from './types'
 
 
@@ -18,6 +18,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   };
   static displayName = 'AntdIcon';
   static inheritAttrs = false;
+  static css = iconStyles;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
   render(props: Omi.RenderableProps<AntdIconComponentProps>) {

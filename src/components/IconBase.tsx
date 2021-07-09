@@ -26,7 +26,7 @@ export default class IconBase extends OmiComponent<IconProps> {
   static propTypes = {
     primaryColor: String,
     secondaryColor: String,
-    focusable: String,
+    focusable: String
   }
   static inheritAttrs = false;
   static displayName = 'IconBase';
@@ -61,7 +61,7 @@ export default class IconBase extends OmiComponent<IconProps> {
 
     return generate(target.icon as AbstractNode, `svg-${target.name}`, {
       ...restProps,
-      ...(className ? { class: classNames(className) } : {}),
+      class: classNames({ [className || '']: !!className }),
       'data-icon': target.name,
       width: '1em',
       height: '1em',
