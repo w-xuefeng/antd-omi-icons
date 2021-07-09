@@ -39,6 +39,7 @@
     "clear": "rimraf lib",
     "dev": "cross-env NODE_ENV=developemnt rollup -c -w",
     "generate": "rimraf src/icons && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=icon",
+    "generate:docs": "rimraf docs && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate-docs/index.ts --target=docs",
     "postcompile": "yarn clean && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=entry",
     "prebuild": "yarn clear",
     "pretest": "yarn build",
