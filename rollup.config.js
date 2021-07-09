@@ -12,6 +12,7 @@ const indexEntry = 'src/index.ts'
 
 const tsPlugin = typescript({
   tsconfig: getPath('./tsconfig.json'),
+  declaration: false
 })
 
 const babelPlugin = babel({
