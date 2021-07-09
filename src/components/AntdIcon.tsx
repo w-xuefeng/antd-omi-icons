@@ -14,7 +14,6 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   static propTypes = {
     spin: Boolean,
     rotate: Number,
-    icon: Object,
     twoToneColor: String,
   };
   static displayName = 'AntdIcon';
@@ -33,6 +32,8 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       onClick,
       ...restProps
     } = props;
+
+    if (!icon) return null
 
     const classObj = classNames({
       anticon: true,
