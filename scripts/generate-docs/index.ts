@@ -44,7 +44,7 @@ async function generateDocs() {
       return `\n        <!-- GENERATE BY ./scripts/generate-docs/index.ts -->
         <!-- DON NOT EDIT IT MANUALLY -->
         <div class="icon">
-          <div class="icon-svg"><o${tagName} style="font-size: 80px" /></div>
+          <div class="icon-svg"><o${tagName} style="font-size: 40px;height: 40px;width: 40px;" /></div>
           <div class="icon-content">&lt;o${tagName} /&gt;</div>
         </div>`
     })
