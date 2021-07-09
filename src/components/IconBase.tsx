@@ -24,7 +24,6 @@ function getTwoToneColors(): TwoToneColorPalette {
 @tag('o-icon-base')
 export default class IconBase extends OmiComponent<IconProps> {
   static propTypes = {
-    icon: Object,
     primaryColor: String,
     secondaryColor: String,
     focusable: String,

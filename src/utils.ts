@@ -19,7 +19,7 @@ export function warning(valid: boolean, message: string): void {
 }
 
 export function isIconDefinition(target: any): target is IconDefinition {
-  return (
+  return target && (
     typeof target === 'object' &&
     typeof target.name === 'string' &&
     typeof target.theme === 'string' &&

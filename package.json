@@ -1,6 +1,6 @@
 {
   "name": "antd-omi-icons",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
   "browser": "lib/umd/antd-omi-icons.min.js",
@@ -42,6 +42,7 @@
     "generate:docs": "rimraf docs && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate-docs/index.ts --target=docs",
     "postcompile": "yarn clean && cross-env TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts --target=entry",
     "prebuild": "yarn clear",
+    "prepublishOnly": "yarn generate:docs",
     "pretest": "yarn build",
     "test": "node test/test.js"
   },
