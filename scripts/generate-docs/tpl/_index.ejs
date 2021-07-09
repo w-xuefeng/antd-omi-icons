@@ -17,7 +17,7 @@
       display: flex;
       flex-direction: column;
       width: 90%;
-      max-width: 1000px;
+      max-width: 1010px;
       margin: 20px auto;
     }
 
@@ -50,7 +50,7 @@
       transition: all 500ms;
     }
 
-    .icon-svg > * {
+    .icon-svg>* {
       font-size: 40px;
       height: 40px;
       width: 40px;
@@ -63,7 +63,7 @@
       background-color: #4f98d4;
     }
 
-    .icon-svg:hover > * {
+    .icon-svg:hover>* {
       color: #fff;
       transition: all 500ms;
     }
@@ -94,12 +94,13 @@
 </body>
 <script>
   function toast({ msg, duration = 2000, location = 'bottom' }) {
+    const offset = window.__toast__item__ && window.__toast__item__ > 0 ? window.__toast__item__ : 0
     const vlocation =
       location === 'bottom'
-        ? 'bottom: 10%;'
+        ? 'bottom: ' + (10 + offset * 7) + '%;'
         : location === 'top'
-          ? 'top: 10%;'
-          : 'top: 50%;'
+          ? 'top: ' + (10 + offset * 7) + '%;'
+          : 'top: ' + (50 + offset * 7) + '%;'
     const toastElement = document.createElement('div')
     toastElement.innerText = msg
     toastElement.style.cssText =
@@ -123,6 +124,7 @@
           font-size: 16px;
         `
     document.body.appendChild(toastElement)
+    window.__toast__item__ = (window.__toast__item__ || 0) + 1
     setTimeout(() => {
       const delay = 0.5
       toastElement.style.webkitTransition =
@@ -134,6 +136,7 @@
       toastElement.style.opacity = '0'
       setTimeout(() => {
         document.body.removeChild(toastElement)
+        window.__toast__item__ = (window.__toast__item__ || 0) - 1
       }, delay * 1000)
     }, duration)
   }
