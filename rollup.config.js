@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
+import replace from '@rollup/plugin-replace';
 import path from 'path'
 import pkg from './package.json'
 
@@ -20,6 +21,10 @@ const babelPlugin = babel({
   babelHelpers: 'runtime',
 })
 
+const replacePlugin = replace({
+  'process.env.NODE_ENV': process.env.NODE_ENV,
+})
+
 const deps = Object.keys(pkg.dependencies)
 
 const commonConfig = (entry = indexEntry, externalDeps = true) => ({
@@ -28,6 +33,7 @@ const commonConfig = (entry = indexEntry, externalDeps = true) => ({
   plugins: [
     resolve({ extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'] }),
     commonjs(),
+    replacePlugin,
     babelPlugin,
     tsPlugin,
   ],
