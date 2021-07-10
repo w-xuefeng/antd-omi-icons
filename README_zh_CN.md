@@ -9,49 +9,48 @@ Ant Design Icons for Omi
 
 </div>
 
-English | [简体中文](README_zh_CN.md)
+[English](README.md) | 简体中文
 
-## All Icons
+## 全部图标
 
   [https://w-xuefeng.github.io/antd-omi-icons/](https://w-xuefeng.github.io/antd-omi-icons/)
 
-## Install with yarn （or npm）
+## 使用 yarn 或 npm 安装
 
 ```bash
 yarn add antd-omi-icons --save
 ```
 
-or
+或者
 
 ```bash
 npm install antd-omi-icons --save
 ```
 
-## Basic Usage
+## 基本用法
 
-First, you should add the icons that you need into the library.
+首先，您应该将所需的图标导入到您的项目中，如 `AccountBookFilled`
 
 ```ts
 import { WeElement, h, tag } from 'omi'
 import 'antd-omi-icons/lib/es/icons/AccountBookFilled'
 ```
 
-After that, you can use antd icons in your Omi components as simply as this:
+之后，你可以像这样简单地在你的 Omi 组件中使用 antd 图标:
 
 ```jsx
 <o-account-book-filled />
 ```
 
-If you want to import the full amount of icons, you can do as follows
 
-- esm project:
+如果你想使用全量图标，你可以像下面一样，在你的项目引入该文件
 
+- esm 项目:
   ```ts
   import 'antd-omi-icons/lib/es'
   ```
 
-- cjs project:
-
+- cjs 项目:
   ```ts
   import 'antd-omi-icons/lib/cjs'
   ```
