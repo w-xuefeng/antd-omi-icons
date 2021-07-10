@@ -1,111 +1,169 @@
 <!DOCTYPE html>
 <html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/omi@6.19.21/dist/omi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@<%= version %>/lib/umd/antd-omi-icons.min.js"></script>
+    <title>Ant Design Icons For Omi</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/omi@6.19.21/dist/omi.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@<%= version %>/lib/umd/antd-omi-icons.min.js"></script>
-  <title>Ant Design Icons For Omi</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1010px;
+        margin: 20px auto;
+      }
 
-    .wrap {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      max-width: 1010px;
-      margin: 20px auto;
-    }
+      .icons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-    .icons {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+      .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ffcccc;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
 
-    .icon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100px;
-      height: 100px;
-      border: 1px solid #ffcccc;
-      margin: 5px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+      .icon-type {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        line-height: 1.17em;
+      }
 
-    .icon-svg {
-      width: 100px;
-      height: 80px;
-      border-bottom: 1px solid #ffcccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 500ms;
-    }
+      .icon-type > i {
+        margin-right: 5px;
+      }
 
-    .icon-svg>* {
-      font-size: 40px;
-      height: 40px;
-      width: 40px;
-      color: #555;
-      transition: all 500ms;
-    }
+      .anticon {
+        display: inline-block;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-    .icon-svg:hover {
-      transition: all 500ms;
-      background-color: #4f98d4;
-    }
+      .icon-svg {
+        width: 100px;
+        height: 80px;
+        border-bottom: 1px solid #ffcccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 500ms;
+      }
 
-    .icon-svg:hover>* {
-      color: #fff;
-      transition: all 500ms;
-    }
+      .icon-svg > * {
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+        color: #555;
+        transition: all 500ms;
+      }
 
-    .icon-content {
-      width: 100%;
-      height: 20px;
-      line-height: 20px;
-      font-size: 12px;
-      color: #666666;
-      background-color: #ffcc99;
-      box-sizing: border-box;
-      text-align: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  </style>
-</head>
+      .icon-svg:hover {
+        transition: all 500ms;
+        background-color: #4f98d4;
+      }
 
-<body>
-  <div class="wrap">
-    <h1 class="title">Ant Design Icons For Omi</h1>
-    <div class="icons">
-      <%= icons %>
+      .icon-svg:hover > * {
+        color: #fff;
+        transition: all 500ms;
+      }
+
+      .icon-content {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #666666;
+        background-color: #ffcc99;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .back-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        font-size: 30px;
+        color: #555;
+        cursor: pointer;
+        display: none;
+      }
+
+      .nav {
+        position: fixed;
+        right: 50px;
+        top: 100px;
+        border-left: 2px solid rgb(201, 201, 201);
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+      }
+
+      .nav-item {
+        width: 100px;
+        color: #555;
+        cursor: pointer;
+        margin: 5px 0;
+      }
+
+      @media screen and (max-width: 1110px) {
+        .nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 class="title">Ant Design Icons For Omi</h1>
+      <div class="icons"><%= icons %></div>
     </div>
-  </div>
-</body>
-<script>
-  function toast({ msg, duration = 2000, location = 'bottom' }) {
-    const offset = window.__toast__item__ && window.__toast__item__ > 0 ? window.__toast__item__ : 0
-    const vlocation =
-      location === 'bottom'
-        ? 'bottom: ' + (10 + offset * 7) + '%;'
-        : location === 'top'
+    <div class="nav"><%= navs %></div>
+  </body>
+  <script>
+    function toast({ msg, duration = 2000, location = 'bottom' }) {
+      const offset =
+        window.__toast__item__ && window.__toast__item__ > 0
+          ? window.__toast__item__
+          : 0
+      const vlocation =
+        location === 'bottom'
+          ? 'bottom: ' + (10 + offset * 7) + '%;'
+          : location === 'top'
           ? 'top: ' + (10 + offset * 7) + '%;'
           : 'top: ' + (50 + offset * 7) + '%;'
-    const toastElement = document.createElement('div')
-    toastElement.innerText = msg
-    toastElement.style.cssText =
-      vlocation +
-      `
+      const toastElement = document.createElement('div')
+      toastElement.innerText = msg
+      toastElement.style.cssText =
+        vlocation +
+        `
           ;
           width: fit-content;
           max-width:80%;
@@ -123,40 +181,72 @@
           background: rgba(0, 0, 0, 0.75);
           font-size: 16px;
         `
-    document.body.appendChild(toastElement)
-    window.__toast__item__ = (window.__toast__item__ || 0) + 1
-    setTimeout(() => {
-      const delay = 0.5
-      toastElement.style.webkitTransition =
-        '-webkit-transform ' +
-        delay +
-        's ease-in, opacity ' +
-        delay +
-        's ease-in'
-      toastElement.style.opacity = '0'
-      setTimeout(() => {
-        document.body.removeChild(toastElement)
-        window.__toast__item__ = (window.__toast__item__ || 0) - 1
-      }, delay * 1000)
-    }, duration)
-  }
-  function copyText(item) {
-    let input = document.createElement('input')
-    input.value = item && item.innerText
-    document.body.appendChild(input)
-    input.select()
-    document.execCommand('Copy')
-    input.style.display = 'none'
-    toast({ msg: String(input.value) + ' 已复制!', location: 'top' })
-    input.remove()
-  }
-  window.onload = function () {
-    ;[...document.querySelectorAll('.icon')].forEach(function (icon) {
-      icon.addEventListener('click', function () {
-        copyText(icon)
+      document.body.appendChild(toastElement)
+      window.__toast__item__ = (window.__toast__item__ || 0) + 1
+      setTimeout(function () {
+        const delay = 0.5
+        toastElement.style.webkitTransition =
+          '-webkit-transform ' +
+          delay +
+          's ease-in, opacity ' +
+          delay +
+          's ease-in'
+        toastElement.style.opacity = '0'
+        setTimeout(function () {
+          document.body.removeChild(toastElement)
+          window.__toast__item__ = (window.__toast__item__ || 0) - 1
+        }, delay * 100)
+      }, duration)
+    }
+    function copyText(item) {
+      let input = document.createElement('input')
+      input.value = item && item.innerText
+      document.body.appendChild(input)
+      input.select()
+      document.execCommand('Copy')
+      input.style.display = 'none'
+      toast({ msg: String(input.value) + ' 已复制!', location: 'top' })
+      input.remove()
+    }
+    function backTop() {
+      const backTopDOM = document.createElement('div')
+      backTopDOM.className = 'back-top'
+      backTopDOM.innerHTML = '<o-arrow-up-outlined />'
+      backTopDOM.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
       })
-    })
-  }
-</script>
-
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop
+        backTopDOM.style.display = scrollTop > 1000 ? 'block' : 'none'
+      })
+      document.body.appendChild(backTopDOM)
+    }
+    function bindNav() {
+      const scrollTops = [...document.querySelectorAll('h3.icon-type')].map(
+        function (e) {
+          return e.offsetTop
+        }
+      )
+      ;[...document.querySelectorAll('.nav-item')].forEach((nav, i) => {
+        nav.addEventListener('click', function () {
+          window.scrollTo({
+            top: scrollTops[i],
+            behavior: 'smooth',
+          })
+        })
+      })
+    }
+    window.onload = function () {
+      backTop()
+      bindNav()
+      ;[...document.querySelectorAll('.icon')].forEach(function (icon) {
+        icon.addEventListener('click', function () {
+          copyText(icon)
+        })
+      })
+    }
+  </script>
 </html>
