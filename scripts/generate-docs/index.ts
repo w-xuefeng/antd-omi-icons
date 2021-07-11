@@ -26,6 +26,12 @@ function changeName(name: string) {
   })
 }
 
+function copyFavicon(docsDir: string) {
+  const fileName = 'favicon.ico'
+  const faviconPath = path.join(__dirname, `../../assets/${fileName}`)
+  fs.copyFileSync(faviconPath, path.join(docsDir, fileName))
+}
+
 async function generateDocs() {
   const docsDir = path.join(__dirname, '../../docs')
   try {
@@ -95,6 +101,8 @@ async function generateDocs() {
     path.resolve(__dirname, `../../docs/index.html`),
     render({ icons: iconText, version: pkg.version, navs })
   )
+
+  copyFavicon(docsDir)
 }
 
 if (process.argv[2] === '--target=docs') {

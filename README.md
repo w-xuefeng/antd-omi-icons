@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/antd-omi-icon.svg" width="80">
+</div>
+
 <h1 align="center">
 Ant Design Icons for Omi
 </h1>
