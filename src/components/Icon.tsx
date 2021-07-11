@@ -1,5 +1,6 @@
 
 import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi';
+import { rmIEFP } from 'omi-tools';
 import { svgBaseProps, warning, iconStyles } from '../utils';
 import type { IconComponentProps } from './types'
 
@@ -88,7 +89,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
     }
 
     return (
-      <span role="img" {...cls} {...restProps} onClick={onClick}>
+      <span role="img" {...cls} {...rmIEFP(restProps)} onClick={onClick}>
         {renderInnerNode()}
       </span>
     );

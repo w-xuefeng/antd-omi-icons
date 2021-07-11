@@ -1422,6 +1422,11 @@ object.assign@^4.1.0:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
+omi-tools@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/omi-tools/-/omi-tools-1.0.1.tgz#6ef6abd41965dd42c1e072ff96049f98ba561b33"
+  integrity sha512-ySdqrvO+zFdataZTcb0iriX2e5WIcjQK0bx0itav7wj9CV9jtyuqAcLQNp58eD41KgSdUKrE4LbiLADqmxi+OA==
+
 omi@^6.19.21:
   version "6.19.21"
   resolved "https://registry.nlark.com/omi/download/omi-6.19.21.tgz#305101b02774073e792128d9a89121833661d02d"

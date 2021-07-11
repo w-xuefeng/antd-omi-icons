@@ -6,7 +6,8 @@
   "browser": "lib/umd/antd-omi-icons.min.js",
   "dependencies": {
     "@ant-design/colors": "^6.0.0",
-    "@ant-design/icons-svg": "^4.1.0"
+    "@ant-design/icons-svg": "^4.1.0",
+    "omi-tools": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

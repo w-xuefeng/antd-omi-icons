@@ -1,4 +1,5 @@
 import { Component as OmiComponent, h } from 'omi';
+import { rmIEFP } from 'omi-tools';
 import type { IconFontProps } from './types';
 import './Icon';
 
@@ -76,7 +77,7 @@ export default function create(options: CustomIconOptions = {}) {
       }
       const iconProps = {
         ...extraCommonProps,
-        ...restProps,
+        ...rmIEFP(restProps),
       };
       return <o-icon {...iconProps}>{content}</o-icon>;
     };

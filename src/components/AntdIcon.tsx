@@ -1,5 +1,6 @@
 
 import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi';
+import { rmIEFP } from 'omi-tools';
 import './IconBase';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 import { normalizeTwoToneColors } from '../utils';
@@ -63,7 +64,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       <span role="img"
         aria-label={icon.name}
         {...classObj}
-        {...restProps}
+        {...rmIEFP(restProps)}
         onClick={onClick}
       >
         <o-icon-base

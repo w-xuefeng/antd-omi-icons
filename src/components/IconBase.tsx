@@ -1,4 +1,5 @@
 import { Component as OmiComponent, extractClass, tag } from 'omi';
+import { rmIEFP } from 'omi-tools';
 import { generate, getSecondaryColor, isIconDefinition, warning, iconStyles } from '../utils';
 import type { AbstractNode } from '@ant-design/icons-svg/lib/types';
 import type { IconProps, TwoToneColorPalette, TwoToneColorPaletteSetter } from './types';
@@ -60,7 +61,7 @@ export default class IconBase extends OmiComponent<IconProps> {
     }
 
     return generate(target.icon as AbstractNode, `svg-${target.name}`, {
-      ...restProps,
+      ...rmIEFP(restProps),
       ...extractClass(props),
       'data-icon': target.name,
       width: '1em',
