@@ -65,7 +65,6 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
         aria-label={icon.name}
         {...classObj}
         {...rmIEFP(restProps)}
-        onClick={onClick}
       >
         <o-icon-base
           icon={icon}

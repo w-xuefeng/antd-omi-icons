@@ -89,7 +89,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
     }
 
     return (
-      <span role="img" {...cls} {...rmIEFP(restProps)} onClick={onClick}>
+      <span role="img" {...cls} {...rmIEFP(restProps)}>
         {renderInnerNode()}
       </span>
     );
