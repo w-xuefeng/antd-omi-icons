@@ -2,6 +2,7 @@
 // DON NOT EDIT IT MANUALLY
 
 import { Component as OmiComponent, h, tag } from 'omi';
+import { rmIEFP } from 'omi-tools';
 import type { AntdIconProps } from '../components/types';
 import '../components/AntdIcon';
 
@@ -13,6 +14,6 @@ export default class FileTwoTone extends OmiComponent<AntdIconProps> {
   static tagName = 'o-file-two-tone';
   static inheritAttrs = false;
   render(props: Omi.RenderableProps<AntdIconProps>) {
-    return <o-antd-icon {...props} icon={FileTwoToneSvg} />;
+    return <o-antd-icon {...rmIEFP(props)} icon={FileTwoToneSvg} />;
   };
 }
