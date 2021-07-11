@@ -57,7 +57,7 @@ If you want to import the full amount of icons, you can do as follows
 - cjs project:
 
   ```ts
-  import 'antd-omi-icons/lib/cjs'
+  require('antd-omi-icons/lib/cjs')
   ```
 
 - CNDs

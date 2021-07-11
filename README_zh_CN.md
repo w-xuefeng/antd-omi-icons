@@ -56,7 +56,7 @@ import 'antd-omi-icons/lib/es/icons/AccountBookFilled'
 
 - cjs 项目:
   ```ts
-  import 'antd-omi-icons/lib/cjs'
+  require('antd-omi-icons/lib/cjs')
   ```
 
 - CNDs
