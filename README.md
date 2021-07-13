@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/antd-omi-icon.svg" width="80">
+  <img src="./assets/antd-omi-icon.svg" width="150">
 </div>
 
 <h1 align="center">
