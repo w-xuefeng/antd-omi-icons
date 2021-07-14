@@ -6,9 +6,16 @@ import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 import { normalizeTwoToneColors } from '../utils';
 import type { AntdIconComponentProps } from './types'
 
-
 // Initial setting
 setTwoToneColor('#1890ff');
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['o-antd-icon']: Omi.Props & Partial<AntdIconComponentProps>
+    }
+  }
+}
 
 @tag('o-antd-icon')
 export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {

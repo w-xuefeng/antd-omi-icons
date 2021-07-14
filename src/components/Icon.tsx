@@ -4,6 +4,14 @@ import { rmIEFP } from 'omi-tools';
 import { svgBaseProps, warning, iconStyles } from '../utils';
 import type { IconComponentProps } from './types'
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['o-icon']: Omi.Props & Partial<IconComponentProps>
+    }
+  }
+}
+
 @tag('o-icon')
 export default class Icon extends OmiComponent<IconComponentProps> {
   static propTypes = {

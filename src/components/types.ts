@@ -24,6 +24,7 @@ export interface TwoToneColorPalette extends TwoToneColorPaletteSetter {
 export interface IconBaseProps extends Omit<JSX.HTMLAttributes, 'icon'> {
   spin?: boolean | string
   rotate?: number
+  onClick?: (e: MouseEvent) => void
 }
 
 export interface AntdIconProps extends IconBaseProps {

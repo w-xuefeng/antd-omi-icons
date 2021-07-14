@@ -22,6 +22,14 @@ function getTwoToneColors(): TwoToneColorPalette {
   };
 }
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['o-icon-base']: Omi.Props & Partial<IconProps>
+    }
+  }
+}
+
 @tag('o-icon-base')
 export default class IconBase extends OmiComponent<IconProps> {
   static propTypes = {

@@ -8,6 +8,14 @@ import '../components/AntdIcon';
 
 const SmallDashOutlinedSvg: AntdIconProps['icon'] = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M112 476h72v72h-72zm182 0h72v72h-72zm364 0h72v72h-72zm182 0h72v72h-72zm-364 0h72v72h-72z"}}]},"name":"small-dash","theme":"outlined"};
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['o-small-dash-outlined']: Omi.Props & Partial<AntdIconProps>
+    }
+  }
+}
+
 @tag('o-small-dash-outlined')
 export default class SmallDashOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SmallDashOutlined';

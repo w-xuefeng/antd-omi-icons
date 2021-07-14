@@ -49,6 +49,14 @@ import '../components/AntdIcon';
 
 const <%= svgIdentifier %>Svg: AntdIconProps['icon'] = <%= svgInfo %>;
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['<%= tagName %>']: Omi.Props & Partial<AntdIconProps>
+    }
+  }
+}
+
 @tag('<%= tagName %>')
 export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   static displayName = '<%= svgIdentifier %>';
