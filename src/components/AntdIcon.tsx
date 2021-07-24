@@ -1,5 +1,5 @@
 
-import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi';
+import { Component as OmiComponent, h, extractClass, tag } from 'omi';
 import { rmIEFP } from 'omi-tools';
 import './IconBase';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
