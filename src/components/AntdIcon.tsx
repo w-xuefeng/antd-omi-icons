@@ -54,7 +54,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       restProps.tabindex = iconTabIndex;
     }
 
-    const svgStyle = typeof rotate === 'number'
+    const svgStyle = typeof parseFloat(String(rotate)) === 'number'
       ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
 
@@ -70,7 +70,8 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
     };
 
     return (
-      <span role="img"
+      <span
+        role="img"
         aria-label={icon.name}
         {...classObj}
         {...rmIEFP(restProps)}
