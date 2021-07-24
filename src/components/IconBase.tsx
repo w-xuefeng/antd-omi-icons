@@ -44,7 +44,17 @@ export default class IconBase extends OmiComponent<IconProps> {
   static setTwoToneColors = setTwoToneColors;
 
   render(props: Omi.RenderableProps<IconProps>) {
-    const { icon, primaryColor, secondaryColor, ...restProps } = props;
+    const { icon, primaryColor, secondaryColor, spin, rotate, ...restProps } = props;
+
+    const classObj = extractClass(props, {
+      anticon: true,
+      [`anticon-${icon.name}`]: Boolean(icon.name),
+      ['anticon-spin']: spin === '' || !!spin || icon.name === 'loading'
+    });
+
+    const svgStyle = typeof parseFloat(String(rotate)) === 'number'
+      ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
+      : undefined;
 
     let colors = twoToneColorPalette;
     if (primaryColor) {
@@ -70,7 +80,8 @@ export default class IconBase extends OmiComponent<IconProps> {
 
     return generate(target.icon as AbstractNode, `svg-${target.name}`, {
       ...rmIEFP(restProps),
-      ...extractClass(props),
+      ...classObj,
+      style: svgStyle,
       'data-icon': target.name,
       width: '1em',
       height: '1em',

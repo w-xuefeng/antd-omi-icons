@@ -10,6 +10,8 @@ export interface IconProps {
   primaryColor?: string // only for two-tone
   secondaryColor?: string // only for two-tone
   focusable?: string
+  spin?: boolean | string
+  rotate?: number
 }
 
 export interface TwoToneColorPaletteSetter {
