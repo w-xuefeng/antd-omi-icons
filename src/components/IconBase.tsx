@@ -52,7 +52,7 @@ export default class IconBase extends OmiComponent<IconProps> {
       ['anticon-spin']: spin === '' || !!spin || icon.name === 'loading'
     });
 
-    const svgStyle = typeof parseFloat(String(rotate)) === 'number'
+    const svgStyle = rotate && typeof parseFloat(String(rotate)) === 'number'
       ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
 

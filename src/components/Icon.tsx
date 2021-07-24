@@ -47,7 +47,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
       anticon: true
     });
 
-    const svgStyle = typeof parseFloat(String(rotate)) === 'number'
+    const svgStyle = rotate && typeof parseFloat(String(rotate)) === 'number'
       ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
 
