@@ -56,6 +56,8 @@ export default class IconBase extends OmiComponent<IconProps> {
       ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
 
+    const styleObj = svgStyle ? { style: svgStyle } : {}
+
     let colors = twoToneColorPalette;
     if (primaryColor) {
       colors = {
@@ -81,7 +83,7 @@ export default class IconBase extends OmiComponent<IconProps> {
     return generate(target.icon as AbstractNode, `svg-${target.name}`, {
       ...rmIEFP(restProps),
       ...classObj,
-      style: svgStyle,
+      ...styleObj,
       'data-icon': target.name,
       width: '1em',
       height: '1em',
