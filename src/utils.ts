@@ -102,7 +102,7 @@ export const svgBaseProps = {
 } as any
 
 export const iconStyles = `
-.anticon {
+svg.anticon {
   display: inline-block;
   color: inherit;
   font-style: normal;
@@ -115,23 +115,23 @@ export const iconStyles = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.anticon > * {
+svg.anticon > * {
   line-height: 1;
 }
 
-.anticon svg {
+svg.anticon svg {
   display: inline-block;
 }
 
-.anticon::before {
+svg.anticon::before {
   display: none;
 }
 
-.anticon .anticon-icon {
+svg.anticon .anticon-icon {
   display: block;
 }
 
-.anticon[tabindex] {
+svg.anticon[tabindex] {
   cursor: pointer;
 }
 
