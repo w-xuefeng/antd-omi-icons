@@ -43,11 +43,6 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
 
     if (!icon) return null
 
-    const classObj = extractClass(props, {
-      anticon: true,
-      [`anticon-${icon.name}`]: Boolean(icon.name)
-    });
-
     let iconTabIndex = tabindex;
     if (iconTabIndex === undefined && onClick) {
       iconTabIndex = -1;
@@ -60,26 +55,25 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
 
     const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor);
 
-    const className = classNames({
-      'anticon-spin': spin === '' || !!spin || icon.name === 'loading'
-    })
+    const classObj = extractClass(props, {
+      anticon: true,
+      [`anticon-${icon.name}`]: Boolean(icon.name),
+      ['anticon-spin']: spin === '' || !!spin || icon.name === 'loading'
+    });
 
-    const styleProps = {
-      ...(className ? { class: className } : undefined),
-      ...(svgStyle ? { style: svgStyle } : undefined),
-    };
+    const styleProps = svgStyle ? { style: svgStyle } : undefined
 
     return (
       <span
         role="img"
         aria-label={icon.name}
-        {...classObj}
         {...rmIEFP(restProps)}
       >
         <o-icon-base
           icon={icon}
           primaryColor={primaryColor}
           secondaryColor={secondaryColor}
+          {...classObj}
           {...styleProps}
         />
       </span>
