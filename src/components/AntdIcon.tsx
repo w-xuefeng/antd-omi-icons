@@ -3,7 +3,7 @@ import { Component as OmiComponent, h, classNames, extractClass, tag } from 'omi
 import { rmIEFP } from 'omi-tools';
 import './IconBase';
 import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
-import { normalizeTwoToneColors } from '../utils';
+import { normalizeTwoToneColors, iconStyles } from '../utils';
 import type { AntdIconComponentProps } from './types'
 
 // Initial setting
@@ -26,6 +26,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   };
   static displayName = 'AntdIcon';
   static inheritAttrs = false;
+  static css = iconStyles;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
   render(props: Omi.RenderableProps<AntdIconComponentProps>) {
@@ -53,19 +54,20 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
       restProps.tabindex = iconTabIndex;
     }
 
-    const svgStyle = rotate
-      ? `.svgInnerRotate {
-        -ms-transform: rotate(${rotate}deg);
-        transform: rotate(${rotate}deg);
-      }
-      `
+    const svgStyle = typeof rotate === 'number'
+      ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
+
     const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor);
 
     const className = classNames({
-      'anticon-spin': spin === '' || !!spin || icon.name === 'loading',
-      svgInnerRotate: !!svgStyle
+      'anticon-spin': spin === '' || !!spin || icon.name === 'loading'
     })
+
+    const styleProps = {
+      ...(className ? { class: className } : undefined),
+      ...(svgStyle ? { style: svgStyle } : undefined),
+    };
 
     return (
       <span role="img"
@@ -77,8 +79,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
           icon={icon}
           primaryColor={primaryColor}
           secondaryColor={secondaryColor}
-          class={className}
-          css={svgStyle}
+          {...styleProps}
         />
       </span>
     );

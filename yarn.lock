@@ -1422,10 +1422,10 @@ object.assign@^4.1.0:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-omi-tools@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/omi-tools/-/omi-tools-1.0.1.tgz#6ef6abd41965dd42c1e072ff96049f98ba561b33"
-  integrity sha512-ySdqrvO+zFdataZTcb0iriX2e5WIcjQK0bx0itav7wj9CV9jtyuqAcLQNp58eD41KgSdUKrE4LbiLADqmxi+OA==
+omi-tools@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/omi-tools/-/omi-tools-1.0.2.tgz#c76c9216bf42f50baa2867b034921eb270528d41"
+  integrity sha512-6MzEyysqtADTFCIE0LnhPg7W5AWXFncugPH/pac31t89hMsGfI3uxHVzOMj8YquA3vRNtJe89wPeRbv0qJvxHA==
 
 omi@^6.19.21:
   version "6.19.21"

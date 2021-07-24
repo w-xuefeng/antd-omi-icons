@@ -47,24 +47,19 @@ export default class Icon extends OmiComponent<IconComponentProps> {
       anticon: true
     });
 
-    const svgStyle = rotate
-      ? `.svgInnerRotate {
-        -ms-transform: rotate(${rotate}deg);
-        transform: rotate(${rotate}deg);
-      }
-      `
+    const svgStyle = typeof rotate === 'number'
+      ? `-ms-transform: rotate(${rotate}deg);transform: rotate(${rotate}deg);`
       : undefined;
 
     const svgClassString = classNames({
-      'anticon-spin': spin === '' || !!spin,
-      svgInnerRotate: !!svgStyle
+      'anticon-spin': spin === '' || !!spin
     });
 
     const innerSvgProps = {
       ...svgBaseProps,
+      ...(svgClassString ? { class: svgClassString } : undefined),
+      ...(svgStyle ? { style: svgStyle } : undefined),
       viewBox,
-      class: svgClassString,
-      css: svgStyle
     };
 
     if (!viewBox) {
