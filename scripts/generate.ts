@@ -92,7 +92,7 @@ export default class <%= svgIdentifier %> extends OmiComponent<AntdIconProps> {
   const entryText = Object.keys(allIconDefs)
     .sort()
     .map((svgIdentifier) => {
-      return `import './${svgIdentifier}';`
+      return `export { default as ${svgIdentifier} } from './${svgIdentifier}';`
     })
     .join('\n')
 
