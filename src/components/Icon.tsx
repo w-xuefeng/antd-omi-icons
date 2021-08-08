@@ -24,7 +24,7 @@ export default class Icon extends OmiComponent<IconComponentProps> {
   static displayName = 'Icon';
   static css = iconStyles;
 
-  render(props: Omi.RenderableProps<IconComponentProps>) {
+  render(props: Omi.OmiProps<IconComponentProps>) {
     const {
       // affect inner <svg>...</svg>
       component: Component,

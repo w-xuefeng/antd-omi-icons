@@ -65,7 +65,7 @@ export default function create(options: CustomIconOptions = {}) {
     };
     static inheritAttrs = false;
     static displayName = 'Iconfont';
-    render(props: Omi.RenderableProps<IconFontProps>) {
+    render(props: Omi.OmiProps<IconFontProps>) {
       const { type, children, ...restProps } = props;
       // children > type
       let content = null;

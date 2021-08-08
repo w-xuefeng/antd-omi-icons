@@ -43,7 +43,7 @@ export default class IconBase extends OmiComponent<IconProps> {
   static getTwoToneColors = getTwoToneColors;
   static setTwoToneColors = setTwoToneColors;
 
-  render(props: Omi.RenderableProps<IconProps>) {
+  render(props: Omi.OmiProps<IconProps>) {
     const { icon, primaryColor, secondaryColor, spin, rotate, ...restProps } = props;
 
     const classObj = extractClass(props, {

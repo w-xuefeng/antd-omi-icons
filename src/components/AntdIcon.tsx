@@ -29,7 +29,7 @@ export default class AntdIcon extends OmiComponent<AntdIconComponentProps> {
   static css = iconStyles;
   static getTwoToneColor = getTwoToneColor;
   static setTwoToneColor = setTwoToneColor;
-  render(props: Omi.RenderableProps<AntdIconComponentProps>) {
+  render(props: Omi.OmiProps<AntdIconComponentProps>) {
     const {
       icon,
       tabindex,
