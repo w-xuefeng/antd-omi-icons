@@ -21,7 +21,7 @@ export default class TagsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TagsOutlined';
   static tagName = 'o-tags-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TagsOutlinedSvg} />;
   };
 }

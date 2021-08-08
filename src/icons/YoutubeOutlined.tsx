@@ -21,7 +21,7 @@ export default class YoutubeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'YoutubeOutlined';
   static tagName = 'o-youtube-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={YoutubeOutlinedSvg} />;
   };
 }

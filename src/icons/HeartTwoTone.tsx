@@ -21,7 +21,7 @@ export default class HeartTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'HeartTwoTone';
   static tagName = 'o-heart-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={HeartTwoToneSvg} />;
   };
 }

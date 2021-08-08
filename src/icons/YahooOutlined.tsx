@@ -21,7 +21,7 @@ export default class YahooOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'YahooOutlined';
   static tagName = 'o-yahoo-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={YahooOutlinedSvg} />;
   };
 }

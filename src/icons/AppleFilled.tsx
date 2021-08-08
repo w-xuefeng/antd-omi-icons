@@ -21,7 +21,7 @@ export default class AppleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AppleFilled';
   static tagName = 'o-apple-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AppleFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class FileGifOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileGifOutlined';
   static tagName = 'o-file-gif-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileGifOutlinedSvg} />;
   };
 }

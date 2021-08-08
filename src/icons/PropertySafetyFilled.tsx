@@ -21,7 +21,7 @@ export default class PropertySafetyFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PropertySafetyFilled';
   static tagName = 'o-property-safety-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PropertySafetyFilledSvg} />;
   };
 }

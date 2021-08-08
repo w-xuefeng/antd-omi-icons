@@ -21,7 +21,7 @@ export default class CodeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CodeFilled';
   static tagName = 'o-code-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CodeFilledSvg} />;
   };
 }

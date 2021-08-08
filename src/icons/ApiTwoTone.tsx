@@ -21,7 +21,7 @@ export default class ApiTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ApiTwoTone';
   static tagName = 'o-api-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ApiTwoToneSvg} />;
   };
 }

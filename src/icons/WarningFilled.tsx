@@ -21,7 +21,7 @@ export default class WarningFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'WarningFilled';
   static tagName = 'o-warning-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WarningFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class SwapOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SwapOutlined';
   static tagName = 'o-swap-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SwapOutlinedSvg} />;
   };
 }

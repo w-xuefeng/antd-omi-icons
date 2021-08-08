@@ -21,7 +21,7 @@ export default class InfoCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InfoCircleOutlined';
   static tagName = 'o-info-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InfoCircleOutlinedSvg} />;
   };
 }

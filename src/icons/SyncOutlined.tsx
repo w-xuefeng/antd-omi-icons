@@ -21,7 +21,7 @@ export default class SyncOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SyncOutlined';
   static tagName = 'o-sync-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SyncOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class HddFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'HddFilled';
   static tagName = 'o-hdd-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={HddFilledSvg} />;
   };
 }

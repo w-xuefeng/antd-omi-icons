@@ -21,7 +21,7 @@ export default class KeyOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'KeyOutlined';
   static tagName = 'o-key-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={KeyOutlinedSvg} />;
   };
 }

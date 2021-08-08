@@ -21,7 +21,7 @@ export default class FireOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FireOutlined';
   static tagName = 'o-fire-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FireOutlinedSvg} />;
   };
 }

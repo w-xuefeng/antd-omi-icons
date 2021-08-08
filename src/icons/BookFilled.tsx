@@ -21,7 +21,7 @@ export default class BookFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BookFilled';
   static tagName = 'o-book-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BookFilledSvg} />;
   };
 }

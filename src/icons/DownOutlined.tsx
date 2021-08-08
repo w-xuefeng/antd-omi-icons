@@ -21,7 +21,7 @@ export default class DownOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DownOutlined';
   static tagName = 'o-down-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DownOutlinedSvg} />;
   };
 }

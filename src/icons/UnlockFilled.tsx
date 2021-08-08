@@ -21,7 +21,7 @@ export default class UnlockFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'UnlockFilled';
   static tagName = 'o-unlock-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UnlockFilledSvg} />;
   };
 }

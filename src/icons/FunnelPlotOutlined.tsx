@@ -21,7 +21,7 @@ export default class FunnelPlotOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FunnelPlotOutlined';
   static tagName = 'o-funnel-plot-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FunnelPlotOutlinedSvg} />;
   };
 }

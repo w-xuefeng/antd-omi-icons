@@ -21,7 +21,7 @@ export default class AreaChartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AreaChartOutlined';
   static tagName = 'o-area-chart-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AreaChartOutlinedSvg} />;
   };
 }

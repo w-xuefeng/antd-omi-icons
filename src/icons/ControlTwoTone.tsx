@@ -21,7 +21,7 @@ export default class ControlTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ControlTwoTone';
   static tagName = 'o-control-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ControlTwoToneSvg} />;
   };
 }

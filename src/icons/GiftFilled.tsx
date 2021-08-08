@@ -21,7 +21,7 @@ export default class GiftFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GiftFilled';
   static tagName = 'o-gift-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GiftFilledSvg} />;
   };
 }

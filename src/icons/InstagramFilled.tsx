@@ -21,7 +21,7 @@ export default class InstagramFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'InstagramFilled';
   static tagName = 'o-instagram-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InstagramFilledSvg} />;
   };
 }

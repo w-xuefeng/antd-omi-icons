@@ -21,7 +21,7 @@ export default class SmileOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SmileOutlined';
   static tagName = 'o-smile-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SmileOutlinedSvg} />;
   };
 }

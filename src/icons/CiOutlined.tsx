@@ -21,7 +21,7 @@ export default class CiOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CiOutlined';
   static tagName = 'o-ci-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CiOutlinedSvg} />;
   };
 }

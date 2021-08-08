@@ -21,7 +21,7 @@ export default class DeleteFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'DeleteFilled';
   static tagName = 'o-delete-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DeleteFilledSvg} />;
   };
 }

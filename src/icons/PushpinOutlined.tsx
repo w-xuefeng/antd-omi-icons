@@ -21,7 +21,7 @@ export default class PushpinOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PushpinOutlined';
   static tagName = 'o-pushpin-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PushpinOutlinedSvg} />;
   };
 }

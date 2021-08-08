@@ -21,7 +21,7 @@ export default class YahooFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'YahooFilled';
   static tagName = 'o-yahoo-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={YahooFilledSvg} />;
   };
 }

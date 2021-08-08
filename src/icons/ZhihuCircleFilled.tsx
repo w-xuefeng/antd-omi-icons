@@ -21,7 +21,7 @@ export default class ZhihuCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ZhihuCircleFilled';
   static tagName = 'o-zhihu-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ZhihuCircleFilledSvg} />;
   };
 }

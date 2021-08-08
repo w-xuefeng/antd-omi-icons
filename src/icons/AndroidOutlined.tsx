@@ -21,7 +21,7 @@ export default class AndroidOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AndroidOutlined';
   static tagName = 'o-android-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AndroidOutlinedSvg} />;
   };
 }

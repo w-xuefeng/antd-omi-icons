@@ -21,7 +21,7 @@ export default class StrikethroughOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'StrikethroughOutlined';
   static tagName = 'o-strikethrough-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={StrikethroughOutlinedSvg} />;
   };
 }

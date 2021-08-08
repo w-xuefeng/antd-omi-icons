@@ -21,7 +21,7 @@ export default class SortAscendingOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SortAscendingOutlined';
   static tagName = 'o-sort-ascending-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SortAscendingOutlinedSvg} />;
   };
 }

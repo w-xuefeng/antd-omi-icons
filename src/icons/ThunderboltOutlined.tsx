@@ -21,7 +21,7 @@ export default class ThunderboltOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ThunderboltOutlined';
   static tagName = 'o-thunderbolt-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ThunderboltOutlinedSvg} />;
   };
 }

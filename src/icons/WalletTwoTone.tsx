@@ -21,7 +21,7 @@ export default class WalletTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'WalletTwoTone';
   static tagName = 'o-wallet-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WalletTwoToneSvg} />;
   };
 }

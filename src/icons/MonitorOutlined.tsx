@@ -21,7 +21,7 @@ export default class MonitorOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MonitorOutlined';
   static tagName = 'o-monitor-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MonitorOutlinedSvg} />;
   };
 }

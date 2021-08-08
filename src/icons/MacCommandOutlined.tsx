@@ -21,7 +21,7 @@ export default class MacCommandOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MacCommandOutlined';
   static tagName = 'o-mac-command-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MacCommandOutlinedSvg} />;
   };
 }

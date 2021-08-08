@@ -21,7 +21,7 @@ export default class SafetyCertificateFilled extends OmiComponent<AntdIconProps>
   static displayName = 'SafetyCertificateFilled';
   static tagName = 'o-safety-certificate-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SafetyCertificateFilledSvg} />;
   };
 }

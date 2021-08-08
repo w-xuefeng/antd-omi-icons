@@ -21,7 +21,7 @@ export default class PrinterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PrinterOutlined';
   static tagName = 'o-printer-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PrinterOutlinedSvg} />;
   };
 }

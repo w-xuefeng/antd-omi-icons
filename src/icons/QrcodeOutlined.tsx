@@ -21,7 +21,7 @@ export default class QrcodeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'QrcodeOutlined';
   static tagName = 'o-qrcode-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={QrcodeOutlinedSvg} />;
   };
 }

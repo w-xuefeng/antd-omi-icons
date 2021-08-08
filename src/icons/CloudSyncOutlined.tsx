@@ -21,7 +21,7 @@ export default class CloudSyncOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CloudSyncOutlined';
   static tagName = 'o-cloud-sync-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CloudSyncOutlinedSvg} />;
   };
 }

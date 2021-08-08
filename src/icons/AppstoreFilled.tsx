@@ -21,7 +21,7 @@ export default class AppstoreFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AppstoreFilled';
   static tagName = 'o-appstore-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AppstoreFilledSvg} />;
   };
 }

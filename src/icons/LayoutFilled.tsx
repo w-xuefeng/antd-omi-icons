@@ -21,7 +21,7 @@ export default class LayoutFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'LayoutFilled';
   static tagName = 'o-layout-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LayoutFilledSvg} />;
   };
 }

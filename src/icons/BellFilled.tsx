@@ -21,7 +21,7 @@ export default class BellFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BellFilled';
   static tagName = 'o-bell-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BellFilledSvg} />;
   };
 }

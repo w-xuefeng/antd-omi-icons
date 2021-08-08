@@ -21,7 +21,7 @@ export default class IssuesCloseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'IssuesCloseOutlined';
   static tagName = 'o-issues-close-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={IssuesCloseOutlinedSvg} />;
   };
 }

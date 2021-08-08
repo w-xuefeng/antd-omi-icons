@@ -21,7 +21,7 @@ export default class PropertySafetyOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'PropertySafetyOutlined';
   static tagName = 'o-property-safety-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PropertySafetyOutlinedSvg} />;
   };
 }

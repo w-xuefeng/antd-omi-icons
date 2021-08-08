@@ -21,7 +21,7 @@ export default class SubnodeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SubnodeOutlined';
   static tagName = 'o-subnode-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SubnodeOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ColumnWidthOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ColumnWidthOutlined';
   static tagName = 'o-column-width-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ColumnWidthOutlinedSvg} />;
   };
 }

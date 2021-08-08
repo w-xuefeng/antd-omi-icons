@@ -21,7 +21,7 @@ export default class CiCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CiCircleFilled';
   static tagName = 'o-ci-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CiCircleFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class LeftCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftCircleFilled';
   static tagName = 'o-left-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LeftCircleFilledSvg} />;
   };
 }

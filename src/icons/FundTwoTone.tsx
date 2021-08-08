@@ -21,7 +21,7 @@ export default class FundTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FundTwoTone';
   static tagName = 'o-fund-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FundTwoToneSvg} />;
   };
 }

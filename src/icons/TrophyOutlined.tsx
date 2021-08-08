@@ -21,7 +21,7 @@ export default class TrophyOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TrophyOutlined';
   static tagName = 'o-trophy-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrophyOutlinedSvg} />;
   };
 }

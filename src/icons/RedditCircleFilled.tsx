@@ -21,7 +21,7 @@ export default class RedditCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'RedditCircleFilled';
   static tagName = 'o-reddit-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RedditCircleFilledSvg} />;
   };
 }

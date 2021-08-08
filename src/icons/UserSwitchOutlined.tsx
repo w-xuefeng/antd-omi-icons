@@ -21,7 +21,7 @@ export default class UserSwitchOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UserSwitchOutlined';
   static tagName = 'o-user-switch-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UserSwitchOutlinedSvg} />;
   };
 }

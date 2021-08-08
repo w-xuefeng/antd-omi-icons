@@ -21,7 +21,7 @@ export default class UserOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UserOutlined';
   static tagName = 'o-user-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UserOutlinedSvg} />;
   };
 }

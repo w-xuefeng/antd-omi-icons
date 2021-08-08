@@ -21,7 +21,7 @@ export default class EyeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'EyeFilled';
   static tagName = 'o-eye-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EyeFilledSvg} />;
   };
 }

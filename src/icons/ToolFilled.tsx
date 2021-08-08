@@ -21,7 +21,7 @@ export default class ToolFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ToolFilled';
   static tagName = 'o-tool-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ToolFilledSvg} />;
   };
 }

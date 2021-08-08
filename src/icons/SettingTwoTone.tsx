@@ -21,7 +21,7 @@ export default class SettingTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SettingTwoTone';
   static tagName = 'o-setting-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SettingTwoToneSvg} />;
   };
 }

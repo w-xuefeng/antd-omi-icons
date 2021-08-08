@@ -21,7 +21,7 @@ export default class BehanceSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BehanceSquareFilled';
   static tagName = 'o-behance-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BehanceSquareFilledSvg} />;
   };
 }

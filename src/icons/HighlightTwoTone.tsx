@@ -21,7 +21,7 @@ export default class HighlightTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'HighlightTwoTone';
   static tagName = 'o-highlight-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={HighlightTwoToneSvg} />;
   };
 }

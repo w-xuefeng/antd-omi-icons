@@ -21,7 +21,7 @@ export default class BoldOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BoldOutlined';
   static tagName = 'o-bold-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BoldOutlinedSvg} />;
   };
 }

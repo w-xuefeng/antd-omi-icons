@@ -21,7 +21,7 @@ export default class ExportOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExportOutlined';
   static tagName = 'o-export-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExportOutlinedSvg} />;
   };
 }

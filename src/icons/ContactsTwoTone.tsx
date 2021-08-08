@@ -21,7 +21,7 @@ export default class ContactsTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ContactsTwoTone';
   static tagName = 'o-contacts-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ContactsTwoToneSvg} />;
   };
 }

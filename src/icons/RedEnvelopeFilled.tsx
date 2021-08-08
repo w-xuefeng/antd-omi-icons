@@ -21,7 +21,7 @@ export default class RedEnvelopeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'RedEnvelopeFilled';
   static tagName = 'o-red-envelope-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RedEnvelopeFilledSvg} />;
   };
 }

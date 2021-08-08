@@ -21,7 +21,7 @@ export default class SnippetsFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SnippetsFilled';
   static tagName = 'o-snippets-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SnippetsFilledSvg} />;
   };
 }

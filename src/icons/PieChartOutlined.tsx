@@ -21,7 +21,7 @@ export default class PieChartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PieChartOutlined';
   static tagName = 'o-pie-chart-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PieChartOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class MediumOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MediumOutlined';
   static tagName = 'o-medium-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MediumOutlinedSvg} />;
   };
 }

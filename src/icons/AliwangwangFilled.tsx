@@ -21,7 +21,7 @@ export default class AliwangwangFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AliwangwangFilled';
   static tagName = 'o-aliwangwang-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AliwangwangFilledSvg} />;
   };
 }

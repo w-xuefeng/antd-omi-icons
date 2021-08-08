@@ -21,7 +21,7 @@ export default class SketchSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SketchSquareFilled';
   static tagName = 'o-sketch-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SketchSquareFilledSvg} />;
   };
 }

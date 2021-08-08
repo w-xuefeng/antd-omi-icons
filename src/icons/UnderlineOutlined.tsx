@@ -21,7 +21,7 @@ export default class UnderlineOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UnderlineOutlined';
   static tagName = 'o-underline-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UnderlineOutlinedSvg} />;
   };
 }

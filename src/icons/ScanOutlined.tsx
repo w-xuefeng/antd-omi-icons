@@ -21,7 +21,7 @@ export default class ScanOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ScanOutlined';
   static tagName = 'o-scan-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ScanOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class FastForwardOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FastForwardOutlined';
   static tagName = 'o-fast-forward-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FastForwardOutlinedSvg} />;
   };
 }

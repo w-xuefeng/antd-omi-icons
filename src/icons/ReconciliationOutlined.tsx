@@ -21,7 +21,7 @@ export default class ReconciliationOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'ReconciliationOutlined';
   static tagName = 'o-reconciliation-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ReconciliationOutlinedSvg} />;
   };
 }

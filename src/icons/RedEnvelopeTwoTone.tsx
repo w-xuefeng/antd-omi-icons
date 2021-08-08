@@ -21,7 +21,7 @@ export default class RedEnvelopeTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'RedEnvelopeTwoTone';
   static tagName = 'o-red-envelope-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RedEnvelopeTwoToneSvg} />;
   };
 }

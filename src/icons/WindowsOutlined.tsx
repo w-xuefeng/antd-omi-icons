@@ -21,7 +21,7 @@ export default class WindowsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WindowsOutlined';
   static tagName = 'o-windows-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WindowsOutlinedSvg} />;
   };
 }

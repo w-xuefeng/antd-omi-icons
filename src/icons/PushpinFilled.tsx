@@ -21,7 +21,7 @@ export default class PushpinFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PushpinFilled';
   static tagName = 'o-pushpin-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PushpinFilledSvg} />;
   };
 }

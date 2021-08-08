@@ -21,7 +21,7 @@ export default class MailFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MailFilled';
   static tagName = 'o-mail-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MailFilledSvg} />;
   };
 }

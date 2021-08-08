@@ -21,7 +21,7 @@ export default class RotateRightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RotateRightOutlined';
   static tagName = 'o-rotate-right-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RotateRightOutlinedSvg} />;
   };
 }

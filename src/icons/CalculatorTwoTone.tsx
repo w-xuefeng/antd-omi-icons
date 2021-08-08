@@ -21,7 +21,7 @@ export default class CalculatorTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CalculatorTwoTone';
   static tagName = 'o-calculator-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CalculatorTwoToneSvg} />;
   };
 }

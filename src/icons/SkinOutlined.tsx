@@ -21,7 +21,7 @@ export default class SkinOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SkinOutlined';
   static tagName = 'o-skin-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SkinOutlinedSvg} />;
   };
 }

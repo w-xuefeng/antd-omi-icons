@@ -21,7 +21,7 @@ export default class BackwardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BackwardFilled';
   static tagName = 'o-backward-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BackwardFilledSvg} />;
   };
 }

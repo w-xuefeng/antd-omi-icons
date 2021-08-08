@@ -21,7 +21,7 @@ export default class DiffOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DiffOutlined';
   static tagName = 'o-diff-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DiffOutlinedSvg} />;
   };
 }

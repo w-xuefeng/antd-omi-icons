@@ -21,7 +21,7 @@ export default class CustomerServiceOutlined extends OmiComponent<AntdIconProps>
   static displayName = 'CustomerServiceOutlined';
   static tagName = 'o-customer-service-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CustomerServiceOutlinedSvg} />;
   };
 }

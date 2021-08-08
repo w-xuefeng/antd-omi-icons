@@ -21,7 +21,7 @@ export default class LayoutTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'LayoutTwoTone';
   static tagName = 'o-layout-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LayoutTwoToneSvg} />;
   };
 }

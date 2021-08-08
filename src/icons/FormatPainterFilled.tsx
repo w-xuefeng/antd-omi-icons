@@ -21,7 +21,7 @@ export default class FormatPainterFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FormatPainterFilled';
   static tagName = 'o-format-painter-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FormatPainterFilledSvg} />;
   };
 }

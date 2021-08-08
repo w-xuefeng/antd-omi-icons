@@ -21,7 +21,7 @@ export default class PrinterFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PrinterFilled';
   static tagName = 'o-printer-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PrinterFilledSvg} />;
   };
 }

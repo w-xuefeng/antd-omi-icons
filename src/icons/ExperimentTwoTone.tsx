@@ -21,7 +21,7 @@ export default class ExperimentTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ExperimentTwoTone';
   static tagName = 'o-experiment-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExperimentTwoToneSvg} />;
   };
 }

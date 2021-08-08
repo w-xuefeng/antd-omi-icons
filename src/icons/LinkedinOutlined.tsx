@@ -21,7 +21,7 @@ export default class LinkedinOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LinkedinOutlined';
   static tagName = 'o-linkedin-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LinkedinOutlinedSvg} />;
   };
 }

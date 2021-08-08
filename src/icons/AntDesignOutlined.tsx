@@ -21,7 +21,7 @@ export default class AntDesignOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AntDesignOutlined';
   static tagName = 'o-ant-design-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AntDesignOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CarFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CarFilled';
   static tagName = 'o-car-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CarFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class DollarCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'DollarCircleFilled';
   static tagName = 'o-dollar-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DollarCircleFilledSvg} />;
   };
 }

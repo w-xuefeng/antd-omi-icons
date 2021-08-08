@@ -21,7 +21,7 @@ export default class NotificationOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'NotificationOutlined';
   static tagName = 'o-notification-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={NotificationOutlinedSvg} />;
   };
 }

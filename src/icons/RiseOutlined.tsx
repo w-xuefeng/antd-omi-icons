@@ -21,7 +21,7 @@ export default class RiseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RiseOutlined';
   static tagName = 'o-rise-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RiseOutlinedSvg} />;
   };
 }

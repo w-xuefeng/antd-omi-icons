@@ -21,7 +21,7 @@ export default class FileMarkdownOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileMarkdownOutlined';
   static tagName = 'o-file-markdown-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileMarkdownOutlinedSvg} />;
   };
 }

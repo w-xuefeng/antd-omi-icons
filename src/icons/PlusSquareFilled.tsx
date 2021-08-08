@@ -21,7 +21,7 @@ export default class PlusSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PlusSquareFilled';
   static tagName = 'o-plus-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PlusSquareFilledSvg} />;
   };
 }

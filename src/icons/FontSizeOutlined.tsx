@@ -21,7 +21,7 @@ export default class FontSizeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FontSizeOutlined';
   static tagName = 'o-font-size-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FontSizeOutlinedSvg} />;
   };
 }

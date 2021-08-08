@@ -21,7 +21,7 @@ export default class InsertRowBelowOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'InsertRowBelowOutlined';
   static tagName = 'o-insert-row-below-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InsertRowBelowOutlinedSvg} />;
   };
 }

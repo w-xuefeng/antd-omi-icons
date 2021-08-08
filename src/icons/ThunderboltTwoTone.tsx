@@ -21,7 +21,7 @@ export default class ThunderboltTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ThunderboltTwoTone';
   static tagName = 'o-thunderbolt-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ThunderboltTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class UndoOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UndoOutlined';
   static tagName = 'o-undo-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UndoOutlinedSvg} />;
   };
 }

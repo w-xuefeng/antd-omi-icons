@@ -21,7 +21,7 @@ export default class FileMarkdownTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FileMarkdownTwoTone';
   static tagName = 'o-file-markdown-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileMarkdownTwoToneSvg} />;
   };
 }

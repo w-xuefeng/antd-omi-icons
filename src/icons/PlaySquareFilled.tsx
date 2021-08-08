@@ -21,7 +21,7 @@ export default class PlaySquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PlaySquareFilled';
   static tagName = 'o-play-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PlaySquareFilledSvg} />;
   };
 }

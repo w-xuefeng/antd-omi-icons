@@ -21,7 +21,7 @@ export default class TrademarkOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TrademarkOutlined';
   static tagName = 'o-trademark-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrademarkOutlinedSvg} />;
   };
 }

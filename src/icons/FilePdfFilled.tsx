@@ -21,7 +21,7 @@ export default class FilePdfFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FilePdfFilled';
   static tagName = 'o-file-pdf-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FilePdfFilledSvg} />;
   };
 }

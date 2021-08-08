@@ -21,7 +21,7 @@ export default class LeftCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftCircleOutlined';
   static tagName = 'o-left-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LeftCircleOutlinedSvg} />;
   };
 }

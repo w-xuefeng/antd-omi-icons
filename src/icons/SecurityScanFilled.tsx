@@ -21,7 +21,7 @@ export default class SecurityScanFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SecurityScanFilled';
   static tagName = 'o-security-scan-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SecurityScanFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class SelectOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SelectOutlined';
   static tagName = 'o-select-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SelectOutlinedSvg} />;
   };
 }

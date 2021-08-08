@@ -21,7 +21,7 @@ export default class PauseCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PauseCircleOutlined';
   static tagName = 'o-pause-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PauseCircleOutlinedSvg} />;
   };
 }

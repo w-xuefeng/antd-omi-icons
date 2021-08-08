@@ -21,7 +21,7 @@ export default class MobileTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'MobileTwoTone';
   static tagName = 'o-mobile-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MobileTwoToneSvg} />;
   };
 }

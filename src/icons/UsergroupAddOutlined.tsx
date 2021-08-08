@@ -21,7 +21,7 @@ export default class UsergroupAddOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UsergroupAddOutlined';
   static tagName = 'o-usergroup-add-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UsergroupAddOutlinedSvg} />;
   };
 }

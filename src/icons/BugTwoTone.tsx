@@ -21,7 +21,7 @@ export default class BugTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'BugTwoTone';
   static tagName = 'o-bug-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BugTwoToneSvg} />;
   };
 }

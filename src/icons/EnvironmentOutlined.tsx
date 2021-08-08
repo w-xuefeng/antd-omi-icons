@@ -21,7 +21,7 @@ export default class EnvironmentOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EnvironmentOutlined';
   static tagName = 'o-environment-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EnvironmentOutlinedSvg} />;
   };
 }

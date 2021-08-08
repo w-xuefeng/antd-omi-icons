@@ -21,7 +21,7 @@ export default class EllipsisOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EllipsisOutlined';
   static tagName = 'o-ellipsis-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EllipsisOutlinedSvg} />;
   };
 }

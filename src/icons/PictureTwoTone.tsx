@@ -21,7 +21,7 @@ export default class PictureTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PictureTwoTone';
   static tagName = 'o-picture-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PictureTwoToneSvg} />;
   };
 }

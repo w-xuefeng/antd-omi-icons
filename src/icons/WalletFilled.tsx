@@ -21,7 +21,7 @@ export default class WalletFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'WalletFilled';
   static tagName = 'o-wallet-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WalletFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class NodeCollapseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'NodeCollapseOutlined';
   static tagName = 'o-node-collapse-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={NodeCollapseOutlinedSvg} />;
   };
 }

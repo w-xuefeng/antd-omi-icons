@@ -21,7 +21,7 @@ export default class FireTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FireTwoTone';
   static tagName = 'o-fire-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FireTwoToneSvg} />;
   };
 }

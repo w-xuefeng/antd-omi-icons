@@ -21,7 +21,7 @@ export default class StarFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'StarFilled';
   static tagName = 'o-star-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={StarFilledSvg} />;
   };
 }

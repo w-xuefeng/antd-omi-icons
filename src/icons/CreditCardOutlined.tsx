@@ -21,7 +21,7 @@ export default class CreditCardOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CreditCardOutlined';
   static tagName = 'o-credit-card-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CreditCardOutlinedSvg} />;
   };
 }

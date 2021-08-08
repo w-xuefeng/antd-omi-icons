@@ -21,7 +21,7 @@ export default class FallOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FallOutlined';
   static tagName = 'o-fall-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FallOutlinedSvg} />;
   };
 }

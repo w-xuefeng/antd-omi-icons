@@ -21,7 +21,7 @@ export default class AmazonCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AmazonCircleFilled';
   static tagName = 'o-amazon-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AmazonCircleFilledSvg} />;
   };
 }

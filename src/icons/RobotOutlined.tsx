@@ -21,7 +21,7 @@ export default class RobotOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RobotOutlined';
   static tagName = 'o-robot-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RobotOutlinedSvg} />;
   };
 }

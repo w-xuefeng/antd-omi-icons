@@ -21,7 +21,7 @@ export default class ClockCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ClockCircleTwoTone';
   static tagName = 'o-clock-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ClockCircleTwoToneSvg} />;
   };
 }

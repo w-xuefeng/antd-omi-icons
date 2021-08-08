@@ -21,7 +21,7 @@ export default class BoxPlotOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BoxPlotOutlined';
   static tagName = 'o-box-plot-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BoxPlotOutlinedSvg} />;
   };
 }

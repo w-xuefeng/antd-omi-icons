@@ -21,7 +21,7 @@ export default class MedicineBoxTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'MedicineBoxTwoTone';
   static tagName = 'o-medicine-box-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MedicineBoxTwoToneSvg} />;
   };
 }

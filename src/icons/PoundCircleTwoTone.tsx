@@ -21,7 +21,7 @@ export default class PoundCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PoundCircleTwoTone';
   static tagName = 'o-pound-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PoundCircleTwoToneSvg} />;
   };
 }

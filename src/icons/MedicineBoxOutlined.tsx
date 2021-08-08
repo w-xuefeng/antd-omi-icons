@@ -21,7 +21,7 @@ export default class MedicineBoxOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MedicineBoxOutlined';
   static tagName = 'o-medicine-box-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MedicineBoxOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class RedditOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RedditOutlined';
   static tagName = 'o-reddit-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RedditOutlinedSvg} />;
   };
 }

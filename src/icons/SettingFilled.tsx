@@ -21,7 +21,7 @@ export default class SettingFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SettingFilled';
   static tagName = 'o-setting-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SettingFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class SlackOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SlackOutlined';
   static tagName = 'o-slack-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SlackOutlinedSvg} />;
   };
 }

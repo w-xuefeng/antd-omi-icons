@@ -21,7 +21,7 @@ export default class DashboardTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'DashboardTwoTone';
   static tagName = 'o-dashboard-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DashboardTwoToneSvg} />;
   };
 }

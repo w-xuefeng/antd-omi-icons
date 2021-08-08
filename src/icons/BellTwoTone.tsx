@@ -21,7 +21,7 @@ export default class BellTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'BellTwoTone';
   static tagName = 'o-bell-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BellTwoToneSvg} />;
   };
 }

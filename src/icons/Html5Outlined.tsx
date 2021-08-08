@@ -21,7 +21,7 @@ export default class Html5Outlined extends OmiComponent<AntdIconProps> {
   static displayName = 'Html5Outlined';
   static tagName = 'o-html5-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={Html5OutlinedSvg} />;
   };
 }

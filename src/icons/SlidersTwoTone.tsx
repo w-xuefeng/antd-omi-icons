@@ -21,7 +21,7 @@ export default class SlidersTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SlidersTwoTone';
   static tagName = 'o-sliders-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SlidersTwoToneSvg} />;
   };
 }

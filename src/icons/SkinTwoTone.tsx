@@ -21,7 +21,7 @@ export default class SkinTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SkinTwoTone';
   static tagName = 'o-skin-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SkinTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class TrademarkCircleTwoTone extends OmiComponent<AntdIconProps> 
   static displayName = 'TrademarkCircleTwoTone';
   static tagName = 'o-trademark-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrademarkCircleTwoToneSvg} />;
   };
 }

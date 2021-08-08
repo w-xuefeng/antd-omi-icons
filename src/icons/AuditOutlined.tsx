@@ -21,7 +21,7 @@ export default class AuditOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AuditOutlined';
   static tagName = 'o-audit-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AuditOutlinedSvg} />;
   };
 }

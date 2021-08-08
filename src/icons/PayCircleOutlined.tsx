@@ -21,7 +21,7 @@ export default class PayCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PayCircleOutlined';
   static tagName = 'o-pay-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PayCircleOutlinedSvg} />;
   };
 }

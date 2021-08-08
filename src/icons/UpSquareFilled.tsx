@@ -21,7 +21,7 @@ export default class UpSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'UpSquareFilled';
   static tagName = 'o-up-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UpSquareFilledSvg} />;
   };
 }

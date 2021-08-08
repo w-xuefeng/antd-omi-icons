@@ -21,7 +21,7 @@ export default class Loading3QuartersOutlined extends OmiComponent<AntdIconProps
   static displayName = 'Loading3QuartersOutlined';
   static tagName = 'o-loading3-quarters-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={Loading3QuartersOutlinedSvg} />;
   };
 }

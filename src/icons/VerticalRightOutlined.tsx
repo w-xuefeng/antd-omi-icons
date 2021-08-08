@@ -21,7 +21,7 @@ export default class VerticalRightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'VerticalRightOutlined';
   static tagName = 'o-vertical-right-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={VerticalRightOutlinedSvg} />;
   };
 }

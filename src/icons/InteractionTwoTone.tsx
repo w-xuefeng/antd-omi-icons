@@ -21,7 +21,7 @@ export default class InteractionTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'InteractionTwoTone';
   static tagName = 'o-interaction-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InteractionTwoToneSvg} />;
   };
 }

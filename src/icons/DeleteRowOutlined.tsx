@@ -21,7 +21,7 @@ export default class DeleteRowOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DeleteRowOutlined';
   static tagName = 'o-delete-row-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DeleteRowOutlinedSvg} />;
   };
 }

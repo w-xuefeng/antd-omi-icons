@@ -21,7 +21,7 @@ export default class MessageOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MessageOutlined';
   static tagName = 'o-message-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MessageOutlinedSvg} />;
   };
 }

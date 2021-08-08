@@ -21,7 +21,7 @@ export default class FundFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FundFilled';
   static tagName = 'o-fund-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FundFilledSvg} />;
   };
 }

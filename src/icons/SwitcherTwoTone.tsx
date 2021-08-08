@@ -21,7 +21,7 @@ export default class SwitcherTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SwitcherTwoTone';
   static tagName = 'o-switcher-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SwitcherTwoToneSvg} />;
   };
 }

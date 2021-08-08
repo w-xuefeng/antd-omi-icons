@@ -21,7 +21,7 @@ export default class MehOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MehOutlined';
   static tagName = 'o-meh-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MehOutlinedSvg} />;
   };
 }

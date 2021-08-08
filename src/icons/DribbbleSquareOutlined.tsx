@@ -21,7 +21,7 @@ export default class DribbbleSquareOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'DribbbleSquareOutlined';
   static tagName = 'o-dribbble-square-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DribbbleSquareOutlinedSvg} />;
   };
 }

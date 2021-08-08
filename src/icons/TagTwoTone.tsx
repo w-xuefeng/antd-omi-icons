@@ -21,7 +21,7 @@ export default class TagTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'TagTwoTone';
   static tagName = 'o-tag-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TagTwoToneSvg} />;
   };
 }

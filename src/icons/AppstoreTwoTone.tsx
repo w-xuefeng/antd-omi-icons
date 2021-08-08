@@ -21,7 +21,7 @@ export default class AppstoreTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'AppstoreTwoTone';
   static tagName = 'o-appstore-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AppstoreTwoToneSvg} />;
   };
 }

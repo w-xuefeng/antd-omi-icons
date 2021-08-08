@@ -21,7 +21,7 @@ export default class SkinFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'SkinFilled';
   static tagName = 'o-skin-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SkinFilledSvg} />;
   };
 }

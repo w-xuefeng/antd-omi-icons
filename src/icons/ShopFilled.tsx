@@ -21,7 +21,7 @@ export default class ShopFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ShopFilled';
   static tagName = 'o-shop-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ShopFilledSvg} />;
   };
 }

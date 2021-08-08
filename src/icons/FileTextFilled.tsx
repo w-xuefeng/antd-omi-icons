@@ -21,7 +21,7 @@ export default class FileTextFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FileTextFilled';
   static tagName = 'o-file-text-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileTextFilledSvg} />;
   };
 }

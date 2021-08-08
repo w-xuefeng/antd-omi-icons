@@ -21,7 +21,7 @@ export default class FastForwardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FastForwardFilled';
   static tagName = 'o-fast-forward-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FastForwardFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ClusterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ClusterOutlined';
   static tagName = 'o-cluster-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ClusterOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class GoldFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GoldFilled';
   static tagName = 'o-gold-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GoldFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class MessageFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MessageFilled';
   static tagName = 'o-message-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MessageFilledSvg} />;
   };
 }

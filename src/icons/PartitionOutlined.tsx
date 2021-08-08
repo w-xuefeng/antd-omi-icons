@@ -21,7 +21,7 @@ export default class PartitionOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PartitionOutlined';
   static tagName = 'o-partition-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PartitionOutlinedSvg} />;
   };
 }

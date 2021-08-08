@@ -21,7 +21,7 @@ export default class FolderOpenTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FolderOpenTwoTone';
   static tagName = 'o-folder-open-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FolderOpenTwoToneSvg} />;
   };
 }

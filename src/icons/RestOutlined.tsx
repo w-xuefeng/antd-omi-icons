@@ -21,7 +21,7 @@ export default class RestOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RestOutlined';
   static tagName = 'o-rest-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RestOutlinedSvg} />;
   };
 }

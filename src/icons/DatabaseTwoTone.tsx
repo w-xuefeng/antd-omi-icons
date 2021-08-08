@@ -21,7 +21,7 @@ export default class DatabaseTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'DatabaseTwoTone';
   static tagName = 'o-database-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DatabaseTwoToneSvg} />;
   };
 }

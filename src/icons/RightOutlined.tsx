@@ -21,7 +21,7 @@ export default class RightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RightOutlined';
   static tagName = 'o-right-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RightOutlinedSvg} />;
   };
 }

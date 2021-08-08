@@ -21,7 +21,7 @@ export default class TabletFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'TabletFilled';
   static tagName = 'o-tablet-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TabletFilledSvg} />;
   };
 }

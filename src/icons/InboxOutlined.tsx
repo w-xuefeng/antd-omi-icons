@@ -21,7 +21,7 @@ export default class InboxOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InboxOutlined';
   static tagName = 'o-inbox-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InboxOutlinedSvg} />;
   };
 }

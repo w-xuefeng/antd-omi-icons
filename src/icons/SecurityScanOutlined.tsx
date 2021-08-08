@@ -21,7 +21,7 @@ export default class SecurityScanOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SecurityScanOutlined';
   static tagName = 'o-security-scan-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SecurityScanOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CrownFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CrownFilled';
   static tagName = 'o-crown-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CrownFilledSvg} />;
   };
 }

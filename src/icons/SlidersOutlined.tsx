@@ -21,7 +21,7 @@ export default class SlidersOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SlidersOutlined';
   static tagName = 'o-sliders-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SlidersOutlinedSvg} />;
   };
 }

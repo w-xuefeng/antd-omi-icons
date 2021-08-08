@@ -21,7 +21,7 @@ export default class Html5TwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'Html5TwoTone';
   static tagName = 'o-html5-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={Html5TwoToneSvg} />;
   };
 }

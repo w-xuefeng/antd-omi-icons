@@ -21,7 +21,7 @@ export default class ExpandAltOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExpandAltOutlined';
   static tagName = 'o-expand-alt-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExpandAltOutlinedSvg} />;
   };
 }

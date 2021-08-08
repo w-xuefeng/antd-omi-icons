@@ -21,7 +21,7 @@ export default class MehFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MehFilled';
   static tagName = 'o-meh-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MehFilledSvg} />;
   };
 }

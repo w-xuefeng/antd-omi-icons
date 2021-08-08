@@ -21,7 +21,7 @@ export default class HeatMapOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'HeatMapOutlined';
   static tagName = 'o-heat-map-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={HeatMapOutlinedSvg} />;
   };
 }

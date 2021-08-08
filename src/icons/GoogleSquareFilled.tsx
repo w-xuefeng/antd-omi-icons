@@ -21,7 +21,7 @@ export default class GoogleSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'GoogleSquareFilled';
   static tagName = 'o-google-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GoogleSquareFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class TrophyFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'TrophyFilled';
   static tagName = 'o-trophy-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrophyFilledSvg} />;
   };
 }

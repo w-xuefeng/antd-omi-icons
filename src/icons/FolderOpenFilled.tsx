@@ -21,7 +21,7 @@ export default class FolderOpenFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FolderOpenFilled';
   static tagName = 'o-folder-open-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FolderOpenFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class PieChartFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PieChartFilled';
   static tagName = 'o-pie-chart-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PieChartFilledSvg} />;
   };
 }

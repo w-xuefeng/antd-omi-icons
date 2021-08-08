@@ -21,7 +21,7 @@ export default class InfoOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InfoOutlined';
   static tagName = 'o-info-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InfoOutlinedSvg} />;
   };
 }

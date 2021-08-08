@@ -21,7 +21,7 @@ export default class PicLeftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PicLeftOutlined';
   static tagName = 'o-pic-left-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PicLeftOutlinedSvg} />;
   };
 }

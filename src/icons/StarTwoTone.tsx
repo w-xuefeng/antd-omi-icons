@@ -21,7 +21,7 @@ export default class StarTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'StarTwoTone';
   static tagName = 'o-star-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={StarTwoToneSvg} />;
   };
 }

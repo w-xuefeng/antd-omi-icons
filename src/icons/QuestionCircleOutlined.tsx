@@ -21,7 +21,7 @@ export default class QuestionCircleOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'QuestionCircleOutlined';
   static tagName = 'o-question-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={QuestionCircleOutlinedSvg} />;
   };
 }

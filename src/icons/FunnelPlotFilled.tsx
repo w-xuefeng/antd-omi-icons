@@ -21,7 +21,7 @@ export default class FunnelPlotFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FunnelPlotFilled';
   static tagName = 'o-funnel-plot-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FunnelPlotFilledSvg} />;
   };
 }

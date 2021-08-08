@@ -21,7 +21,7 @@ export default class FileJpgOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileJpgOutlined';
   static tagName = 'o-file-jpg-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileJpgOutlinedSvg} />;
   };
 }

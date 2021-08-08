@@ -21,7 +21,7 @@ export default class AlipayOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AlipayOutlined';
   static tagName = 'o-alipay-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AlipayOutlinedSvg} />;
   };
 }

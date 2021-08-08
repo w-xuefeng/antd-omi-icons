@@ -21,7 +21,7 @@ export default class BankFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BankFilled';
   static tagName = 'o-bank-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BankFilledSvg} />;
   };
 }

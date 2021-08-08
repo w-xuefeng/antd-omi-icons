@@ -21,7 +21,7 @@ export default class CiTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CiTwoTone';
   static tagName = 'o-ci-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CiTwoToneSvg} />;
   };
 }

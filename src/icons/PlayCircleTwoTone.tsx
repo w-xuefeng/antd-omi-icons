@@ -21,7 +21,7 @@ export default class PlayCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PlayCircleTwoTone';
   static tagName = 'o-play-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PlayCircleTwoToneSvg} />;
   };
 }

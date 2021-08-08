@@ -21,7 +21,7 @@ export default class GatewayOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'GatewayOutlined';
   static tagName = 'o-gateway-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GatewayOutlinedSvg} />;
   };
 }

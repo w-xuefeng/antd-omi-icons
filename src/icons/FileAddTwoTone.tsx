@@ -21,7 +21,7 @@ export default class FileAddTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FileAddTwoTone';
   static tagName = 'o-file-add-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileAddTwoToneSvg} />;
   };
 }

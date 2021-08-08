@@ -21,7 +21,7 @@ export default class AliwangwangOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AliwangwangOutlined';
   static tagName = 'o-aliwangwang-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AliwangwangOutlinedSvg} />;
   };
 }

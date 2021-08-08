@@ -21,7 +21,7 @@ export default class LineChartOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LineChartOutlined';
   static tagName = 'o-line-chart-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LineChartOutlinedSvg} />;
   };
 }

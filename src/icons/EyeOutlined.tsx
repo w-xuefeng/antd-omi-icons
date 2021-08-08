@@ -21,7 +21,7 @@ export default class EyeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EyeOutlined';
   static tagName = 'o-eye-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EyeOutlinedSvg} />;
   };
 }

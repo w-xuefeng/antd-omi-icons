@@ -21,7 +21,7 @@ export default class LockFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'LockFilled';
   static tagName = 'o-lock-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LockFilledSvg} />;
   };
 }

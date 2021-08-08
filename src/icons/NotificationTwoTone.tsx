@@ -21,7 +21,7 @@ export default class NotificationTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'NotificationTwoTone';
   static tagName = 'o-notification-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={NotificationTwoToneSvg} />;
   };
 }

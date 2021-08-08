@@ -21,7 +21,7 @@ export default class BellOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BellOutlined';
   static tagName = 'o-bell-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BellOutlinedSvg} />;
   };
 }

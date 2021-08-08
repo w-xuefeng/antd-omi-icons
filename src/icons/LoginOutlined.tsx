@@ -21,7 +21,7 @@ export default class LoginOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LoginOutlined';
   static tagName = 'o-login-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LoginOutlinedSvg} />;
   };
 }

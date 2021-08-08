@@ -21,7 +21,7 @@ export default class PoundCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PoundCircleFilled';
   static tagName = 'o-pound-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PoundCircleFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ItalicOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ItalicOutlined';
   static tagName = 'o-italic-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ItalicOutlinedSvg} />;
   };
 }

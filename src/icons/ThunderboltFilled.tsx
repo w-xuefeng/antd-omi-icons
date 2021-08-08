@@ -21,7 +21,7 @@ export default class ThunderboltFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ThunderboltFilled';
   static tagName = 'o-thunderbolt-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ThunderboltFilledSvg} />;
   };
 }

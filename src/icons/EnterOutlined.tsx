@@ -21,7 +21,7 @@ export default class EnterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EnterOutlined';
   static tagName = 'o-enter-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EnterOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CopyrightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CopyrightOutlined';
   static tagName = 'o-copyright-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CopyrightOutlinedSvg} />;
   };
 }

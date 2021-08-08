@@ -21,7 +21,7 @@ export default class FormOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FormOutlined';
   static tagName = 'o-form-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FormOutlinedSvg} />;
   };
 }

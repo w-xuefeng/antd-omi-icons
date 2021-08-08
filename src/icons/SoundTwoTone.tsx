@@ -21,7 +21,7 @@ export default class SoundTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SoundTwoTone';
   static tagName = 'o-sound-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SoundTwoToneSvg} />;
   };
 }

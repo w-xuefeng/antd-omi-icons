@@ -21,7 +21,7 @@ export default class ExperimentOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExperimentOutlined';
   static tagName = 'o-experiment-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExperimentOutlinedSvg} />;
   };
 }

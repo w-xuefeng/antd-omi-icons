@@ -21,7 +21,7 @@ export default class ReloadOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ReloadOutlined';
   static tagName = 'o-reload-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ReloadOutlinedSvg} />;
   };
 }

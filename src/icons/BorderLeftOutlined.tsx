@@ -21,7 +21,7 @@ export default class BorderLeftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BorderLeftOutlined';
   static tagName = 'o-border-left-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BorderLeftOutlinedSvg} />;
   };
 }

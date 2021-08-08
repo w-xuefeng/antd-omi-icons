@@ -21,7 +21,7 @@ export default class CloseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CloseOutlined';
   static tagName = 'o-close-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CloseOutlinedSvg} />;
   };
 }

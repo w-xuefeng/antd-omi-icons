@@ -21,7 +21,7 @@ export default class CopyFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CopyFilled';
   static tagName = 'o-copy-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CopyFilledSvg} />;
   };
 }

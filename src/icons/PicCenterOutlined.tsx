@@ -21,7 +21,7 @@ export default class PicCenterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PicCenterOutlined';
   static tagName = 'o-pic-center-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PicCenterOutlinedSvg} />;
   };
 }

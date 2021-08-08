@@ -21,7 +21,7 @@ export default class ContainerOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ContainerOutlined';
   static tagName = 'o-container-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ContainerOutlinedSvg} />;
   };
 }

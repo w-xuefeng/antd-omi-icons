@@ -21,7 +21,7 @@ export default class SecurityScanTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SecurityScanTwoTone';
   static tagName = 'o-security-scan-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SecurityScanTwoToneSvg} />;
   };
 }

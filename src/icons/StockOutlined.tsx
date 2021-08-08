@@ -21,7 +21,7 @@ export default class StockOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'StockOutlined';
   static tagName = 'o-stock-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={StockOutlinedSvg} />;
   };
 }

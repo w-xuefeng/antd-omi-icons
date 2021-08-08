@@ -21,7 +21,7 @@ export default class LeftSquareOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftSquareOutlined';
   static tagName = 'o-left-square-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LeftSquareOutlinedSvg} />;
   };
 }

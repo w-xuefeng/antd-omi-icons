@@ -21,7 +21,7 @@ export default class LikeTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'LikeTwoTone';
   static tagName = 'o-like-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LikeTwoToneSvg} />;
   };
 }

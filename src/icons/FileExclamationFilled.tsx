@@ -21,7 +21,7 @@ export default class FileExclamationFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FileExclamationFilled';
   static tagName = 'o-file-exclamation-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileExclamationFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class RocketFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'RocketFilled';
   static tagName = 'o-rocket-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RocketFilledSvg} />;
   };
 }

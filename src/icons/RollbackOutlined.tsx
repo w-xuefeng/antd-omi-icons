@@ -21,7 +21,7 @@ export default class RollbackOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RollbackOutlined';
   static tagName = 'o-rollback-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RollbackOutlinedSvg} />;
   };
 }

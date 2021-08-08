@@ -21,7 +21,7 @@ export default class ZhihuOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ZhihuOutlined';
   static tagName = 'o-zhihu-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ZhihuOutlinedSvg} />;
   };
 }

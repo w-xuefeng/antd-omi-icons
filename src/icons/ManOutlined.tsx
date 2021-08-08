@@ -21,7 +21,7 @@ export default class ManOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ManOutlined';
   static tagName = 'o-man-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ManOutlinedSvg} />;
   };
 }

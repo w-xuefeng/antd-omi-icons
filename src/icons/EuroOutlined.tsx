@@ -21,7 +21,7 @@ export default class EuroOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EuroOutlined';
   static tagName = 'o-euro-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EuroOutlinedSvg} />;
   };
 }

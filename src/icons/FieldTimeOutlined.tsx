@@ -21,7 +21,7 @@ export default class FieldTimeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FieldTimeOutlined';
   static tagName = 'o-field-time-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FieldTimeOutlinedSvg} />;
   };
 }

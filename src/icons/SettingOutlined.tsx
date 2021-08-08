@@ -21,7 +21,7 @@ export default class SettingOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SettingOutlined';
   static tagName = 'o-setting-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SettingOutlinedSvg} />;
   };
 }

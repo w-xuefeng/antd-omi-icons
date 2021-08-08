@@ -21,7 +21,7 @@ export default class ForwardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ForwardFilled';
   static tagName = 'o-forward-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ForwardFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class UploadOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UploadOutlined';
   static tagName = 'o-upload-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UploadOutlinedSvg} />;
   };
 }

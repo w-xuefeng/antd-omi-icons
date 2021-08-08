@@ -21,7 +21,7 @@ export default class EditOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'EditOutlined';
   static tagName = 'o-edit-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EditOutlinedSvg} />;
   };
 }

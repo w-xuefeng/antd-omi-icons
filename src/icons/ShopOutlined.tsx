@@ -21,7 +21,7 @@ export default class ShopOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ShopOutlined';
   static tagName = 'o-shop-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ShopOutlinedSvg} />;
   };
 }

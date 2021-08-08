@@ -21,7 +21,7 @@ export default class CloudUploadOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CloudUploadOutlined';
   static tagName = 'o-cloud-upload-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CloudUploadOutlinedSvg} />;
   };
 }

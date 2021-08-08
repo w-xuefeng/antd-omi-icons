@@ -21,7 +21,7 @@ export default class QuestionOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'QuestionOutlined';
   static tagName = 'o-question-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={QuestionOutlinedSvg} />;
   };
 }

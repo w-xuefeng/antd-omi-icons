@@ -21,7 +21,7 @@ export default class AlibabaOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AlibabaOutlined';
   static tagName = 'o-alibaba-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AlibabaOutlinedSvg} />;
   };
 }

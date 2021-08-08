@@ -21,7 +21,7 @@ export default class SaveTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'SaveTwoTone';
   static tagName = 'o-save-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SaveTwoToneSvg} />;
   };
 }

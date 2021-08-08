@@ -21,7 +21,7 @@ export default class PhoneTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PhoneTwoTone';
   static tagName = 'o-phone-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PhoneTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CheckCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CheckCircleOutlined';
   static tagName = 'o-check-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CheckCircleOutlinedSvg} />;
   };
 }

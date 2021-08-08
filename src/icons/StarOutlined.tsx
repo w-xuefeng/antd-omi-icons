@@ -21,7 +21,7 @@ export default class StarOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'StarOutlined';
   static tagName = 'o-star-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={StarOutlinedSvg} />;
   };
 }

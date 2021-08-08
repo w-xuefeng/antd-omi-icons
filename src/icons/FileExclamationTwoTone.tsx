@@ -21,7 +21,7 @@ export default class FileExclamationTwoTone extends OmiComponent<AntdIconProps> 
   static displayName = 'FileExclamationTwoTone';
   static tagName = 'o-file-exclamation-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileExclamationTwoToneSvg} />;
   };
 }

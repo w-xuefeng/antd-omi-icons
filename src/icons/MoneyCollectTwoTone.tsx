@@ -21,7 +21,7 @@ export default class MoneyCollectTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'MoneyCollectTwoTone';
   static tagName = 'o-money-collect-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MoneyCollectTwoToneSvg} />;
   };
 }

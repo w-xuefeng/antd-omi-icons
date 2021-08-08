@@ -21,7 +21,7 @@ export default class CommentOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CommentOutlined';
   static tagName = 'o-comment-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CommentOutlinedSvg} />;
   };
 }

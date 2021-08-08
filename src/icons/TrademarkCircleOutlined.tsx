@@ -21,7 +21,7 @@ export default class TrademarkCircleOutlined extends OmiComponent<AntdIconProps>
   static displayName = 'TrademarkCircleOutlined';
   static tagName = 'o-trademark-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrademarkCircleOutlinedSvg} />;
   };
 }

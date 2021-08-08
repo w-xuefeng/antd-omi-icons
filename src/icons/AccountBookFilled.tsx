@@ -21,7 +21,7 @@ export default class AccountBookFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AccountBookFilled';
   static tagName = 'o-account-book-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AccountBookFilledSvg} />;
   };
 }

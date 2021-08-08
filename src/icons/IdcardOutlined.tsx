@@ -21,7 +21,7 @@ export default class IdcardOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'IdcardOutlined';
   static tagName = 'o-idcard-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={IdcardOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class PhoneFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'PhoneFilled';
   static tagName = 'o-phone-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PhoneFilledSvg} />;
   };
 }

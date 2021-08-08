@@ -21,7 +21,7 @@ export default class FacebookOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FacebookOutlined';
   static tagName = 'o-facebook-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FacebookOutlinedSvg} />;
   };
 }

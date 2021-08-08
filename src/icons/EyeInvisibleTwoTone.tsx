@@ -21,7 +21,7 @@ export default class EyeInvisibleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'EyeInvisibleTwoTone';
   static tagName = 'o-eye-invisible-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EyeInvisibleTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class RadiusSettingOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RadiusSettingOutlined';
   static tagName = 'o-radius-setting-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RadiusSettingOutlinedSvg} />;
   };
 }

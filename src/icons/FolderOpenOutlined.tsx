@@ -21,7 +21,7 @@ export default class FolderOpenOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FolderOpenOutlined';
   static tagName = 'o-folder-open-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FolderOpenOutlinedSvg} />;
   };
 }

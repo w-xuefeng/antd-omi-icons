@@ -21,7 +21,7 @@ export default class FieldNumberOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FieldNumberOutlined';
   static tagName = 'o-field-number-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FieldNumberOutlinedSvg} />;
   };
 }

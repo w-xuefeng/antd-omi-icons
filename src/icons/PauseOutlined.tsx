@@ -21,7 +21,7 @@ export default class PauseOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PauseOutlined';
   static tagName = 'o-pause-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PauseOutlinedSvg} />;
   };
 }

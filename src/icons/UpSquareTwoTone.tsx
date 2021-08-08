@@ -21,7 +21,7 @@ export default class UpSquareTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'UpSquareTwoTone';
   static tagName = 'o-up-square-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UpSquareTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class LeftSquareTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'LeftSquareTwoTone';
   static tagName = 'o-left-square-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LeftSquareTwoToneSvg} />;
   };
 }

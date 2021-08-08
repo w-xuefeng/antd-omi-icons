@@ -21,7 +21,7 @@ export default class EnvironmentFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'EnvironmentFilled';
   static tagName = 'o-environment-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EnvironmentFilledSvg} />;
   };
 }

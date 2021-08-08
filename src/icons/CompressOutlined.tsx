@@ -21,7 +21,7 @@ export default class CompressOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CompressOutlined';
   static tagName = 'o-compress-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CompressOutlinedSvg} />;
   };
 }

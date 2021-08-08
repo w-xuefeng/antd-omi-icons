@@ -21,7 +21,7 @@ export default class FileSyncOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileSyncOutlined';
   static tagName = 'o-file-sync-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileSyncOutlinedSvg} />;
   };
 }

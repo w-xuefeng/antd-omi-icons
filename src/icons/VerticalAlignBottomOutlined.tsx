@@ -21,7 +21,7 @@ export default class VerticalAlignBottomOutlined extends OmiComponent<AntdIconPr
   static displayName = 'VerticalAlignBottomOutlined';
   static tagName = 'o-vertical-align-bottom-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={VerticalAlignBottomOutlinedSvg} />;
   };
 }

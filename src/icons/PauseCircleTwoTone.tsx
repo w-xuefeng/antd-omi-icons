@@ -21,7 +21,7 @@ export default class PauseCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PauseCircleTwoTone';
   static tagName = 'o-pause-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PauseCircleTwoToneSvg} />;
   };
 }

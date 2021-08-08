@@ -21,7 +21,7 @@ export default class RadiusUpleftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RadiusUpleftOutlined';
   static tagName = 'o-radius-upleft-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RadiusUpleftOutlinedSvg} />;
   };
 }

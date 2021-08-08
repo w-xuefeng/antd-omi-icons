@@ -21,7 +21,7 @@ export default class PlayCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'PlayCircleOutlined';
   static tagName = 'o-play-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PlayCircleOutlinedSvg} />;
   };
 }

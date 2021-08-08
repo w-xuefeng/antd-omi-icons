@@ -21,7 +21,7 @@ export default class TabletOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TabletOutlined';
   static tagName = 'o-tablet-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TabletOutlinedSvg} />;
   };
 }

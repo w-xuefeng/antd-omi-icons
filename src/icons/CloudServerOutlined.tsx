@@ -21,7 +21,7 @@ export default class CloudServerOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CloudServerOutlined';
   static tagName = 'o-cloud-server-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CloudServerOutlinedSvg} />;
   };
 }

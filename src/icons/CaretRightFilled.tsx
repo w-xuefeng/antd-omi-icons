@@ -21,7 +21,7 @@ export default class CaretRightFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CaretRightFilled';
   static tagName = 'o-caret-right-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CaretRightFilledSvg} />;
   };
 }

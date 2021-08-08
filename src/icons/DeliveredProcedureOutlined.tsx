@@ -21,7 +21,7 @@ export default class DeliveredProcedureOutlined extends OmiComponent<AntdIconPro
   static displayName = 'DeliveredProcedureOutlined';
   static tagName = 'o-delivered-procedure-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DeliveredProcedureOutlinedSvg} />;
   };
 }

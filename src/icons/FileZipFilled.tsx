@@ -21,7 +21,7 @@ export default class FileZipFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FileZipFilled';
   static tagName = 'o-file-zip-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileZipFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class TagsFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'TagsFilled';
   static tagName = 'o-tags-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TagsFilledSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CopyrightTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CopyrightTwoTone';
   static tagName = 'o-copyright-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CopyrightTwoToneSvg} />;
   };
 }

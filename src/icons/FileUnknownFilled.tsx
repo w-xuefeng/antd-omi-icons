@@ -21,7 +21,7 @@ export default class FileUnknownFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FileUnknownFilled';
   static tagName = 'o-file-unknown-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileUnknownFilledSvg} />;
   };
 }

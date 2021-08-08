@@ -21,7 +21,7 @@ export default class ScheduleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ScheduleTwoTone';
   static tagName = 'o-schedule-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ScheduleTwoToneSvg} />;
   };
 }

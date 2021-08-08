@@ -21,7 +21,7 @@ export default class LayoutOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LayoutOutlined';
   static tagName = 'o-layout-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LayoutOutlinedSvg} />;
   };
 }

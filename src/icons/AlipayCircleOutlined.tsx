@@ -21,7 +21,7 @@ export default class AlipayCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AlipayCircleOutlined';
   static tagName = 'o-alipay-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AlipayCircleOutlinedSvg} />;
   };
 }

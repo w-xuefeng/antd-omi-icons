@@ -21,7 +21,7 @@ export default class RestTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'RestTwoTone';
   static tagName = 'o-rest-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RestTwoToneSvg} />;
   };
 }

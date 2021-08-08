@@ -21,7 +21,7 @@ export default class ProfileTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ProfileTwoTone';
   static tagName = 'o-profile-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ProfileTwoToneSvg} />;
   };
 }

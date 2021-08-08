@@ -21,7 +21,7 @@ export default class AccountBookTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'AccountBookTwoTone';
   static tagName = 'o-account-book-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AccountBookTwoToneSvg} />;
   };
 }

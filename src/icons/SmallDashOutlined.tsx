@@ -21,7 +21,7 @@ export default class SmallDashOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SmallDashOutlined';
   static tagName = 'o-small-dash-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SmallDashOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class CodepenSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CodepenSquareFilled';
   static tagName = 'o-codepen-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CodepenSquareFilledSvg} />;
   };
 }

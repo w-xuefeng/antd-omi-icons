@@ -21,7 +21,7 @@ export default class BehanceOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BehanceOutlined';
   static tagName = 'o-behance-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BehanceOutlinedSvg} />;
   };
 }

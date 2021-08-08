@@ -21,7 +21,7 @@ export default class FolderViewOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FolderViewOutlined';
   static tagName = 'o-folder-view-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FolderViewOutlinedSvg} />;
   };
 }

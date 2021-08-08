@@ -21,7 +21,7 @@ export default class TaobaoOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TaobaoOutlined';
   static tagName = 'o-taobao-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TaobaoOutlinedSvg} />;
   };
 }

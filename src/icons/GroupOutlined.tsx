@@ -21,7 +21,7 @@ export default class GroupOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'GroupOutlined';
   static tagName = 'o-group-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GroupOutlinedSvg} />;
   };
 }

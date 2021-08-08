@@ -21,7 +21,7 @@ export default class GitlabOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'GitlabOutlined';
   static tagName = 'o-gitlab-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GitlabOutlinedSvg} />;
   };
 }

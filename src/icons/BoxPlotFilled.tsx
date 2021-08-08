@@ -21,7 +21,7 @@ export default class BoxPlotFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'BoxPlotFilled';
   static tagName = 'o-box-plot-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BoxPlotFilledSvg} />;
   };
 }

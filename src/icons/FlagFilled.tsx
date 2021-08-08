@@ -21,7 +21,7 @@ export default class FlagFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FlagFilled';
   static tagName = 'o-flag-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FlagFilledSvg} />;
   };
 }

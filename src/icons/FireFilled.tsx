@@ -21,7 +21,7 @@ export default class FireFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FireFilled';
   static tagName = 'o-fire-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FireFilledSvg} />;
   };
 }

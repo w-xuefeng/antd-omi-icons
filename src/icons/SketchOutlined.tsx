@@ -21,7 +21,7 @@ export default class SketchOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SketchOutlined';
   static tagName = 'o-sketch-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SketchOutlinedSvg} />;
   };
 }

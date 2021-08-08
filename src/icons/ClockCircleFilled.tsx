@@ -21,7 +21,7 @@ export default class ClockCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ClockCircleFilled';
   static tagName = 'o-clock-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ClockCircleFilledSvg} />;
   };
 }

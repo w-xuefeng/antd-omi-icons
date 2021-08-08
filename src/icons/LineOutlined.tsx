@@ -21,7 +21,7 @@ export default class LineOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'LineOutlined';
   static tagName = 'o-line-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={LineOutlinedSvg} />;
   };
 }

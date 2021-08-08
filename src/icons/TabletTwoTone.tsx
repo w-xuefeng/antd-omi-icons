@@ -21,7 +21,7 @@ export default class TabletTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'TabletTwoTone';
   static tagName = 'o-tablet-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TabletTwoToneSvg} />;
   };
 }

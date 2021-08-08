@@ -21,7 +21,7 @@ export default class ArrowLeftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ArrowLeftOutlined';
   static tagName = 'o-arrow-left-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ArrowLeftOutlinedSvg} />;
   };
 }

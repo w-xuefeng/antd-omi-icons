@@ -21,7 +21,7 @@ export default class AppstoreAddOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AppstoreAddOutlined';
   static tagName = 'o-appstore-add-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AppstoreAddOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ZoomInOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ZoomInOutlined';
   static tagName = 'o-zoom-in-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ZoomInOutlinedSvg} />;
   };
 }

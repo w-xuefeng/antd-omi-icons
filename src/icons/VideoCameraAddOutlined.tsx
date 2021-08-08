@@ -21,7 +21,7 @@ export default class VideoCameraAddOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'VideoCameraAddOutlined';
   static tagName = 'o-video-camera-add-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={VideoCameraAddOutlinedSvg} />;
   };
 }

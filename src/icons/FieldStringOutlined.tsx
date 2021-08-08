@@ -21,7 +21,7 @@ export default class FieldStringOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FieldStringOutlined';
   static tagName = 'o-field-string-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FieldStringOutlinedSvg} />;
   };
 }

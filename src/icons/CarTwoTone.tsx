@@ -21,7 +21,7 @@ export default class CarTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CarTwoTone';
   static tagName = 'o-car-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CarTwoToneSvg} />;
   };
 }

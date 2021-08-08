@@ -21,7 +21,7 @@ export default class UpSquareOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'UpSquareOutlined';
   static tagName = 'o-up-square-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UpSquareOutlinedSvg} />;
   };
 }

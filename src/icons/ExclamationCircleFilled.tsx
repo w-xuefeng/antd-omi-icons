@@ -21,7 +21,7 @@ export default class ExclamationCircleFilled extends OmiComponent<AntdIconProps>
   static displayName = 'ExclamationCircleFilled';
   static tagName = 'o-exclamation-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExclamationCircleFilledSvg} />;
   };
 }

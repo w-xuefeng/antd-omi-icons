@@ -21,7 +21,7 @@ export default class PrinterTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'PrinterTwoTone';
   static tagName = 'o-printer-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={PrinterTwoToneSvg} />;
   };
 }

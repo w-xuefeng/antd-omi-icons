@@ -21,7 +21,7 @@ export default class ProjectFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'ProjectFilled';
   static tagName = 'o-project-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ProjectFilledSvg} />;
   };
 }

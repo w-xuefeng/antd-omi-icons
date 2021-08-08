@@ -21,7 +21,7 @@ export default class MediumSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'MediumSquareFilled';
   static tagName = 'o-medium-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MediumSquareFilledSvg} />;
   };
 }

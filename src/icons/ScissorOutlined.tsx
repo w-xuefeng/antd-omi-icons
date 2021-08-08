@@ -21,7 +21,7 @@ export default class ScissorOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ScissorOutlined';
   static tagName = 'o-scissor-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ScissorOutlinedSvg} />;
   };
 }

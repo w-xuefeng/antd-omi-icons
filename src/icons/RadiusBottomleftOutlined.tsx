@@ -21,7 +21,7 @@ export default class RadiusBottomleftOutlined extends OmiComponent<AntdIconProps
   static displayName = 'RadiusBottomleftOutlined';
   static tagName = 'o-radius-bottomleft-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RadiusBottomleftOutlinedSvg} />;
   };
 }

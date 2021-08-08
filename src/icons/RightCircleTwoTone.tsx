@@ -21,7 +21,7 @@ export default class RightCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'RightCircleTwoTone';
   static tagName = 'o-right-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RightCircleTwoToneSvg} />;
   };
 }

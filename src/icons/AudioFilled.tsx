@@ -21,7 +21,7 @@ export default class AudioFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AudioFilled';
   static tagName = 'o-audio-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AudioFilledSvg} />;
   };
 }

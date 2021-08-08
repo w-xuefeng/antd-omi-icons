@@ -21,7 +21,7 @@ export default class CodepenCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CodepenCircleOutlined';
   static tagName = 'o-codepen-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CodepenCircleOutlinedSvg} />;
   };
 }

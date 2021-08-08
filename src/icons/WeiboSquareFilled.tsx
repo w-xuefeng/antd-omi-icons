@@ -21,7 +21,7 @@ export default class WeiboSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'WeiboSquareFilled';
   static tagName = 'o-weibo-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WeiboSquareFilledSvg} />;
   };
 }

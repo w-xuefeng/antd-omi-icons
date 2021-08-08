@@ -21,7 +21,7 @@ export default class InteractionOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'InteractionOutlined';
   static tagName = 'o-interaction-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InteractionOutlinedSvg} />;
   };
 }

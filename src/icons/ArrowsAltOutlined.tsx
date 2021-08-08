@@ -21,7 +21,7 @@ export default class ArrowsAltOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ArrowsAltOutlined';
   static tagName = 'o-arrows-alt-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ArrowsAltOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ControlOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ControlOutlined';
   static tagName = 'o-control-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ControlOutlinedSvg} />;
   };
 }

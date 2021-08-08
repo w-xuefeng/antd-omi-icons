@@ -21,7 +21,7 @@ export default class FileZipTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FileZipTwoTone';
   static tagName = 'o-file-zip-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileZipTwoToneSvg} />;
   };
 }

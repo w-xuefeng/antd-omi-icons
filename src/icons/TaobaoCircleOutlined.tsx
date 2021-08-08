@@ -21,7 +21,7 @@ export default class TaobaoCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TaobaoCircleOutlined';
   static tagName = 'o-taobao-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TaobaoCircleOutlinedSvg} />;
   };
 }

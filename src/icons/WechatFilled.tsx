@@ -21,7 +21,7 @@ export default class WechatFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'WechatFilled';
   static tagName = 'o-wechat-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WechatFilledSvg} />;
   };
 }

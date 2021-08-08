@@ -21,7 +21,7 @@ export default class WomanOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WomanOutlined';
   static tagName = 'o-woman-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WomanOutlinedSvg} />;
   };
 }

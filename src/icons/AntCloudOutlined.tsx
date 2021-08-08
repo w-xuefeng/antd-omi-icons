@@ -21,7 +21,7 @@ export default class AntCloudOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AntCloudOutlined';
   static tagName = 'o-ant-cloud-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AntCloudOutlinedSvg} />;
   };
 }

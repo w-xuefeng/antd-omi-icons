@@ -21,7 +21,7 @@ export default class EuroTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'EuroTwoTone';
   static tagName = 'o-euro-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EuroTwoToneSvg} />;
   };
 }

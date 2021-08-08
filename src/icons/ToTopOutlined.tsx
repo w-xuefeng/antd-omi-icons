@@ -21,7 +21,7 @@ export default class ToTopOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ToTopOutlined';
   static tagName = 'o-to-top-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ToTopOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class BuildTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'BuildTwoTone';
   static tagName = 'o-build-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BuildTwoToneSvg} />;
   };
 }

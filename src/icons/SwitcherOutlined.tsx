@@ -21,7 +21,7 @@ export default class SwitcherOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SwitcherOutlined';
   static tagName = 'o-switcher-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SwitcherOutlinedSvg} />;
   };
 }

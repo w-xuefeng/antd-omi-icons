@@ -21,7 +21,7 @@ export default class CalculatorOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CalculatorOutlined';
   static tagName = 'o-calculator-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CalculatorOutlinedSvg} />;
   };
 }

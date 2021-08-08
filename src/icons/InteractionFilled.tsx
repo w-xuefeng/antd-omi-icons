@@ -21,7 +21,7 @@ export default class InteractionFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'InteractionFilled';
   static tagName = 'o-interaction-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InteractionFilledSvg} />;
   };
 }

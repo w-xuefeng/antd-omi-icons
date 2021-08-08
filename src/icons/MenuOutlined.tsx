@@ -21,7 +21,7 @@ export default class MenuOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MenuOutlined';
   static tagName = 'o-menu-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MenuOutlinedSvg} />;
   };
 }

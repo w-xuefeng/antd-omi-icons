@@ -21,7 +21,7 @@ export default class GiftOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'GiftOutlined';
   static tagName = 'o-gift-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={GiftOutlinedSvg} />;
   };
 }

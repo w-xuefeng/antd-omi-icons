@@ -21,7 +21,7 @@ export default class BookOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BookOutlined';
   static tagName = 'o-book-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BookOutlinedSvg} />;
   };
 }

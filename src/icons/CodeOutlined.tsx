@@ -21,7 +21,7 @@ export default class CodeOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CodeOutlined';
   static tagName = 'o-code-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CodeOutlinedSvg} />;
   };
 }

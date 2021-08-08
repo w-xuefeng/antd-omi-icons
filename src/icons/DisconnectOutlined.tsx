@@ -21,7 +21,7 @@ export default class DisconnectOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DisconnectOutlined';
   static tagName = 'o-disconnect-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DisconnectOutlinedSvg} />;
   };
 }

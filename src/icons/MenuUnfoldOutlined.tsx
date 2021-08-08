@@ -21,7 +21,7 @@ export default class MenuUnfoldOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MenuUnfoldOutlined';
   static tagName = 'o-menu-unfold-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MenuUnfoldOutlinedSvg} />;
   };
 }

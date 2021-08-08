@@ -21,7 +21,7 @@ export default class DeploymentUnitOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'DeploymentUnitOutlined';
   static tagName = 'o-deployment-unit-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DeploymentUnitOutlinedSvg} />;
   };
 }

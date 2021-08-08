@@ -21,7 +21,7 @@ export default class CodeSandboxSquareFilled extends OmiComponent<AntdIconProps>
   static displayName = 'CodeSandboxSquareFilled';
   static tagName = 'o-code-sandbox-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CodeSandboxSquareFilledSvg} />;
   };
 }

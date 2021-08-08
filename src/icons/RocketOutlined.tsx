@@ -21,7 +21,7 @@ export default class RocketOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'RocketOutlined';
   static tagName = 'o-rocket-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={RocketOutlinedSvg} />;
   };
 }

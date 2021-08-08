@@ -21,7 +21,7 @@ export default class InsuranceTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'InsuranceTwoTone';
   static tagName = 'o-insurance-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InsuranceTwoToneSvg} />;
   };
 }

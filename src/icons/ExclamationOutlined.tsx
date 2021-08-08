@@ -21,7 +21,7 @@ export default class ExclamationOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ExclamationOutlined';
   static tagName = 'o-exclamation-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ExclamationOutlinedSvg} />;
   };
 }

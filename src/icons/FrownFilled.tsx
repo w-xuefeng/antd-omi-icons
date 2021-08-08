@@ -21,7 +21,7 @@ export default class FrownFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FrownFilled';
   static tagName = 'o-frown-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FrownFilledSvg} />;
   };
 }

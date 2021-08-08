@@ -21,7 +21,7 @@ export default class EuroCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'EuroCircleTwoTone';
   static tagName = 'o-euro-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EuroCircleTwoToneSvg} />;
   };
 }

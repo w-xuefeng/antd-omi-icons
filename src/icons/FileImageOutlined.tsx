@@ -21,7 +21,7 @@ export default class FileImageOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FileImageOutlined';
   static tagName = 'o-file-image-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FileImageOutlinedSvg} />;
   };
 }

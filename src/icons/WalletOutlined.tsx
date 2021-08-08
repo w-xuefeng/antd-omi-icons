@@ -21,7 +21,7 @@ export default class WalletOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WalletOutlined';
   static tagName = 'o-wallet-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WalletOutlinedSvg} />;
   };
 }

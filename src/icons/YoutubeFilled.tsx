@@ -21,7 +21,7 @@ export default class YoutubeFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'YoutubeFilled';
   static tagName = 'o-youtube-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={YoutubeFilledSvg} />;
   };
 }

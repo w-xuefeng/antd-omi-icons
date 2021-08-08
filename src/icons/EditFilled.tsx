@@ -21,7 +21,7 @@ export default class EditFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'EditFilled';
   static tagName = 'o-edit-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={EditFilledSvg} />;
   };
 }

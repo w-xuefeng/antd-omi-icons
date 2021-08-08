@@ -21,7 +21,7 @@ export default class WeiboCircleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WeiboCircleOutlined';
   static tagName = 'o-weibo-circle-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WeiboCircleOutlinedSvg} />;
   };
 }

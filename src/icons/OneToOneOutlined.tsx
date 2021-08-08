@@ -21,7 +21,7 @@ export default class OneToOneOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'OneToOneOutlined';
   static tagName = 'o-one-to-one-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={OneToOneOutlinedSvg} />;
   };
 }

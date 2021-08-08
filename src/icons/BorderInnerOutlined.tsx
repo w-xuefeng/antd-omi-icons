@@ -21,7 +21,7 @@ export default class BorderInnerOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BorderInnerOutlined';
   static tagName = 'o-border-inner-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BorderInnerOutlinedSvg} />;
   };
 }

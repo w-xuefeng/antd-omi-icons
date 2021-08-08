@@ -21,7 +21,7 @@ export default class BorderlessTableOutlined extends OmiComponent<AntdIconProps>
   static displayName = 'BorderlessTableOutlined';
   static tagName = 'o-borderless-table-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BorderlessTableOutlinedSvg} />;
   };
 }

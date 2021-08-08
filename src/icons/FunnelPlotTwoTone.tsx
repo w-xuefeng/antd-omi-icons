@@ -21,7 +21,7 @@ export default class FunnelPlotTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'FunnelPlotTwoTone';
   static tagName = 'o-funnel-plot-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FunnelPlotTwoToneSvg} />;
   };
 }

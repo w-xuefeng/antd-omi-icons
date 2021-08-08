@@ -21,7 +21,7 @@ export default class CrownOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CrownOutlined';
   static tagName = 'o-crown-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CrownOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class SnippetsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SnippetsOutlined';
   static tagName = 'o-snippets-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SnippetsOutlinedSvg} />;
   };
 }

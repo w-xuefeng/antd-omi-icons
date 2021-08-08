@@ -21,7 +21,7 @@ export default class ShopTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'ShopTwoTone';
   static tagName = 'o-shop-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ShopTwoToneSvg} />;
   };
 }

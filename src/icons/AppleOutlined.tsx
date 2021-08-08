@@ -21,7 +21,7 @@ export default class AppleOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AppleOutlined';
   static tagName = 'o-apple-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AppleOutlinedSvg} />;
   };
 }

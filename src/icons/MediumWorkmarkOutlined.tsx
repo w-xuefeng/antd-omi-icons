@@ -21,7 +21,7 @@ export default class MediumWorkmarkOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'MediumWorkmarkOutlined';
   static tagName = 'o-medium-workmark-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MediumWorkmarkOutlinedSvg} />;
   };
 }

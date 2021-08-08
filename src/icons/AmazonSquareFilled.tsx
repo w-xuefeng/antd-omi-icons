@@ -21,7 +21,7 @@ export default class AmazonSquareFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'AmazonSquareFilled';
   static tagName = 'o-amazon-square-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AmazonSquareFilledSvg} />;
   };
 }

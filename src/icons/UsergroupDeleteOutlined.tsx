@@ -21,7 +21,7 @@ export default class UsergroupDeleteOutlined extends OmiComponent<AntdIconProps>
   static displayName = 'UsergroupDeleteOutlined';
   static tagName = 'o-usergroup-delete-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UsergroupDeleteOutlinedSvg} />;
   };
 }

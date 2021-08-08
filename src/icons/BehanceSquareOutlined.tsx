@@ -21,7 +21,7 @@ export default class BehanceSquareOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BehanceSquareOutlined';
   static tagName = 'o-behance-square-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BehanceSquareOutlinedSvg} />;
   };
 }

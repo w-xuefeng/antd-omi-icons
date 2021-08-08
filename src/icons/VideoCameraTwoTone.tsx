@@ -21,7 +21,7 @@ export default class VideoCameraTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'VideoCameraTwoTone';
   static tagName = 'o-video-camera-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={VideoCameraTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class ColumnHeightOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ColumnHeightOutlined';
   static tagName = 'o-column-height-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ColumnHeightOutlinedSvg} />;
   };
 }

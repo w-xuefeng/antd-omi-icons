@@ -21,7 +21,7 @@ export default class SaveOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SaveOutlined';
   static tagName = 'o-save-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SaveOutlinedSvg} />;
   };
 }

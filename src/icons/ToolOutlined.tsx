@@ -21,7 +21,7 @@ export default class ToolOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'ToolOutlined';
   static tagName = 'o-tool-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={ToolOutlinedSvg} />;
   };
 }

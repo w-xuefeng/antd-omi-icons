@@ -21,7 +21,7 @@ export default class UsbFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'UsbFilled';
   static tagName = 'o-usb-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={UsbFilledSvg} />;
   };
 }

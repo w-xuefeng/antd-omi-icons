@@ -21,7 +21,7 @@ export default class SplitCellsOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'SplitCellsOutlined';
   static tagName = 'o-split-cells-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={SplitCellsOutlinedSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class DropboxOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DropboxOutlined';
   static tagName = 'o-dropbox-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DropboxOutlinedSvg} />;
   };
 }

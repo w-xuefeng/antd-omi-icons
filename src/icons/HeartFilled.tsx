@@ -21,7 +21,7 @@ export default class HeartFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'HeartFilled';
   static tagName = 'o-heart-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={HeartFilledSvg} />;
   };
 }

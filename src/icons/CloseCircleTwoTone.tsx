@@ -21,7 +21,7 @@ export default class CloseCircleTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'CloseCircleTwoTone';
   static tagName = 'o-close-circle-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CloseCircleTwoToneSvg} />;
   };
 }

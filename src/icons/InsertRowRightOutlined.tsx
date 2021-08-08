@@ -21,7 +21,7 @@ export default class InsertRowRightOutlined extends OmiComponent<AntdIconProps> 
   static displayName = 'InsertRowRightOutlined';
   static tagName = 'o-insert-row-right-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={InsertRowRightOutlinedSvg} />;
   };
 }

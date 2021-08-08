@@ -21,7 +21,7 @@ export default class AmazonOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'AmazonOutlined';
   static tagName = 'o-amazon-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={AmazonOutlinedSvg} />;
   };
 }

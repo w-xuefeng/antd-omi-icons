@@ -21,7 +21,7 @@ export default class TwitterOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'TwitterOutlined';
   static tagName = 'o-twitter-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TwitterOutlinedSvg} />;
   };
 }

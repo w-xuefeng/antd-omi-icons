@@ -21,7 +21,7 @@ export default class TrophyTwoTone extends OmiComponent<AntdIconProps> {
   static displayName = 'TrophyTwoTone';
   static tagName = 'o-trophy-two-tone';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={TrophyTwoToneSvg} />;
   };
 }

@@ -21,7 +21,7 @@ export default class FastBackwardFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'FastBackwardFilled';
   static tagName = 'o-fast-backward-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FastBackwardFilledSvg} />;
   };
 }

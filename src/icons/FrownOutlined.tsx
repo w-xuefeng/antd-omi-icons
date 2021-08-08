@@ -21,7 +21,7 @@ export default class FrownOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'FrownOutlined';
   static tagName = 'o-frown-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={FrownOutlinedSvg} />;
   };
 }

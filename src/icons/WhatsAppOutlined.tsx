@@ -21,7 +21,7 @@ export default class WhatsAppOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'WhatsAppOutlined';
   static tagName = 'o-whats-app-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={WhatsAppOutlinedSvg} />;
   };
 }

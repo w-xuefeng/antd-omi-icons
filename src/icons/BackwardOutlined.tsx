@@ -21,7 +21,7 @@ export default class BackwardOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'BackwardOutlined';
   static tagName = 'o-backward-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={BackwardOutlinedSvg} />;
   };
 }

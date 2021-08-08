@@ -21,7 +21,7 @@ export default class MoneyCollectOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'MoneyCollectOutlined';
   static tagName = 'o-money-collect-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={MoneyCollectOutlinedSvg} />;
   };
 }

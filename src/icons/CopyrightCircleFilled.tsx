@@ -21,7 +21,7 @@ export default class CopyrightCircleFilled extends OmiComponent<AntdIconProps> {
   static displayName = 'CopyrightCircleFilled';
   static tagName = 'o-copyright-circle-filled';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CopyrightCircleFilledSvg} />;
   };
 }

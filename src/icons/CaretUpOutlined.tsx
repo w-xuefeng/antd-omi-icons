@@ -21,7 +21,7 @@ export default class CaretUpOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'CaretUpOutlined';
   static tagName = 'o-caret-up-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={CaretUpOutlinedSvg} />;
   };
 }

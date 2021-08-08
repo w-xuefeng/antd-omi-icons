@@ -21,7 +21,7 @@ export default class DashboardOutlined extends OmiComponent<AntdIconProps> {
   static displayName = 'DashboardOutlined';
   static tagName = 'o-dashboard-outlined';
   static inheritAttrs = false;
-  render(props: Omi.RenderableProps<AntdIconProps>) {
+  render(props: Omi.OmiProps<AntdIconProps>) {
     return <o-antd-icon {...rmIEFP(props)} icon={DashboardOutlinedSvg} />;
   };
 }
