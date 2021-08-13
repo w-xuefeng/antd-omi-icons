@@ -1422,15 +1422,15 @@ object.assign@^4.1.0:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-omi-tools@^1.0.20:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/omi-tools/-/omi-tools-1.0.20.tgz#f3d4af03f960e217fed0907e69698e6751a83031"
-  integrity sha512-d6CSfFw0xlQoglF/Fn/h2y5yAO32qIct5sv38cOaFx6HuApxi+XvQ4lUiHBiHQ8tedAFl9+xqsNpyPIGSazj7g==
+omi-tools@^1.0.26:
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/omi-tools/-/omi-tools-1.0.26.tgz#80b969ccb8eacf77ea2c1bef2492be9197a628b5"
+  integrity sha512-fwGwHlROk5UyPSLjNIcLdKFFDpe0Mh5og9UmJVfK2HNPYGVvXylO8qKjEDWHPhZAWkCNItH9kSU6fn9emrlRVQ==
 
-omi@^6.21.3:
-  version "6.21.3"
-  resolved "https://registry.yarnpkg.com/omi/-/omi-6.21.3.tgz#47ed3d02f582bf5ab49ec339e0c2e867cd605e4b"
-  integrity sha512-IMgkaJLXy/gbQ/C1kpR4k76GxDkyflRwJ6253fyqfMiLiYMcmbfoFZ6rre8e8f9P7FL0AoD8slkLlzaYh9oVBQ==
+omi@^6.23.0:
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/omi/-/omi-6.23.0.tgz#a35ddaa1197659cb6d68098967c0f250a41cd6a4"
+  integrity sha512-9kNWLFT5nzAXr2VPlPl2RJpSGdFTFJINj1iEOtKhABZpXG90HShFW0zfaeh8qPEZDuEOJ8CeIq7VwhX7dZzEsw==
   dependencies:
     construct-style-sheets-polyfill "^3.0.0-0"
 

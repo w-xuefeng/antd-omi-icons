@@ -69,6 +69,6 @@ import 'antd-omi-icons/lib/es/icons/AccountBookFilled'
     [https://bundle.run/antd-omi-icons](https://bundle.run/antd-omi-icons)
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/omi@6.19.21/dist/omi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/omi@6.23.0/dist/omi.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@0.0.13/lib/umd/antd-omi-icons.min.js"></script>
     ```
