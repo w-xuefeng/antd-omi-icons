@@ -63,7 +63,7 @@ then use it as this:
 ```jsx
 <AccountBookFilled />
 ```
-If your project moudle type is commonjs, replace `es` to `cjs` in the path.
+If your project moudle type is commonjs, replace `es` with `cjs` in the path when you using `require`.
 
 If you want to import the full amount of icons, you can do as follows
 
