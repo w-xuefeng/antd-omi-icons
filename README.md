@@ -46,6 +46,25 @@ After that, you can use antd icons in your Omi components as simply as this:
 <o-account-book-filled />
 ```
 
+Meanwhile, you can also import it by specific name like this
+
+```ts
+import { AccountBookFilled } from 'antd-omi-icons/lib/es/icons'
+```
+
+or
+
+```ts
+import AccountBookFilled from 'antd-omi-icons/lib/es/icons/AccountBookFilled'
+```
+
+then use it as this:
+
+```jsx
+<AccountBookFilled />
+```
+If your project moudle type is commonjs, replace `es` to `cjs` in the path.
+
 If you want to import the full amount of icons, you can do as follows
 
 - esm project:
