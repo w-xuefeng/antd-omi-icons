@@ -46,6 +46,25 @@ import 'antd-omi-icons/lib/es/icons/AccountBookFilled'
 <o-account-book-filled />
 ```
 
+同时，您也可以像这样以特定的名称导入它
+
+```ts
+import { AccountBookFilled } from 'antd-omi-icons/lib/es/icons'
+```
+
+或者
+
+```ts
+import AccountBookFilled from 'antd-omi-icons/lib/es/icons/AccountBookFilled'
+```
+
+然后按如下方式使用：
+
+```jsx
+<AccountBookFilled />
+```
+
+如果您是 commonjs 项目，在使用 `require` 的时候请将路径中的`es`替换为`cjs`
 
 如果你想使用全量图标，你可以像下面一样，在你的项目引入该文件
 
@@ -70,5 +89,5 @@ import 'antd-omi-icons/lib/es/icons/AccountBookFilled'
 
     ```html
     <script src="https://cdn.jsdelivr.net/npm/omi@6.23.0/dist/omi.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@0.0.13/lib/umd/antd-omi-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@0.0.24/lib/umd/antd-omi-icons.min.js"></script>
     ```
