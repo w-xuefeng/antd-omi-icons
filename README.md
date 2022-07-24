@@ -89,6 +89,6 @@ If you want to import the full amount of icons, you can do as follows
     [https://bundle.run/antd-omi-icons](https://bundle.run/antd-omi-icons)
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/omi@6.23.0/dist/omi.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@0.0.24/lib/umd/antd-omi-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/omi@6.25.3/dist/omi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd-omi-icons@0.0.25/lib/umd/antd-omi-icons.min.js"></script>
     ```
